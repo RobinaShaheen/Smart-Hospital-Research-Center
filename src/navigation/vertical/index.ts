@@ -10,6 +10,10 @@ const navigation = (): VerticalNavItemsType => {
       badgeColor: 'error',
       children: [
         {
+          title: 'Billing',
+          path: '/dashboards/billing'
+        },
+        {
           title: 'Analytics',
           path: '/dashboards/analytics'
         },

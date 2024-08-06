@@ -10,6 +10,11 @@ const navigation: HorizontalNavItemsType = [
     title: 'Dashboards',
     children: [
       {
+        icon: 'tabler:device-analytics',
+        title: 'Billing',
+        path: '/dashboards/billing'
+      },
+      {
         icon: 'tabler:chart-pie-2',
         title: 'Analytics',
         path: '/dashboards/analytics'

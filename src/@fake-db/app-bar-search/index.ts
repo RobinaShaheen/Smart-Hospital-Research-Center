@@ -6,6 +6,13 @@ import { AppBarSearchType } from 'src/@fake-db/types'
 
 const searchData: AppBarSearchType[] = [
   {
+    id: 0,
+    url: '/dashboards/billing',
+    icon: 'tabler:chart-pie-2',
+    title: 'Billing Dashboard',
+    category: 'dashboards'
+  },
+  {
     id: 1,
     url: '/dashboards/analytics',
     icon: 'tabler:chart-pie-2',

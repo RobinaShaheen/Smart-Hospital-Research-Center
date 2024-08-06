@@ -70,6 +70,11 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       },
       {
         icon: 'tabler:device-analytics',
+        suggestion: 'Billing',
+        link: '/dashboards/Billing'
+      },
+      {
+        icon: 'tabler:device-analytics',
         suggestion: 'CRM',
         link: '/dashboards/crm'
       },

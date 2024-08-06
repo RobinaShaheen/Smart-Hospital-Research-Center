@@ -20,8 +20,8 @@ const CardStatsVertical2 = (props: CardStatsVerticalProps) => {
         <Image
           src={imgSrc}
           alt={title}
-          width={100}
-          height={100}
+          width={30}
+          height={30}
           style={{ borderRadius: '8px', marginBottom: '16px' }}
         />
         <Typography variant='h5'>{title}</Typography>

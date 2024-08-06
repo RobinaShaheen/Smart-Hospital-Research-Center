@@ -9,6 +9,11 @@ const navigation = (): HorizontalNavItemsType => {
       children: [
         {
           icon: 'tabler:chart-pie-2',
+          title: 'Billing',
+          path: '/dashboards/billing'
+        },
+        {
+          icon: 'tabler:chart-pie-2',
           title: 'Analytics',
           path: '/dashboards/analytics'
         },
