@@ -11,13 +11,43 @@ const navigation: HorizontalNavItemsType = [
     children: [
       {
         icon: 'tabler:device-analytics',
+        title: 'Pathology',
+        path: '/dashboards/pathology'
+      },
+      {
+        icon: 'tabler:device-analytics',
+        title: 'Radiology',
+        path: '/dashboards/radiology'
+      },
+      {
+        icon: 'tabler:device-analytics',
         title: 'Billing',
         path: '/dashboards/billing'
+      },
+      {
+        icon: 'tabler:device-analytics',
+        title: 'Pharmacy',
+        path: '/dashboards/pharmacy'
+      },
+      {
+        icon: 'tabler:calendar',
+        title: 'Appointment',
+        path: '/dashboards/Appointment'
       },
       {
         icon: 'tabler:chart-pie-2',
         title: 'Analytics',
         path: '/dashboards/analytics'
+      },
+      {
+        icon: 'tabler:chart-pie-2',
+        title: 'OPD',
+        path: '/dashboards/OPD'
+      },
+      {
+        icon: 'tabler:chart-pie-2',
+        title: 'IPD',
+        path: '/dashboards/IPD'
       },
       {
         icon: 'tabler:device-analytics',

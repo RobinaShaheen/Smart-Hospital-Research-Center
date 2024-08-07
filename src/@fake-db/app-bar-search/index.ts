@@ -725,7 +725,49 @@ const searchData: AppBarSearchType[] = [
     icon: 'tabler:shield',
     title: 'Access Control (ACL)',
     category: 'chartsMisc'
-  }
+  },
+  {
+    id: 103,
+    url: '/dashboards/appointment',
+    icon: 'tabler:calender',
+    title: 'Appointment Dashboard',
+    category: 'dashboards'
+  },
+  {
+    id: 104,
+    url: '/dashboards/OPD',
+    icon: 'tabler:calender',
+    title: 'OPD Dashboard',
+    category: 'dashboards'
+  },
+  {
+    id: 105,
+    url: '/dashboards/IPD',
+    icon: 'tabler:calender',
+    title: 'IPD Dashboard',
+    category: 'dashboards'
+  },
+  {
+    id: 106,
+    url: '/dashboards/pharmacy',
+    icon: 'tabler:chart-pie-2',
+    title: 'Pharmacy Dashboard',
+    category: 'dashboards'
+  },
+  {
+    id: 108,
+    url: '/dashboards/pathology',
+    icon: 'tabler:chart-pie-2',
+    title: 'Patholgy Dashboard',
+    category: 'dashboards'
+  },
+  {
+    id: 109,
+    url: '/dashboards/radiology',
+    icon: 'tabler:chart-pie-2',
+    title: 'radiology Dashboard',
+    category: 'dashboards'
+  },
 ]
 
 // ** GET Search Data

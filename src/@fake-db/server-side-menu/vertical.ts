@@ -20,6 +20,31 @@ const navigation: VerticalNavItemsType = [
         path: '/dashboards/analytics'
       },
       {
+        title: 'Pharmacy',
+        path: '/dashboards/pharmacy'
+      },
+      {
+        title: 'OPD',
+        path: '/dashboards/OPD'
+      },
+      {
+        title: 'IPD',
+        path: '/dashboards/IPD'
+      },
+      
+      {
+        title: 'Radiology',
+        path: '/dashboards/radiology'
+      },
+      {
+        title: 'Pathology',
+        path: '/dashboards/pathology'
+      },
+      {
+        title: 'Appointment',
+        path: '/dashboards/appointment'
+      },
+      {
         title: 'CRM',
         path: '/dashboards/crm'
       },

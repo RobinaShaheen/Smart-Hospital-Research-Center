@@ -18,6 +18,36 @@ const navigation = (): HorizontalNavItemsType => {
           path: '/dashboards/analytics'
         },
         {
+          icon: 'tabler:chart-pie-2',
+          title: 'Pathology',
+          path: '/dashboards/pathology'
+        },
+        {
+          icon: 'tabler:chart-pie-2',
+          title: 'Radiology',
+          path: '/dashboards/radiology'
+        },
+        {
+          icon: 'tabler:chart-pie-2',
+          title: 'Pharmacy',
+          path: '/dashboards/pharmacy'
+        },
+        {
+          icon: 'tabler:calender',
+          title: 'Appointment',
+          path: '/dashboards/appointment'
+        },
+        {
+          icon: 'tabler:calender',
+          title: 'OPD',
+          path: '/dashboards/OPD'
+        },
+        {
+          icon: 'tabler:calender',
+          title: 'IPD',
+          path: '/dashboards/IPD'
+        },
+        {
           icon: 'tabler:device-analytics',
           title: 'CRM',
           path: '/dashboards/crm'

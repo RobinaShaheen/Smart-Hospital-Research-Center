@@ -65,8 +65,39 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
     suggestions: [
       {
         icon: 'tabler:chart-pie-2',
+        suggestion: 'Pharmacy',
+        link: '/dashboards/pharmacy'
+      },
+      {
+        icon: 'tabler:chart-pie-2',
         suggestion: 'Analytics',
         link: '/dashboards/analytics'
+      },
+      {
+        icon: 'tabler:calender',
+        suggestion: 'Appointment',
+        link: '/dashboards/appointment'
+      },
+      {
+        icon: 'tabler:calender',
+        suggestion: 'Pathology',
+        link: '/dashboards/pathology'
+      },
+      {
+        icon: 'tabler:calender',
+        suggestion: 'Radiology',
+        link: '/dashboards/radiology'
+      },
+      
+      {
+        icon: 'tabler:calender',
+        suggestion: 'OPD',
+        link: '/dashboards/OPD'
+      },
+      {
+        icon: 'tabler:calender',
+        suggestion: 'IPD',
+        link: '/dashboards/IPD'
       },
       {
         icon: 'tabler:device-analytics',
