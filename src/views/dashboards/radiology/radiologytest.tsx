@@ -129,7 +129,7 @@ const columns: GridColDef[] = [
   }
 ]
 
-const RadiologyTable = () => {
+const RadiologyTest = () => {
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
@@ -137,30 +137,23 @@ const RadiologyTable = () => {
   return (
     <Card>
       <CardContent
-        sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}
+        sx={{ gap: 4, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'space-between' }}
       >
-        <Button
-          component={Link}
-          variant='contained'
-          href='/dashboards/radiology/generate-bill'
-          startIcon={<Icon icon='tabler:receipt' />}
-        >
-          Generate Bill
-        </Button>
-        <Button
-          component={Link}
-          variant='contained'
-          href='/dashboards/radiology/radiology-test'
-          startIcon={<Icon icon='tabler:medication' />}
-        >
-          Radiology Test
-        </Button>
-        <Box sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
+        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', mb: 4 }}>
           <CustomTextField
             value={value}
             placeholder='Search Report'
             onChange={e => setValue(e.target.value)}
+            sx={{ flex: 1, mr: 2 }}
           />
+          <Button
+            component={Link}
+            variant='contained'
+            href='/dashboards/radiology/add-radiology-test'
+            startIcon={<Icon icon='tabler:medication' />}
+          >
+            Add Radiology Test
+          </Button>
         </Box>
       </CardContent>
       <DataGrid
@@ -177,4 +170,4 @@ const RadiologyTable = () => {
   )
 }
 
-export default RadiologyTable
+export default RadiologyTest

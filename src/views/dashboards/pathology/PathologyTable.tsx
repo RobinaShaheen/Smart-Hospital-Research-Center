@@ -143,7 +143,7 @@ const PathologyTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/apps/pathology/generate-bill'
+          href='/dashboards/pathology/generate-bill'
           startIcon={<Icon icon='tabler:receipt' />}
         >
           Generate Bill
@@ -151,7 +151,7 @@ const PathologyTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/apps/pathology/pathology-test'
+          href='/dashboards/pathology/pathology-test'
           startIcon={<Icon icon='tabler:medication' />}
         >
           Pathology Test
