@@ -92,12 +92,12 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       {
         icon: 'tabler:calender',
         suggestion: 'OPD',
-        link: '/dashboards/OPD'
+        link: '/dashboards/Patients/OPD'
       },
       {
         icon: 'tabler:calender',
         suggestion: 'IPD',
-        link: '/dashboards/IPD'
+        link: '/dashboards/Patients/IPD'
       },
       {
         icon: 'tabler:device-analytics',

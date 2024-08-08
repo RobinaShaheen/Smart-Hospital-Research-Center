@@ -31,11 +31,11 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title: 'OPD',
-          path: '/dashboards/OPD'
+          path: '/dashboards/Patients/OPD'
         },
         {
           title: 'IPD',
-          path: '/dashboards/IPD'
+          path: '/dashboards/Patients/IPD'
         },
         {
           title: 'Appointment',

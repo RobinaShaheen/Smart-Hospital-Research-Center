@@ -9,10 +9,6 @@ import Link from 'next/link'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
-import Tooltip from '@mui/material/Tooltip'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { styled } from '@mui/material/styles'
-import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
@@ -21,11 +17,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import Icon from 'src/@core/components/icon'
 
 // ** Custom Component Imports
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import OptionsMenu from 'src/@core/components/option-menu'
 import CustomTextField from 'src/@core/components/mui/text-field'
-import { ThemeColor } from 'src/@core/layouts/types'
 
 // ** Dummy Data
 const dummyData = [
@@ -33,53 +25,53 @@ const dummyData = [
     id: 1,
     name: 'John Doe',
     patientId: 'PAT-001',
-    guardianName: 'Jane Doe',
+    caseId: 'CASE-001',
     gender: 'Male',
     phone: '123-456-7890',
     consultant: 'Dr. Smith',
-    lastVisit: '2023-07-15',
-    totalRecheckups: 3
+    admissionDate: '2024-07-01',
+    dischargedDate: '2024-07-15',
+    tax: 50,
+    netAmount: 500,
+    total: 550
   },
   {
     id: 2,
     name: 'Alice Johnson',
     patientId: 'PAT-002',
-    guardianName: 'Bob Johnson',
+    caseId: 'CASE-002',
     gender: 'Female',
     phone: '987-654-3210',
     consultant: 'Dr. Lee',
-    lastVisit: '2023-06-20',
-    totalRecheckups: 2
+    admissionDate: '2024-06-20',
+    dischargedDate: '2024-07-05',
+    tax: 30,
+    netAmount: 300,
+    total: 330
   },
   {
     id: 3,
     name: 'Sam Brown',
     patientId: 'PAT-003',
-    guardianName: 'Sarah Brown',
+    caseId: 'CASE-003',
     gender: 'Male',
     phone: '555-555-5555',
     consultant: 'Dr. Adams',
-    lastVisit: '2023-08-05',
-    totalRecheckups: 1
+    admissionDate: '2024-08-01',
+    dischargedDate: '2024-08-07',
+    tax: 70,
+    netAmount: 700,
+    total: 770
   }
 ]
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-interface OPDStatusObj {
-  [key: string]: {
-    icon: string
-    color: ThemeColor
-  }
-}
 
 interface CellType {
   row: typeof dummyData[0]
 }
 
 
-// ** Vars
 
-const defaultColumns: GridColDef[] = [
+const columns: GridColDef[] = [
   {
     flex: 0.2,
     field: 'name',
@@ -91,15 +83,15 @@ const defaultColumns: GridColDef[] = [
     flex: 0.2,
     field: 'patientId',
     minWidth: 130,
-    headerName: 'Patient ID',
+    headerName: 'Patient Id',
     renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.patientId}</Typography>
   },
   {
     flex: 0.2,
-    field: 'guardianName',
-    minWidth: 150,
-    headerName: 'Guardian Name',
-    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.guardianName}</Typography>
+    field: 'caseId',
+    minWidth: 130,
+    headerName: 'Case ID',
+    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.caseId}</Typography>
   },
   {
     flex: 0.1,
@@ -124,59 +116,45 @@ const defaultColumns: GridColDef[] = [
   },
   {
     flex: 0.15,
-    field: 'lastVisit',
+    field: 'admissionDate',
     minWidth: 120,
-    headerName: 'Last Visit',
-    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.lastVisit}</Typography>
+    headerName: 'Admission Date',
+    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.admissionDate}</Typography>
   },
   {
     flex: 0.15,
-    field: 'totalRecheckups',
-    minWidth: 150,
-    headerName: 'Total Recheckups',
-    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.totalRecheckups}</Typography>
+    field: 'dischargedDate',
+    minWidth: 120,
+    headerName: 'Discharged Date',
+    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.dischargedDate}</Typography>
+  },
+  {
+    flex: 0.15,
+    field: 'tax',
+    minWidth: 100,
+    headerName: 'Tax ($)',
+    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.tax}</Typography>
+  },
+  {
+    flex: 0.15,
+    field: 'netAmount',
+    minWidth: 120,
+    headerName: 'Net Amount ($)',
+    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.netAmount}</Typography>
+  },
+  {
+    flex: 0.15,
+    field: 'total',
+    minWidth: 120,
+    headerName: 'Total ($)',
+    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.total}</Typography>
   }
 ]
 
-const OPDOutPatientTable = () => {
+const IPDDischargedPatientTable = () => {
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
-
-  const columns: GridColDef[] = [
-    ...defaultColumns,
-    {
-      flex: 0.1,
-      minWidth: 130,
-      sortable: false,
-      field: 'actions',
-      headerName: 'Actions',
-      renderCell: ({ row }: CellType) => (
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Tooltip title='View Details'>
-            <IconButton size='small' component={Link} href={`/apps/appointment/preview/${row.patientId}`}>
-              <Icon icon='tabler:eye' />
-            </IconButton>
-          </Tooltip>
-          <OptionsMenu
-            iconButtonProps={{ size: 'small' }}
-            menuProps={{ sx: { '& .MuiMenuItem-root svg': { mr: 2 } } }}
-            options={[
-              {
-                text: 'Edit',
-                href: `/apps/appointment/edit/${row.patientId}`,
-                icon: <Icon icon='tabler:pencil' fontSize='1.25rem' />
-              },
-              {
-                text: 'Duplicate',
-                icon: <Icon icon='tabler:copy' fontSize='1.25rem' />
-              }
-            ]}
-          />
-        </Box>
-      )
-    }
-  ]
 
   return (
     <Card>
@@ -186,17 +164,25 @@ const OPDOutPatientTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/dashboards/Patients/add-patient'
-          startIcon={<Icon icon='tabler:plus' />}
+          href='/apps/ipd/generate-bill'
+          startIcon={<Icon icon='tabler:receipt' />}
         >
-          Add Patient
+          Generate Bill
+        </Button>
+        <Button
+          component={Link}
+          variant='contained'
+          href='/apps/ipd/medicines'
+          startIcon={<Icon icon='tabler:medication' />}
+        >
+          Medicines
         </Button>
         <Box sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
           <CustomTextField
             value={value}
             placeholder='Search Patient'
             onChange={e => setValue(e.target.value)}
-        />
+          />
         </Box>
       </CardContent>
       <DataGrid
@@ -213,4 +199,4 @@ const OPDOutPatientTable = () => {
   )
 }
 
-export default OPDOutPatientTable
+export default IPDDischargedPatientTable

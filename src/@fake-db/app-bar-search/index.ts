@@ -735,14 +735,14 @@ const searchData: AppBarSearchType[] = [
   },
   {
     id: 104,
-    url: '/dashboards/OPD',
+    url: '/dashboards/Patients/OPD',
     icon: 'tabler:calender',
     title: 'OPD Dashboard',
     category: 'dashboards'
   },
   {
     id: 105,
-    url: '/dashboards/IPD',
+    url: '/dashboards/Patients/IPD',
     icon: 'tabler:calender',
     title: 'IPD Dashboard',
     category: 'dashboards'

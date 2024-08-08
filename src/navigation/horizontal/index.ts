@@ -40,12 +40,12 @@ const navigation = (): HorizontalNavItemsType => {
         {
           icon: 'tabler:calender',
           title: 'OPD',
-          path: '/dashboards/OPD'
+          path: '/dashboards/Patients/OPD'
         },
         {
           icon: 'tabler:calender',
           title: 'IPD',
-          path: '/dashboards/IPD'
+          path: '/dashboards/Patients/IPD'
         },
         {
           icon: 'tabler:device-analytics',

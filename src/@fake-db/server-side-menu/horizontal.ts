@@ -42,12 +42,12 @@ const navigation: HorizontalNavItemsType = [
       {
         icon: 'tabler:chart-pie-2',
         title: 'OPD',
-        path: '/dashboards/OPD'
+        path: '/dashboards/Patients/OPD'
       },
       {
         icon: 'tabler:chart-pie-2',
         title: 'IPD',
-        path: '/dashboards/IPD'
+        path: '/dashboards/Patients/IPD'
       },
       {
         icon: 'tabler:device-analytics',

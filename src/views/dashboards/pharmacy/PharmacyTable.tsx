@@ -143,7 +143,7 @@ const PharmacyTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/apps/pharmacy/generate-bill'
+          href='/dashboards/pharmacy/generate-bill'
           startIcon={<Icon icon='tabler:receipt' />}
         >
           Generate Bill
@@ -151,7 +151,7 @@ const PharmacyTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/apps/pharmacy/medicines'
+          href='/dashboards/pharmacy/medicines'
           startIcon={<Icon icon='tabler:medication' />}
         >
           Medicines

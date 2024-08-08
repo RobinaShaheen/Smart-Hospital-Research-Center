@@ -182,7 +182,7 @@ const IPDInPatientTable = () => {
           <Button
             component={Link}
             variant='contained'
-            href='/apps/appointment/add'
+            href='/dashboards/Patients/add-patient'
             startIcon={<Icon icon='tabler:plus' />}
           >
             Add Patient
@@ -191,9 +191,9 @@ const IPDInPatientTable = () => {
             variant='contained'
             color='error'
             startIcon={<Icon icon='tabler:exit' />}
-            href='/apps/appointment/discharge'
+            href='/dashboards/Patients/IPD/discharged'
           >
-            Discharge Patient
+            Discharged Patients
           </Button>
         </Box>
         <CustomTextField
