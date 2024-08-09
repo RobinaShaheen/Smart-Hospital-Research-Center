@@ -133,7 +133,7 @@ const PurchaseTable = () => {
           <Button
             component={Link}
             variant='contained'
-            href='/dashboards/pharmacy/add-purchase'
+            href='/pharmacy/add-purchase'
             startIcon={<Icon icon='tabler:receipt' />}
           >
             Purchase Medicine

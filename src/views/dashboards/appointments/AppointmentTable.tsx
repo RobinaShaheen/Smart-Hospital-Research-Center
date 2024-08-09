@@ -289,7 +289,7 @@ const AppointmentTable = () => {
             variant='contained'
             color='primary'
             startIcon={<Icon icon='tabler:doctor' />}
-            href='/dashboards/appointment/doctor-wise'
+            href='/appointment/doctor-wise'
           >
             Doctor Wise
           </Button>
@@ -297,7 +297,7 @@ const AppointmentTable = () => {
             variant='contained'
             color='primary'
             startIcon={<Icon icon='tabler:queue' />}
-            href='/dashboards/appointment/queue'
+            href='/appointment/queue'
           >
             Queue
           </Button>

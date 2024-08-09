@@ -142,7 +142,7 @@ const RadiologyTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/dashboards/radiology/generate-bill'
+          href='/radiology/generate-bill'
           startIcon={<Icon icon='tabler:receipt' />}
         >
           Generate Bill
@@ -150,7 +150,7 @@ const RadiologyTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/dashboards/radiology/radiology-test'
+          href='/radiology/radiology-test'
           startIcon={<Icon icon='tabler:medication' />}
         >
           Radiology Test

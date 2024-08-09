@@ -12,47 +12,48 @@ const navigation: VerticalNavItemsType = [
     badgeColor: 'error',
     children: [
       {
-        title: 'Billing',
-        path: '/dashboards/billing'
-      },
-      {
         title: 'Analytics',
         path: '/dashboards/analytics'
-      },
-      {
-        title: 'Pharmacy',
-        path: '/dashboards/pharmacy'
-      },
-      {
-        title: 'OPD',
-        path: '/dashboards/Patients/OPD'
-      },
-      {
-        title: 'IPD',
-        path: '/dashboards/Patients/IPD'
-      },
-      
-      {
-        title: 'Radiology',
-        path: '/dashboards/radiology'
-      },
-      {
-        title: 'Pathology',
-        path: '/dashboards/pathology'
-      },
-      {
-        title: 'Appointment',
-        path: '/dashboards/appointment'
-      },
-      {
-        title: 'CRM',
-        path: '/dashboards/crm'
-      },
-      {
-        title: 'eCommerce',
-        path: '/dashboards/ecommerce'
       }
     ]
+  },
+  {
+    title: 'Billing',
+    path: '/billing'
+  },
+  
+  {
+    title: 'Pharmacy',
+    path: '/pharmacy'
+  },
+  {
+    title: 'OPD',
+    path: '/Patients/OPD'
+  },
+  {
+    title: 'IPD',
+    path: '/Patients/IPD'
+  },
+  
+  {
+    title: 'Radiology',
+    path: '/radiology'
+  },
+  {
+    title: 'Pathology',
+    path: '/pathology'
+  },
+  {
+    title: 'Appointment',
+    path: '/appointment'
+  },
+  {
+    title: 'CRM',
+    path: '/crm'
+  },
+  {
+    title: 'eCommerce',
+    path: '/ecommerce'
   },
   {
     sectionTitle: 'Apps & Pages'

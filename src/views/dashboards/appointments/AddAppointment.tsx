@@ -24,7 +24,7 @@ const AddAppointment = () => {
       <Grid item xs={12}>
         <Box display="flex" justifyContent="flex-end" mb={4}>
           <Button variant='contained' color='primary' sx={{ mr: 2 }}
-          href='/dashboards/appointment/add-new-patient'
+          href='/appointment/add-new-patient'
           >
             Add New Patient
           </Button>

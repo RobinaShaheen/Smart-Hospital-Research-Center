@@ -149,7 +149,7 @@ const PathologyTest = () => {
           <Button
             component={Link}
             variant='contained'
-            href='/dashboards/pathology/add-pathology-test'
+            href='/pathology/add-pathology-test'
             startIcon={<Icon icon='tabler:medication' />}
           >
             Add Pathology Test

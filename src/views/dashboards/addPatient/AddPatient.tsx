@@ -24,7 +24,7 @@ const AddPatient = () => {
       <Grid item xs={12}>
         <Box display="flex" justifyContent="flex-end" mb={4}>
           <Button variant='contained' color='primary'
-          href='/dashboards/Patients/add-new-patient'
+          href='/Patients/add-new-patient'
           >
             Add New Patient
           </Button>

@@ -186,7 +186,7 @@ const OPDOutPatientTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/dashboards/Patients/add-patient'
+          href='/Patients/add-patient'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Patient

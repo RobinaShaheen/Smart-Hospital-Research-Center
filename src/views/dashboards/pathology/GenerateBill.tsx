@@ -29,7 +29,7 @@ const PathologyGenerateBill = () => {
       <Grid item xs={12}>
         <Box display="flex" flexDirection="column" mb={4}>
           <OptionsWrapper>
-            <Button variant='contained' color='primary' href='/dashboards/pathology/add-new-patient'>
+            <Button variant='contained' color='primary' href='/pathology/add-new-patient'>
               New Patient
             </Button>
             <CustomTextField

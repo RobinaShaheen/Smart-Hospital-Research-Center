@@ -1,10 +1,8 @@
 // ** MUI Import
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-
-// ** Demo Component Imports
+import IPDInPatientTable from 'src/views/dashboards/IPD/IPDtable'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import PathologyTest from 'src/views/dashboards/pathology/pathologytest'
 
 const Appointment = () => {
   return (
@@ -14,11 +12,11 @@ const Appointment = () => {
         gutterBottom
         sx={{ mb: 4 }} // Adjust margin bottom if needed
       >
-        Generate Bill
+        IPD Patients
       </Typography>
       <Grid container spacing={6}>
         <Grid item xs={12}>
-          <PathologyTest />
+          <IPDInPatientTable />
         </Grid>
       </Grid>
     </ApexChartWrapper>

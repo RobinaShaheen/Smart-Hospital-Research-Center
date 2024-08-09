@@ -14,7 +14,7 @@ const Appointment = () => {
         gutterBottom
         sx={{ mb: 4 }} // Adjust margin bottom if needed
       >
-        Add patient
+        Add New Patient
       </Typography>
       <Grid container spacing={6}>
         <Grid item xs={12}>

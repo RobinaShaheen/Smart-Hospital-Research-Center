@@ -29,13 +29,13 @@ const MedicineTable = () => {
       <Grid item xs={12}>
         <Box display="flex" justifyContent="space-between" mb={4}>
           <Box>
-            <Button variant='contained' color='primary' sx={{ mr: 2 }} href='/dashboards/pharmacy/import-medicines'>
+            <Button variant='contained' color='primary' sx={{ mr: 2 }} href='/pharmacy/import-medicines'>
               Import Medicine
             </Button>
-            <Button variant='contained' color='primary' sx={{ mr: 2 }} href='/dashboards/pharmacy/add-medicines'>
+            <Button variant='contained' color='primary' sx={{ mr: 2 }} href='/pharmacy/add-medicines'>
               Add Medicine 
             </Button>
-            <Button variant='contained' color='primary' sx={{ mr: 2 }} href='/dashboards/pharmacy/purchase'>
+            <Button variant='contained' color='primary' sx={{ mr: 2 }} href='/pharmacy/purchase'>
               Purchase
             </Button>
           </Box>

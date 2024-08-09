@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import AddMedicine from 'src/views/dashboards/pharmacy/addmedicine'
+import AddNewPatient from 'src/views/dashboards/addnewpatient/addNewpatient'
 
 const Appointment = () => {
   return (
@@ -14,11 +14,11 @@ const Appointment = () => {
         gutterBottom
         sx={{ mb: 4 }} // Adjust margin bottom if needed
       >
-        Generate Bill
+        Add New Patient
       </Typography>
       <Grid container spacing={6}>
         <Grid item xs={12}>
-          <AddMedicine />
+          < AddNewPatient/>
         </Grid>
       </Grid>
     </ApexChartWrapper>

@@ -65,54 +65,61 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
     suggestions: [
       {
         icon: 'tabler:chart-pie-2',
-        suggestion: 'Pharmacy',
-        link: '/dashboards/pharmacy'
-      },
-      {
-        icon: 'tabler:chart-pie-2',
         suggestion: 'Analytics',
         link: '/dashboards/analytics'
+      }
+    ]
+  },
+  {
+    category: '',
+    suggestions:[
+      
+      {
+        icon: 'tabler:chart-pie-2',
+        suggestion: 'Pharmacy',
+        link: '/pharmacy'
       },
+      
       {
         icon: 'tabler:calender',
         suggestion: 'Appointment',
-        link: '/dashboards/appointment'
+        link: '/appointment'
       },
       {
         icon: 'tabler:calender',
         suggestion: 'Pathology',
-        link: '/dashboards/pathology'
+        link: '/pathology'
       },
       {
         icon: 'tabler:calender',
         suggestion: 'Radiology',
-        link: '/dashboards/radiology'
+        link: '/radiology'
       },
       
       {
         icon: 'tabler:calender',
         suggestion: 'OPD',
-        link: '/dashboards/Patients/OPD'
+        link: '/Patients/OPD'
       },
       {
         icon: 'tabler:calender',
         suggestion: 'IPD',
-        link: '/dashboards/Patients/IPD'
+        link: '/Patients/IPD'
       },
       {
         icon: 'tabler:device-analytics',
         suggestion: 'Billing',
-        link: '/dashboards/Billing'
+        link: '/Billing'
       },
       {
         icon: 'tabler:device-analytics',
         suggestion: 'CRM',
-        link: '/dashboards/crm'
+        link: '/crm'
       },
       {
         icon: 'tabler:shopping-cart',
         suggestion: 'eCommerce',
-        link: '/dashboards/ecommerce'
+        link: '/ecommerce'
       },
       {
         icon: 'tabler:users',
@@ -120,6 +127,7 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
         link: '/apps/user/list'
       }
     ]
+
   },
   {
     category: 'Apps & Pages',
