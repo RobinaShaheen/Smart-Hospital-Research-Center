@@ -113,6 +113,11 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       },
       {
         icon: 'tabler:device-analytics',
+        suggestion: 'Human Resource',
+        link: '/human-resource'
+      },
+      {
+        icon: 'tabler:device-analytics',
         suggestion: 'CRM',
         link: '/crm'
       },

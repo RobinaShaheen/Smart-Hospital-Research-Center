@@ -56,6 +56,10 @@ const navigation: VerticalNavItemsType = [
     path: '/ecommerce'
   },
   {
+    title: 'Human resource',
+    path: '/human-resource'
+  },
+  {
     sectionTitle: 'Apps & Pages'
   },
   {
