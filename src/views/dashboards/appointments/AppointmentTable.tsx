@@ -258,7 +258,7 @@ const AppointmentTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/apps/appointment/add'
+          href='/appointment/add'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Create Appointment

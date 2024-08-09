@@ -45,6 +45,14 @@ const navigation = (): VerticalNavItemsType => {
       path: '/appointment'
     },
     {
+      title: 'Human Resource',
+      path: '/human-resource'
+    },
+    {
+      title: 'Referral',
+      path: '/referral'
+    },
+    {
       title: 'CRM',
       path: '/crm'
     },
@@ -52,10 +60,7 @@ const navigation = (): VerticalNavItemsType => {
       title: 'eCommerce',
       path: '/ecommerce'
     },
-    {
-      title: 'Human Resource',
-      path: '/human-resource'
-    },
+    
     {
       sectionTitle: 'Apps & Pages'
     },

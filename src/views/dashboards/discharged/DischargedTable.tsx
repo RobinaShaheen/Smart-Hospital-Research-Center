@@ -3,18 +3,15 @@
 import { useState } from 'react'
 
 // ** Next Import
-import Link from 'next/link'
 
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
-import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
 
 // ** Custom Component Imports
 import CustomTextField from 'src/@core/components/mui/text-field'
@@ -161,22 +158,6 @@ const IPDDischargedPatientTable = () => {
       <CardContent
         sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}
       >
-        <Button
-          component={Link}
-          variant='contained'
-          href='/apps/ipd/generate-bill'
-          startIcon={<Icon icon='tabler:receipt' />}
-        >
-          Generate Bill
-        </Button>
-        <Button
-          component={Link}
-          variant='contained'
-          href='/apps/ipd/medicines'
-          startIcon={<Icon icon='tabler:medication' />}
-        >
-          Medicines
-        </Button>
         <Box sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
           <CustomTextField
             value={value}

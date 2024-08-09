@@ -203,9 +203,12 @@ const AddStaff = () => {
           )}
         </Grid>
 
-        <Box sx={{ mt: 3, textAlign: 'right' }}>
+        <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
           <Button variant='contained' onClick={() => setShowMoreDetails(!showMoreDetails)}>
             {showMoreDetails ? 'Hide Details' : 'Add More Details'}
+          </Button>
+          <Button variant='contained' color='primary'>
+            Save
           </Button>
         </Box>
       </CardContent>

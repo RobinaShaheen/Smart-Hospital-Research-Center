@@ -48,6 +48,10 @@ const navigation: VerticalNavItemsType = [
     path: '/appointment'
   },
   {
+    title: 'Referral',
+    path: '/referral'
+  },
+  {
     title: 'CRM',
     path: '/crm'
   },

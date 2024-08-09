@@ -14,7 +14,6 @@ import OutlinedInput from '@mui/material/OutlinedInput'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
-import Link from 'next/link'
 
 const ImportStaff = () => {
   // ** State
@@ -39,9 +38,6 @@ const ImportStaff = () => {
       <CardContent>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
           <Button
-            component={Link}
-            href='/path/to/sample.csv'
-            download
             variant='contained'
             startIcon={<Icon icon='tabler:download' />}
             sx={{ alignSelf: 'flex-start' }}
