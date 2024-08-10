@@ -1,72 +1,48 @@
-// ** MUI Import
-import Grid from '@mui/material/Grid'
+import React from 'react';
 
-// ** Demo Component Imports
-import AnalyticsProject from 'src/views/dashboards/analytics/AnalyticsProject'
-import AnalyticsOrderVisits from 'src/views/dashboards/analytics/AnalyticsOrderVisits'
-import AnalyticsTotalEarning from 'src/views/dashboards/analytics/AnalyticsTotalEarning'
-import AnalyticsSourceVisits from 'src/views/dashboards/analytics/AnalyticsSourceVisits'
-import AnalyticsEarningReports from 'src/views/dashboards/analytics/AnalyticsEarningReports'
-import AnalyticsSupportTracker from 'src/views/dashboards/analytics/AnalyticsSupportTracker'
-import AnalyticsSalesByCountries from 'src/views/dashboards/analytics/AnalyticsSalesByCountries'
-import AnalyticsMonthlyCampaignState from 'src/views/dashboards/analytics/AnalyticsMonthlyCampaignState'
-import AnalyticsWebsiteAnalyticsSlider from 'src/views/dashboards/analytics/AnalyticsWebsiteAnalyticsSlider'
-
-// ** Custom Component Import
-import KeenSliderWrapper from 'src/@core/styles/libs/keen-slider'
-import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import CardStatsWithAreaChart from 'src/@core/components/card-statistics/card-stats-with-area-chart'
+// ** MUI Imports
+import Grid from '@mui/material/Grid';
+import KeenSliderWrapper from 'src/@core/styles/libs/keen-slider';
+import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts';
+import NotificationBar from 'src/views/dashboards/analytics/HorizontalBar';
+import IncomeExpenseCards from 'src/views/dashboards/analytics/IncomeExpenseCards';
+import MonthlyIncomeOverview from 'src/views/dashboards/analytics/MonthlyIncome';
+import YearlyIncomeExpense from 'src/views/dashboards/analytics/yearlyIncomeExpense';
+import AppCalendar from 'src/pages/apps/calendar';
+import RolesList from 'src/views/dashboards/analytics/RoleIcons';
 
 const AnalyticsDashboard = () => {
   return (
     <ApexChartWrapper>
       <KeenSliderWrapper>
-        <Grid container spacing={6}>
+        {/* Notification Bar */}
+        <Grid item xs={12} lg={6}>
+          <NotificationBar />
+        </Grid>
+        {/* Income Expense Cards */}
+        <Grid item xs={12} lg={6}>
+          <IncomeExpenseCards />
+        </Grid>
+        {/* Monthly and Yearly Overview */}
+        <Grid container spacing={2}>
           <Grid item xs={12} lg={6}>
-            <AnalyticsWebsiteAnalyticsSlider />
+            <MonthlyIncomeOverview />
           </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <AnalyticsOrderVisits
-            
-            
-            
-            />
+          <Grid item xs={12} lg={6}>
+            <YearlyIncomeExpense />
           </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <CardStatsWithAreaChart
-              stats='97.5k'
-              chartColor='success'
-              avatarColor='success'
-              title='Yearly income & expense'
-              avatarIcon='tabler:credit-card'
-              chartSeries={[{ data: [6, 35, 25, 61, 32, 84, 70] }]}
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <AnalyticsEarningReports />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <AnalyticsSupportTracker/>
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <AnalyticsSalesByCountries />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <AnalyticsTotalEarning />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <AnalyticsMonthlyCampaignState />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <AnalyticsSourceVisits />
-          </Grid>
-          <Grid item xs={12} lg={8}>
-            <AnalyticsProject />
-          </Grid>
+        </Grid>
+
+        {/* App Calendar with increased gap */}
+        <Grid item xs={12} lg={6} sx={{ mt: 4 }}> {/* Added mt (margin-top) to increase gap */}
+          <AppCalendar />
+        </Grid>
+        <Grid item xs={12} lg={6}>
+          <RolesList />
         </Grid>
       </KeenSliderWrapper>
     </ApexChartWrapper>
-  )
-}
+  );
+};
 
-export default AnalyticsDashboard
+export default AnalyticsDashboard;
