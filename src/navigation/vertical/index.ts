@@ -685,21 +685,27 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Certificate',
           path: '/certificate/Certificate'
-        },
-        {
-          title: 'Patient ID Card',
-          path: ''
-        },
-        {
-          title: 'Staff ID Card',
-          path: ''
         }
       ]
     },
     {
       title:'Download Center',
       path:'/download-center'
-    }
+    },
+    {
+      title: 'Live Consultation',
+      icon: 'tabler:receipt',
+      children: [
+        {
+          title: 'Live Consultation',
+          path: '/liveConsultation/LiveConsultation'
+        },
+        {
+          title: 'Live Meeting',
+          path: '/liveConsultation/LiveMeeting'
+        }
+      ]
+    },
   ]
 }
 
