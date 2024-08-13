@@ -123,6 +123,11 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       },
       {
         icon: 'tabler:device-analytics',
+        suggestion: 'TPA Management',
+        link: '/TPA'
+      },
+      {
+        icon: 'tabler:device-analytics',
         suggestion: 'CRM',
         link: '/crm'
       },
