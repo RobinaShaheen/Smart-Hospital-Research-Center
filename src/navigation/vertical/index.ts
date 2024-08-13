@@ -1,4 +1,6 @@
 // ** Type import
+import path from 'path'
+import { title } from 'process'
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
 const navigation = (): VerticalNavItemsType => {
@@ -60,7 +62,28 @@ const navigation = (): VerticalNavItemsType => {
       title: 'eCommerce',
       path: '/ecommerce'
     },
-    
+    {
+      title: 'Inventory',
+      path: '/Inventory',
+    },
+    {
+      title: 'Certificate',
+      path: '/Certificate',
+      children: [
+        // {
+        //   title: 'Certificate',
+        //   path: '/Certificate/Certificate',
+        // },
+        {
+          title: 'Patient ID Card',
+          path: '/Certificate/PatientId',
+        },
+        {
+          title: 'Staff ID Card',
+          path: '/Certificate/Staffid',
+        },
+      ]
+    },
     {
       sectionTitle: 'Apps & Pages'
     },
