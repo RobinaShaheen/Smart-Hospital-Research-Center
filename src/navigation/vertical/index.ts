@@ -53,6 +53,27 @@ const navigation = (): VerticalNavItemsType => {
       path: '/referral'
     },
     {
+      title: 'TPA Management',
+      path: '/TPA'
+    },
+    {
+      title: 'Finance',
+      icon: 'tabler:money',
+      badgeContent: '',
+      badgeColor: 'error',
+      children: [
+        {
+          title: 'Income',
+          path: '/Finance/Income'
+        },
+        {
+          title: 'Expense',
+          path: '/Finance/Expense'
+        }
+        
+      ]
+    },
+    {
       title: 'CRM',
       path: '/crm'
     },
