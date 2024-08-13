@@ -91,10 +91,6 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Certificate',
       path: '/Certificate',
       children: [
-        // {
-        //   title: 'Certificate',
-        //   path: '/Certificate/Certificate',
-        // },
         {
           title: 'Patient ID Card',
           path: '/Certificate/PatientId',
@@ -104,6 +100,10 @@ const navigation = (): VerticalNavItemsType => {
           path: '/Certificate/Staffid',
         },
       ]
+    },
+    {
+      title: 'Front CMS',
+      path: '/front-cms',
     },
     {
       sectionTitle: 'Apps & Pages'
