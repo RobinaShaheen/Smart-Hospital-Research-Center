@@ -656,6 +656,28 @@ const navigation = (): VerticalNavItemsType => {
           path: 'https://demos.pixinvent.com/vuexy-nextjs-admin-template/documentation'
         }
       ]
+    },
+    {
+      title: 'Certificate',
+      icon: 'tabler:receipt',
+      children: [
+        {
+          title: 'Certificate',
+          path: '/certificate/Certificate'
+        },
+        {
+          title: 'Patient ID Card',
+          path: ''
+        },
+        {
+          title: 'Staff ID Card',
+          path: ''
+        }
+      ]
+    },
+    {
+      title:'Download Center',
+      path:'/download-center'
     }
   ]
 }

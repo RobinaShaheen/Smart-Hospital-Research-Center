@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import PathologyGenerateBill from 'src/views/dashboards/pathology/GenerateBill'
+import UploadContent from 'src/views/dashboards/download-center/UploadContent'
 
 const Appointment = () => { 
   return (
@@ -14,11 +14,11 @@ const Appointment = () => {
         gutterBottom
         sx={{ mb: 4 }} // Adjust margin bottom if needed
       >
-        Generate Bill
+        Upload Content
       </Typography>
       <Grid container spacing={6}>
         <Grid item xs={12}>
-          <PathologyGenerateBill />
+          <UploadContent />
         </Grid>
       </Grid>
     </ApexChartWrapper>
