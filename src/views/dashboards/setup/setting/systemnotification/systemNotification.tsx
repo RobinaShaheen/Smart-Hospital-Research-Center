@@ -102,34 +102,13 @@ const columns: GridColDef[] = [
     field: 'PatientMessage',
     minWidth: 200,
     headerName: 'Patient Message',
-    renderCell: ({ row }: CellType) => (
-      <Box sx={{ 
-        display: 'flex',
-        flexDirection: 'column', 
-        justifyContent: 'space-between', 
-        maxHeight: '200px', 
-        overflow: 'hidden', 
-        whiteSpace: 'normal'
-      }}>
-        <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <Tooltip title='Edit'>
-            <IconButton 
-              size='small' 
-              onClick={() => console.log('edit', row.id)} 
-              href='/Setup/Setting/systemnotification'
-            >
-              <Icon icon='tabler:edit' />
-            </IconButton>
-          </Tooltip>
-        </Box>
+    renderCell: ({ row }: CellType) => 
         <Typography 
           variant="body2" 
           sx={{ color: 'text.secondary', overflow: 'auto' }}
         >
           {row.PatientMessage}
         </Typography>
-      </Box>
-    )
   }
 ]
 
@@ -144,6 +123,13 @@ const SystemNotificationSetting = () => {
       <CardContent
         sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}
       >
+        <Typography
+        variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')
+        gutterBottom
+        sx={{ mb: 4 }} // Adjust margin bottom if needed
+        >
+        System Notification Setting
+        </Typography>
         <Button
           component={Link}
           variant='contained'

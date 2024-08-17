@@ -43,11 +43,11 @@ const BedSideBar: React.FC<SettingSideBarProps> = ({ onSelectBed }) => {
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectBed('BedStatus')}>Bed Status</StyledLink>
-              <StyledLink onClick={() => onSelectBed('NotificationSetting')}>Notification Setting</StyledLink>
-              <StyledLink onClick={() => onSelectBed('SystemNotificationSetting')}>System Notification Setting</StyledLink>
-              <StyledLink onClick={() => onSelectBed('SMSSetting')}>SMS Setting</StyledLink>
-              <StyledLink onClick={() => onSelectBed('EmailSetting')}>Email Setting</StyledLink>
+              <StyledLink onClick={() => onSelectBed('BedStatus')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed Status</StyledLink>
+              <StyledLink onClick={() => onSelectBed('BedList')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed List</StyledLink>
+              <StyledLink onClick={() => onSelectBed('BedType')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed Type</StyledLink>
+              <StyledLink onClick={() => onSelectBed('BedGroup')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed Group</StyledLink>
+              <StyledLink onClick={() => onSelectBed('FloorList')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Floor</StyledLink>
               
               {/* Add more settings links as needed */}
             </OptionsWrapper>

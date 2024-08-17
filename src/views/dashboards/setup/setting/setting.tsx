@@ -105,21 +105,21 @@ const SettingSideBar: React.FC<SettingSideBarProps> = ({ onSelectSetting }) => {
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectSetting('GeneralSetting')}>General Setting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('NotificationSetting')}>Notification Setting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('SystemNotificationSetting')}>System Notification Setting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('SMSSetting')}>SMS Setting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('EmailSetting')}>Email Setting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('PaymentMethod')}>Payment Method</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('FrontCMSSetting')}>Front CMS Setting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('PrefixSetting')}>Prefix Setting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('RolePremission')}>Role Premission</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('BackupRestore')}>Backup Restore</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('Languages')}>Languages</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('Users')}>Users</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('CaptchaSetting')}>CaptchaSetting</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('Modules')}>Modules</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('SystemUpdate')}>System Update</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('GeneralSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>General Setting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('NotificationSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Notification Setting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('SystemNotificationSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>System Notification Setting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('SMSSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>SMS Setting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('EmailSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Email Setting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('PaymentMethod')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Payment Method</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('FrontCMSSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Front CMS Setting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('PrefixSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Prefix Setting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('RolePremission')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Role Premission</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('BackupRestore')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Backup Restore</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('Languages')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Languages</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('Users')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Users</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('CaptchaSetting')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>CaptchaSetting</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('Modules')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Modules</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('SystemUpdate')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>System Update</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
