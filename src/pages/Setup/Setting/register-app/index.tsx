@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import SettingSideBar from 'src/views/dashboards/setup/setting/setting'
+import SettingSideBar from 'src/views/dashboards/setup/bed/setting'
 import SettingContainer from 'src/views/dashboards/setup/setting/SettingContainer'
 import Typography from '@mui/material/Typography'
 import RegisterAndroidApp from 'src/views/dashboards/setup/setting/generalSetting/registerApp'

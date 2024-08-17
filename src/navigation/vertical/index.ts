@@ -116,6 +116,10 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Patient',
           path: '/Setup/PatientSetup',
+        },
+        {
+          title: 'Bed',
+          path: '/Setup/Bed',
         }
       ]
     },
