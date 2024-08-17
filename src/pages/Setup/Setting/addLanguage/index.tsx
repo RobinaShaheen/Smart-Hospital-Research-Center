@@ -4,21 +4,14 @@ import Typography from '@mui/material/Typography'
 
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import AddItemStock from 'src/views/dashboards/Inventory/addItemStock'
+import AddLanguage from 'src/views/dashboards/setup/setting/language/addlanguage'
 
 const Appointment = () => {
   return (
     <ApexChartWrapper>
-      <Typography
-        variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')
-        gutterBottom
-        sx={{ mb: 4 }} // Adjust margin bottom if needed
-      >
-        Add Item Stock
-      </Typography>
       <Grid container spacing={6}>
         <Grid item xs={12}>
-          <AddItemStock/>
+            <AddLanguage/>
         </Grid>
       </Grid>
     </ApexChartWrapper>

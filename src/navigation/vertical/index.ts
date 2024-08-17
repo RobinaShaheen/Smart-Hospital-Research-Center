@@ -106,6 +106,20 @@ const navigation = (): VerticalNavItemsType => {
       path: '/front-cms',
     },
     {
+      title: 'Setup',
+      path: '/Setup',
+      children: [
+        {
+          title: 'Settings',
+          path: '/Setup/Setting',
+        },
+        {
+          title: 'Patient',
+          path: '/Setup/PatientSetup',
+        }
+      ]
+    },
+    {
       sectionTitle: 'Apps & Pages'
     },
     {

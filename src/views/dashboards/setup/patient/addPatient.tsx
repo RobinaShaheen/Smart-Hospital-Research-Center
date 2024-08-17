@@ -19,7 +19,7 @@ const OptionsWrapper = styled(Box)<BoxProps>(() => ({
   justifyContent: 'space-between'
 }))
 
-const AddItemStock = () => {
+const AddPatient = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,35 +33,22 @@ const AddItemStock = () => {
       <Grid item xs={12}>
         <Card>
           <CardContent>
-            <CustomTextField
-              select
-              fullWidth
-              label='Item Inventory *'
-              defaultValue=''
-              sx={{ mb: 4 }}
-            >
-              <MenuItem value=''>Select</MenuItem>
-              {/* Add patient options here */}
-            </CustomTextField>
-            <CustomTextField fullWidth select label='Item *' sx={{ mb: 2 }}>
+            <CustomTextField fullWidth label='Name *' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Guardian Name' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Gender' sx={{ mb: 2 }}>
                 <MenuItem value=''>Select</MenuItem>
             </CustomTextField>
-            <CustomTextField fullWidth select label='Supplier *' sx={{ mb: 2 }}>
+            <CustomTextField fullWidth label='Date Of Birth' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Age' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Blood Group' sx={{ mb: 2 }}>
                 <MenuItem value=''>Select</MenuItem>
             </CustomTextField>
-            <CustomTextField fullWidth select label='Store' sx={{ mb: 2 }}>
+            <CustomTextField fullWidth label='Marital Status' sx={{ mb: 2 }}>
                 <MenuItem value=''>Select</MenuItem>
             </CustomTextField>
-            <CustomTextField fullWidth select label='Quantity *' sx={{ mb: 2 }}>
-                <MenuItem value=''>+</MenuItem>
-                <MenuItem value=''>-</MenuItem>
-            </CustomTextField>
-            <CustomTextField fullWidth label='Purchase Price *' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Date' type='datetime-local' sx={{ mb: 2 }} InputLabelProps={{ shrink: true }} value='2024-10-08T14:08' />
-            <CustomTextField fullWidth label='Description' sx={{ mb: 2 }}/>
             <Box sx={{ mb: 2 }}>
               <Typography variant='body2' sx={{ mb: 1 }}>
-                Attach Document
+                Patient Photo
               </Typography>
               <Box
                 sx={{
@@ -90,6 +77,15 @@ const AddItemStock = () => {
                 )}
               </Box>
             </Box>
+            <CustomTextField fullWidth label='Phone' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Email'  sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Address' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Remarks' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Any Know Allergies' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='TPA ID' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='TPA Validity' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='National Identification Number' sx={{ mb: 2 }}/>
+            <CustomTextField fullWidth label='Alternate Number' sx={{ mb: 2 }}/>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 4 }}>
               <Button variant='contained' fullWidth sx={{ mr: 2 }}>
                 Save
@@ -102,4 +98,4 @@ const AddItemStock = () => {
   )
 }
 
-export default AddItemStock
+export default AddPatient

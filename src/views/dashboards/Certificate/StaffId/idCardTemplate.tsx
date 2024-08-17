@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
+import { FC } from 'react'
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import { useState } from 'react'
@@ -31,7 +32,11 @@ const StaffIdCardTemplate = () => {
     }
   }
 
-  const CustomSwitchField = ({ label }) => (
+  interface CustomSwitchFieldProps {
+    label: string
+  }
+  
+  const CustomSwitchField: FC<CustomSwitchFieldProps> = ({ label }) => (
     <FormControlLabel
         control={<Switch />}
         label={label}
