@@ -1,4 +1,5 @@
 // ** Type import
+import { title } from 'process'
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
 const navigation = (): VerticalNavItemsType => {
@@ -706,6 +707,28 @@ const navigation = (): VerticalNavItemsType => {
         }
       ]
     },
+    {
+      title: 'Set Up',
+      icon:'tabler:settings',
+      children:[
+        {
+          title:'Setting',
+          path:'/setup/setting/Setting',
+          // children:[
+          //   {
+          //     title:'System Notification Title',
+          //     path:'/setup/setting/NotificationSetting'
+          //   }
+          // ]
+        },{
+          title:"Hospital Charges",
+          path:'/setup/hospitalCharges'
+        },{
+          title:'Print Header Footer',
+          path:'/setup/printHeaderFooter'
+        }
+      ]
+    }
   ]
 }
 
