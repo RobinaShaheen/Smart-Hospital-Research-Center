@@ -144,6 +144,18 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Zoom Setting',
           path: '/Setup/ZoomSetting',
+        },
+        {
+          title: 'Finance',
+          path: '/Setup/Finance',
+        },
+        {
+          title: 'Referral',
+          path: '/Setup/Referral',
+        },
+        {
+          title: 'Inventory',
+          path: '/Setup/Inventory',
         }
       ]
     },
