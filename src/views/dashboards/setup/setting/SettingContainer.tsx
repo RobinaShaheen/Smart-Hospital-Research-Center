@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import GeneralSetting from './generalSetting/generalsetting'
 import NotificationSetting from './notificationSetting/notificationSetting'

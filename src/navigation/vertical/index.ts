@@ -120,6 +120,30 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Bed',
           path: '/Setup/Bed',
+        },
+        {
+          title: 'Front Office',
+          path: '/Setup/FrontOffice',
+        },
+        {
+          title: 'Operations',
+          path: '/Setup/Operation',
+        },
+        {
+          title: 'Pathology',
+          path: '/Setup/Pathology',
+        },
+        {
+          title: 'Blood Bank',
+          path: '/Setup/BloodBank',
+        },
+        {
+          title: 'Symptoms',
+          path: '/Setup/Symptom',
+        },
+        {
+          title: 'Zoom Setting',
+          path: '/Setup/ZoomSetting',
         }
       ]
     },

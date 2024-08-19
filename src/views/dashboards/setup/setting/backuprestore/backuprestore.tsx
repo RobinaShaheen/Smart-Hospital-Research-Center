@@ -15,8 +15,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 // ** Custom Component Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
-import { IconButton, InputAdornment, MenuItem, TextField, Tooltip } from '@mui/material'
+import { IconButton, InputAdornment, TextField, Tooltip } from '@mui/material'
 
 // ** Dummy Data
 const dummyData = [

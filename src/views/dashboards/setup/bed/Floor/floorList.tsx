@@ -4,20 +4,18 @@ import { useState } from 'react'
 
 // ** Next Import
 import Link from 'next/link'
-import { FC } from 'react'
 // ** MUI Imports
-import Image from 'next/image'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
-import { DataGrid, GridColDef } from '@mui/x-data-grid'
+import { DataGrid, GridColDef, GridRowHeightParams, GridRowHeightReturnValue } from '@mui/x-data-grid'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 // ** Custom Component Imports
 import CustomTextField from 'src/@core/components/mui/text-field'
-import { FormControlLabel, IconButton, InputAdornment, MenuItem, Switch, TextField, Tooltip } from '@mui/material'
+import { IconButton, Tooltip } from '@mui/material'
 // ** Dummy Data
 const dummyData = [
   {
@@ -71,12 +69,7 @@ const columns: GridColDef[] = [
     field: 'Description',
     minWidth: 200,
     headerName: 'Description',
-    renderCell: ({ row }: CellType) => <Typography 
-            variant="body2" 
-            sx={{ color: 'text.secondary', overflow: 'auto' }}
-        >
-            {row.Description}
-        </Typography>
+    renderCell: ({ row }: CellType) => <Typography variant="h6" sx={{ color: 'text.secondary' }}>{row.Description}</Typography>
   },
   {
     flex: 0.15,
@@ -107,6 +100,7 @@ const FloorList = () => {
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
+  const getRowHeight = (params: GridRowHeightParams): GridRowHeightReturnValue => 'auto';
 
   return (
     <Card>
@@ -137,7 +131,7 @@ const FloorList = () => {
         </Box>
         <DataGrid
           autoHeight
-          rowHeight={54}
+          getRowHeight={getRowHeight}
           rows={dummyData}
           columns={columns}
           disableRowSelectionOnClick

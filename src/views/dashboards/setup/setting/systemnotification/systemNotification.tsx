@@ -6,18 +6,11 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 // ** MUI Imports
-import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
-import { DataGrid, GridColDef } from '@mui/x-data-grid'
-// ** Icon Imports
-import Icon from 'src/@core/components/icon'
-// ** Custom Component Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
-import { IconButton, Tooltip } from '@mui/material'
-import input from 'src/@core/theme/overrides/input'
+import { DataGrid, GridColDef, GridRowHeightParams, GridRowHeightReturnValue } from '@mui/x-data-grid'
 
 
 // ** Dummy Data
@@ -102,13 +95,13 @@ const columns: GridColDef[] = [
     field: 'PatientMessage',
     minWidth: 200,
     headerName: 'Patient Message',
-    renderCell: ({ row }: CellType) => 
+    renderCell: ({ row }: CellType) =>( 
         <Typography 
           variant="body2" 
           sx={{ color: 'text.secondary', overflow: 'auto' }}
         >
           {row.PatientMessage}
-        </Typography>
+        </Typography>)
   }
 ]
 
@@ -117,6 +110,7 @@ const SystemNotificationSetting = () => {
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
+  const getRowHeight = (params: GridRowHeightParams): GridRowHeightReturnValue => 'auto';
 
   return (
     <Card>
@@ -140,7 +134,7 @@ const SystemNotificationSetting = () => {
       </CardContent>
       <DataGrid
         autoHeight
-        rowHeight={54}
+        getRowHeight={getRowHeight}
         rows={dummyData}
         columns={columns}
         disableRowSelectionOnClick

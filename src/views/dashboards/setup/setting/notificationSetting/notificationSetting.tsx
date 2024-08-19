@@ -6,18 +6,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 // ** MUI Imports
-import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
-import { DataGrid, GridColDef } from '@mui/x-data-grid'
-// ** Icon Imports
-import Icon from 'src/@core/components/icon'
-// ** Custom Component Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
-import { IconButton, Tooltip } from '@mui/material'
-import input from 'src/@core/theme/overrides/input'
+import { DataGrid, GridColDef, GridRowHeightParams, GridRowHeightReturnValue } from '@mui/x-data-grid'
+
 
 
 // ** Dummy Data
@@ -91,34 +85,7 @@ const columns: GridColDef[] = [
     field: 'SampleMessage',
     minWidth: 200,
     headerName: 'SampleMessage',
-    renderCell: ({ row }: CellType) => <Typography 
-      variant="body2" 
-      sx={{ color: 'text.secondary', overflow: 'auto' }}
-      >
-        {row.SampleMessage}
-      </Typography>
-    //   (
-    //   <Box sx={{ 
-    //     display: 'flex',
-    //     flexDirection: 'column', 
-    //     justifyContent: 'space-between', 
-    //     maxHeight: '200px', 
-    //     overflow: 'hidden', 
-    //     whiteSpace: 'normal'
-    //   }}>
-    //      <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-    //       <Tooltip title='Edit'>
-    //         <IconButton 
-    //           size='small' 
-    //           onClick={() => console.log('edit', row.id)} 
-    //           href='/Setup/Setting/notification'
-    //         >
-    //           <Icon icon='tabler:edit' />
-    //         </IconButton>
-    //       </Tooltip>
-    //     </Box> 
-    //  </Box>
-    // // )
+    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.SampleMessage}</Typography>
   }
 ]
 
@@ -127,6 +94,7 @@ const NotificationSetting = () => {
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
+  const getRowHeight = (params: GridRowHeightParams): GridRowHeightReturnValue => 'auto';
 
   return (
     <Card>
@@ -150,16 +118,13 @@ const NotificationSetting = () => {
       </CardContent>
       <DataGrid
         autoHeight
+        getRowHeight={getRowHeight}
         rows={dummyData}
         columns={columns}
         disableRowSelectionOnClick
         paginationModel={paginationModel}
         pageSizeOptions={[6, 10, 25, 50]}
         onPaginationModelChange={setPaginationModel}
-        // sx={{
-        //   // width: '100%',
-        //   overflowY: 'auto'
-        // }}
       />
     </Card>
   )

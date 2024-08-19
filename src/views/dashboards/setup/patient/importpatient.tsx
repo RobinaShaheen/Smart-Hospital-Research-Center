@@ -16,8 +16,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import Icon from 'src/@core/components/icon'
 // ** Custom Component Imports
 import CustomTextField from 'src/@core/components/mui/text-field'
-import { IconButton, MenuItem, Tooltip } from '@mui/material'
-import Patient from './patient'
+import { IconButton, MenuItem } from '@mui/material'
 
 
 // ** Dummy Data

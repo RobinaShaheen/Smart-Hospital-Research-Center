@@ -12,7 +12,7 @@ import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
-import { DataGrid, GridColDef } from '@mui/x-data-grid'
+import { DataGrid, GridColDef, GridRowHeightParams, GridRowHeightReturnValue } from '@mui/x-data-grid'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 // ** Custom Component Imports
@@ -83,12 +83,7 @@ const columns: GridColDef[] = [
     field: 'Description',
     minWidth: 130,
     headerName: 'Description',
-    renderCell: ({ row }: CellType) => <Typography 
-        variant="body2" 
-        sx={{ color: 'text.secondary', overflow: 'auto' }}
-      >
-        {row.Description}
-      </Typography>
+    renderCell: ({ row }: CellType) => <Typography variant="h6" sx={{ color: 'text.secondary' }}>{row.Description}</Typography>
   },
   {
     flex: 0.15,
@@ -119,6 +114,7 @@ const BedGroup = () => {
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
+  const getRowHeight = (params: GridRowHeightParams): GridRowHeightReturnValue => 'auto';
 
   return (
     <Card>
@@ -149,7 +145,7 @@ const BedGroup = () => {
         </Box>
         <DataGrid
           autoHeight
-          rowHeight={54}
+          getRowHeight={getRowHeight}
           rows={dummyData}
           columns={columns}
           disableRowSelectionOnClick

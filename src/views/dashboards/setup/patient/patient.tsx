@@ -11,7 +11,7 @@ import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
-import { DataGrid, GridColDef } from '@mui/x-data-grid'
+import { DataGrid, GridColDef, GridRowHeightParams, GridRowHeightReturnValue } from '@mui/x-data-grid'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 // ** Custom Component Imports
@@ -114,7 +114,7 @@ const columns: GridColDef[] = [
     field: 'Address',
     minWidth: 150,
     headerName: 'Address',
-    renderCell: ({ row }: CellType) => <Typography sx={{ color: 'text.secondary' }}>{row.Address}</Typography>
+    renderCell: ({ row }: CellType) => (<Typography sx={{ color: 'text.secondary' }}>{row.Address}</Typography>)
   },
   {
     flex: 0.15,
@@ -150,6 +150,7 @@ const Patient = () => {
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
+  const getRowHeight = (params: GridRowHeightParams): GridRowHeightReturnValue => 'auto';
 
   return (
     <Card>
@@ -198,7 +199,7 @@ const Patient = () => {
       </CardContent>
       <DataGrid
         autoHeight
-        rowHeight={54}
+        getRowHeight={getRowHeight}
         rows={dummyData}
         columns={columns}
         disableRowSelectionOnClick
