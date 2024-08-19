@@ -15,7 +15,6 @@ const navigation = (): VerticalNavItemsType => {
           title: 'Analytics',
           path: '/dashboards/analytics'
         }
-        
       ]
     },
     {
