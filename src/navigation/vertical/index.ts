@@ -712,20 +712,28 @@ const navigation = (): VerticalNavItemsType => {
       icon:'tabler:settings',
       children:[
         {
-          title:'Setting',
-          path:'/setup/setting/Setting',
-          // children:[
-          //   {
-          //     title:'System Notification Title',
-          //     path:'/setup/setting/NotificationSetting'
-          //   }
-          // ]
-        },{
           title:"Hospital Charges",
           path:'/setup/hospitalCharges'
-        },{
+        },
+        {
           title:'Print Header Footer',
           path:'/setup/printHeaderFooter'
+        },
+        {
+          title:'Pharmacy',
+          path:'/setup/pharmacy'
+        },
+        {
+          title:'Radiology',
+          path:'/setup/radiology'
+        },
+        {
+          title:'Finding',
+          path:'/setup/finding'
+        },
+        {
+          title:'Custom Field',
+          path:'/setup/customField'
         }
       ]
     }
