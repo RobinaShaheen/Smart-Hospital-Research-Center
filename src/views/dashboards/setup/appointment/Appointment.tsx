@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, {useState} from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -38,15 +38,24 @@ interface AppointmentSideBarProps {
 }
 
 const AppointmentSideBarProps: React.FC<AppointmentSideBarProps> = ({ onSelectSetting }) => {
+
+  const [selected, setSelected] = useState<string>('slot'); // Default active setting
+
+  const handleClick = (setting:string) => {
+    setSelected(setting);
+    onSelectSetting(setting);
+    // Add any additional logic you need for when a setting is selected
+  };
+
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectSetting('slot')} sx={{"&:focus":{textDecoration:'underline'}}}>Slot</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('doctorShift')} sx={{"&:focus":{textDecoration:'underline'}}}>Doctor Shift</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('shift')} sx={{"&:focus":{textDecoration:'underline'}}}>Shift</StyledLink>
+              <StyledLink onClick={() => handleClick('slot')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'slot'? 'blue':'black'}}>Slot</StyledLink>
+              <StyledLink onClick={() => handleClick('doctorShift')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'doctorShift'? 'blue':'black'}}>Doctor Shift</StyledLink>
+              <StyledLink onClick={() => handleClick('shift')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'shift'? 'blue':'black'}}>Shift</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

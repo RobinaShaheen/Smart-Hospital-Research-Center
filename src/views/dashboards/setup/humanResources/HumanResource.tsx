@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, {useState} from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -38,16 +38,25 @@ interface HumanResourcesSideBarProps {
 }
 
 const HumanResourcesSideBarProps: React.FC<HumanResourcesSideBarProps> = ({ onSelectSetting }) => {
+  
+  const [selected, setSelected] = useState<string>('slot'); // Default active setting
+
+  const handleClick = (setting:string) => {
+    setSelected(setting);
+    onSelectSetting(setting);
+    // Add any additional logic you need for when a setting is selected
+  };
+
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectSetting('leaveType')} sx={{"&:focus":{textDecoration:'underline'}}}>Leave Type</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('department')} sx={{"&:focus":{textDecoration:'underline'}}}>Department</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('designation')} sx={{"&:focus":{textDecoration:'underline'}}}>Designation</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('specialist')} sx={{"&:focus":{textDecoration:'underline'}}}>Specialist</StyledLink>
+              <StyledLink onClick={() => handleClick('leaveType')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'leaveType'? 'blue':'black'}}>Leave Type</StyledLink>
+              <StyledLink onClick={() => handleClick('department')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'department'? 'blue':'black'}}>Department</StyledLink>
+              <StyledLink onClick={() => handleClick('designation')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'designation'? 'blue':'black'}}>Designation</StyledLink>
+              <StyledLink onClick={() => handleClick('specialist')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'specialist'? 'blue':'black'}}>Specialist</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
