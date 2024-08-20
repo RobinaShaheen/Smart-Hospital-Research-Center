@@ -12,7 +12,6 @@ import MuiAccordionDetails, { AccordionDetailsProps } from '@mui/material/Accord
 import CustomTextField from 'src/@core/components/mui/text-field'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
-import { Box } from '@mui/system'
 
 // Styled component for Accordion component
 const Accordion = styled(MuiAccordion)<AccordionProps>(({ theme }) => ({

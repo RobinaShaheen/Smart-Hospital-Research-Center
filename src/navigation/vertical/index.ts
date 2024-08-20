@@ -734,6 +734,14 @@ const navigation = (): VerticalNavItemsType => {
         {
           title:'Custom Field',
           path:'/setup/customField'
+        },
+        {
+          title:'Appointment',
+          path:'/setup/appointment'
+        },
+        {
+          title:'Human Resources',
+          path:'/setup/humanResources'
         }
       ]
     }

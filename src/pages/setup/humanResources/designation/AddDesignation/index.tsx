@@ -4,28 +4,25 @@ import Typography from '@mui/material/Typography'
 
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import AddCertificateTemplate from 'src/views/dashboards/certificate/addCertificateTemplate'
+import AddDesignation from 'src/views/dashboards/setup/humanResources/designation/AddDesignation'
 
-
-const AddCertificateTmplate = () => {
+const Addesignation = () => { 
   return (
     <ApexChartWrapper>
-        
       <Typography
         variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')
         gutterBottom
         sx={{ mb: 4 }} // Adjust margin bottom if needed
       >
-        Add Certificate Template
+        Add Designation
       </Typography>
-      
       <Grid container spacing={6}>
         <Grid item xs={12}>
-          <AddCertificateTemplate />
+          <AddDesignation />
         </Grid>
       </Grid>
     </ApexChartWrapper>
   )
 }
 
-export default AddCertificateTmplate
+export default Addesignation
