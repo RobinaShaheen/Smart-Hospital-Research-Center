@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, { useState } from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -37,17 +37,25 @@ interface SettingSideBarProps {
 }
 
 const BedSideBar: React.FC<SettingSideBarProps> = ({ onSelectBed }) => {
+
+  const [selected, setSelected] = useState<string>('BedStatus'); // Track the selected link
+
+  const handleClick = (setting: string) => {
+    setSelected(setting); // Update the selected link
+    onSelectBed(setting); // Call the onSelectBloodBank function
+  };
+
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectBed('BedStatus')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed Status</StyledLink>
-              <StyledLink onClick={() => onSelectBed('BedList')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed List</StyledLink>
-              <StyledLink onClick={() => onSelectBed('BedType')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed Type</StyledLink>
-              <StyledLink onClick={() => onSelectBed('BedGroup')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Bed Group</StyledLink>
-              <StyledLink onClick={() => onSelectBed('FloorList')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Floor</StyledLink>
+              <StyledLink onClick={() => handleClick('BedStatus')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedStatus' ? 'blue' : '#000', fontSize: '20px'}}>Bed Status</StyledLink>
+              <StyledLink onClick={() => handleClick('BedList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedList' ? 'blue' : '#000', fontSize: '20px'}}>Bed List</StyledLink>
+              <StyledLink onClick={() => handleClick('BedType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedType' ? 'blue' : '#000', fontSize: '20px'}}>Bed Type</StyledLink>
+              <StyledLink onClick={() => handleClick('BedGroup')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedGroup' ? 'blue' : '#000', fontSize: '20px'}}>Bed Group</StyledLink>
+              <StyledLink onClick={() => handleClick('FloorList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'FloorList' ? 'blue' : '#000', fontSize: '20px'}}>Floor</StyledLink>
               
               {/* Add more settings links as needed */}
             </OptionsWrapper>

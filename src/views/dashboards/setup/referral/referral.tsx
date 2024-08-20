@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, { useState } from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -37,14 +37,22 @@ interface SettingSideBarProps {
 }
 
 const ReferralSideBar: React.FC<SettingSideBarProps> = ({ onSelectReferral }) => {
+
+  const [selected, setSelected] = useState<string>('ReferralCommission'); // Track the selected link
+
+  const handleClick = (setting: string) => {
+    setSelected(setting); // Update the selected link
+    onSelectReferral(setting); // Call the onSelectBloodBank function
+  };
+
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectReferral('ReferralCommission')} sx={{"&:active": {color: 'blue'}, fontSize: '20px'}}>Referral Commission</StyledLink>
-              <StyledLink onClick={() => onSelectReferral('ReferralCategory')} sx={{"&:active": {color: 'blue'}, fontSize: '20px'}}>Referral Category</StyledLink>
+              <StyledLink onClick={() => handleClick('ReferralCommission')} sx={{"&:active": {color: 'blue'}, color: selected === 'ReferralCommission'? 'blue' : '#000', fontSize: '20px'}}>Referral Commission</StyledLink>
+              <StyledLink onClick={() => handleClick('ReferralCategory')} sx={{"&:active": {color: 'blue'}, color: selected === 'ReferralCategory'? 'blue' : '#000', fontSize: '20px'}}>Referral Category</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

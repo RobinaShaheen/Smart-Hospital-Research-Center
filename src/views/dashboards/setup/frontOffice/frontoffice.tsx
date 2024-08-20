@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, { useState } from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -36,16 +36,24 @@ interface SettingSideBarProps {
 }
 
 const FrontOfficeSideBar: React.FC<SettingSideBarProps> = ({ onSelectFrontOffice }) => {
+
+  const [selected, setSelected] = useState<string>('Purpose'); // Track the selected link
+
+  const handleClick = (setting: string) => {
+    setSelected(setting); // Update the selected link
+    onSelectFrontOffice(setting); // Call the onSelectBloodBank function
+  };
+
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectFrontOffice('Purpose')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Purpose</StyledLink>
-              <StyledLink onClick={() => onSelectFrontOffice('ComplainType')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Complain Type</StyledLink>
-              <StyledLink onClick={() => onSelectFrontOffice('Source')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Source</StyledLink>
-              <StyledLink onClick={() => onSelectFrontOffice('AppointmentPriority')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Appointment Priority</StyledLink> 
+              <StyledLink onClick={() => handleClick('Purpose')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Purpose' ? 'blue' : '#000', fontSize: '20px'}}>Purpose</StyledLink>
+              <StyledLink onClick={() => handleClick('ComplainType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ComplainType' ? 'blue' : '#000', fontSize: '20px'}}>Complain Type</StyledLink>
+              <StyledLink onClick={() => handleClick('Source')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Source' ? 'blue' : '#000', fontSize: '20px'}}>Source</StyledLink>
+              <StyledLink onClick={() => handleClick('AppointmentPriority')} sx={{"&:focus": {color: 'blue'}, color: selected === 'AppointmentPriority' ? 'blue' : '#000', fontSize: '20px'}}>Appointment Priority</StyledLink> 
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

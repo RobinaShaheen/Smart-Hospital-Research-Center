@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, { useState } from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -37,14 +37,22 @@ interface SettingSideBarProps {
 }
 
 const OperationSideBar: React.FC<SettingSideBarProps> = ({ onSelectOperation }) => {
+
+  const [selected, setSelected] = useState<string>('OperationCategory'); // Track the selected link
+
+  const handleClick = (setting: string) => {
+    setSelected(setting); // Update the selected link
+    onSelectOperation(setting); // Call the onSelectBloodBank function
+  };
+
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectOperation('OperationCategory')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Operation Category</StyledLink>
-              <StyledLink onClick={() => onSelectOperation('OperationList')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Operation</StyledLink>
+              <StyledLink onClick={() => handleClick('OperationCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'OperationCategory' ? 'blue' : '#000', fontSize: '20px'}}>Operation Category</StyledLink>
+              <StyledLink onClick={() => handleClick('OperationList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'OperationList' ? 'blue' : '#000', fontSize: '20px'}}>Operation</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

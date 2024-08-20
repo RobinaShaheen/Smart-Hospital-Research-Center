@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, { useState } from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -37,13 +37,29 @@ interface SettingSideBarProps {
 }
 
 const BloodBankSideBar: React.FC<SettingSideBarProps> = ({ onSelectBloodBank }) => {
+  const [selected, setSelected] = useState<string>('Products'); // Track the selected link
+
+  const handleClick = (setting: string) => {
+    setSelected(setting); // Update the selected link
+    onSelectBloodBank(setting); // Call the onSelectBloodBank function
+  };
+  
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectBloodBank('Products')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Products</StyledLink>
+              <StyledLink 
+                onClick={() => handleClick('Products')}
+                sx={{
+                  color: selected === 'Products' ? 'blue' : '#000', // Apply blue color if selected
+                  fontSize: '20px',
+                  '&:focus': { color: 'blue' }
+                }}
+              >
+                Products
+              </StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

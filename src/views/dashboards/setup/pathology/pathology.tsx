@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-import React from 'react'
+import React, { useState } from 'react'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
@@ -36,15 +36,23 @@ interface SettingSideBarProps {
 }
 
 const PathologySideBar: React.FC<SettingSideBarProps> = ({ onSelectPathology }) => {
+
+  const [selected, setSelected] = useState<string>('PathologyCategory'); // Track the selected link
+
+  const handleClick = (setting: string) => {
+    setSelected(setting); // Update the selected link
+    onSelectPathology(setting); // Call the onSelectBloodBank function
+  };
+
   return (
     <Grid container spacing={6}>
       <Grid item>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectPathology('PathologyCategory')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Pathology Category</StyledLink>
-              <StyledLink onClick={() => onSelectPathology('Unit')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Unit</StyledLink>
-              <StyledLink onClick={() => onSelectPathology('PathologyParameter')} sx={{"&:focus": {color: 'blue'}, fontSize: '20px'}}>Pathology Parameter</StyledLink>
+              <StyledLink onClick={() => handleClick('PathologyCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PathologyCategory' ? 'blue' : '#000', fontSize: '20px'}}>Pathology Category</StyledLink>
+              <StyledLink onClick={() => handleClick('Unit')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Unit' ? 'blue' : '#000', fontSize: '20px'}}>Unit</StyledLink>
+              <StyledLink onClick={() => handleClick('PathologyParameter')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PathologyParameter' ? 'blue' : '#000', fontSize: '20px'}}>Pathology Parameter</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
