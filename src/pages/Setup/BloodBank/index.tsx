@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import Typography from '@mui/material/Typography'
 import BloodBankSideBar from 'src/views/dashboards/setup/bloodBank/bloodBank'
 import BloodBankContanier from 'src/views/dashboards/setup/bloodBank/bloodBankContanier'
-
 const Appointment = () => {
   const [selectedBloodBank, setSelectedBloodBank] = useState<string>('Products')
   

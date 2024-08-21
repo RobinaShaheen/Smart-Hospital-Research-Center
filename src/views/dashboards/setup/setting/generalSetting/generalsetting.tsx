@@ -6,17 +6,10 @@ import Grid from '@mui/material/Grid'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import Typography from '@mui/material/Typography'
-import Languages from './languages'
-import DateTime from './dateTime'
-import MobilaApp from './mobileApp'
-import Miscellaneous from './miscellenous'
-import CurrentTheme from './currenttheme'
-import { display } from '@mui/system'
 import Box from '@mui/material/Box'
 import MenuItem from '@mui/material/MenuItem'
 import Button from '@mui/material/Button'
 import Link from 'next/link'
-
 
 const GeneralSetting = () => {
   return (

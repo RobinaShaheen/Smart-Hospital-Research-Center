@@ -3,8 +3,6 @@ import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import BedSideBar from 'src/views/dashboards/setup/bed/bed'
 import BedContainer from 'src/views/dashboards/setup/bed/BedContainer'
-import Typography from '@mui/material/Typography'
-
 const Appointment = () => {
   const [selectedBed, setSelectedBed] = useState<string>('BedStatus')
   

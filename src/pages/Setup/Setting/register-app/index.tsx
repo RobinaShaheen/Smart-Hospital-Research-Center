@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import Typography from '@mui/material/Typography'
-import RegisterAndroidApp from 'src/views/dashboards/setup/setting/generalSetting/registerApp'
-
+import RegisterAndroidApp from 'src/views/dashboards/setup/setting/generalSetting/addAndroidApp'
 const Appointment = () => {
   const [selectedSetting, setSelectedSetting] = useState<string>('GeneralSetting')
 

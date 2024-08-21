@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import Typography from '@mui/material/Typography'
 import ReferralSideBar from 'src/views/dashboards/setup/referral/referral'
 import ReferralContainer from 'src/views/dashboards/setup/referral/referralContanier'
-
 const Appointment = () => {
   const [selectedReferral, setSelectedReferral] = useState<string>('ReferralCommission')
   
