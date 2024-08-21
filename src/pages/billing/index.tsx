@@ -6,9 +6,12 @@ import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 
+import Link from 'next/link'
 // ** Custom Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import CardStatsVertical2 from 'src/@core/components/card-statistics/card-stats-vertical2'
+import { blue } from '@mui/material/colors'
+import { color } from '@mui/system'
 
 const BillingDashboard = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -21,6 +24,7 @@ const BillingDashboard = () => {
     // Add logic to handle the search button click here
     console.log('Searching for:', searchTerm)
   }
+  
 
   return (
     <ApexChartWrapper>
@@ -30,47 +34,60 @@ const BillingDashboard = () => {
           <Grid container spacing={6}>
             {/* Row 1 */}
             <Grid item xs={12} sm={4} lg={4}>
+              
+              <Link  href='/billing/AppointmentTable' style={{textDecoration:'none' }} >
               <CardStatsVertical2
                 imgSrc='/images/cards/Appointment.PNG'
                 title='Appointment'
-                sx={{ height: '100%' }}
+                sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'}}}
               />
+              </Link>
             </Grid>
             <Grid item xs={12} sm={4} lg={4}>
-              <CardStatsVertical2
-                imgSrc='/images/cards/OPD.PNG'
-                title='OPD'
-                sx={{ height: '100%' }}
-              />
+              <Link href='/billing/opdTable' style={{textDecoration:'none' }}>
+                <CardStatsVertical2
+                  imgSrc='/images/cards/OPD.PNG'
+                  title='OPD'
+                  sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'} }}
+                />
+              </Link>
             </Grid>
             <Grid item xs={12} sm={4} lg={4}>
-              <CardStatsVertical2
-                imgSrc='/images/cards/Pathology.PNG'
-                title='Pathology'
-                sx={{ height: '100%' }}
-              />
+              <Link href='/billing/pathologyTable' style={{textDecoration:'none' }}>
+                <CardStatsVertical2
+                  imgSrc='/images/cards/Pathology.PNG'
+                  title='Pathology'
+                  sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'} }}
+                />
+              </Link>
             </Grid>
             {/* Row 2 */}
             <Grid item xs={12} sm={4} lg={4}>
+              <Link href='/billing/radiology' style={{textDecoration:'none' }}>
               <CardStatsVertical2
                 imgSrc='/images/cards/Radiology.PNG'
                 title='Radiology'
-                sx={{ height: '100%' }}
+                sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'} }}
               />
+              </Link>
             </Grid>
             <Grid item xs={12} sm={4} lg={4}>
-              <CardStatsVertical2
-                imgSrc='/images/cards/Blood issue.PNG'
-                title='Blood Issue'
-                sx={{ height: '100%' }}
-              />
+              <Link href='/billing/bloodIssueBilling' style={{textDecoration:'none' }}>
+                <CardStatsVertical2
+                  imgSrc='/images/cards/Blood issue.PNG'
+                  title='Blood Issue'
+                  sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'} }}
+                />
+              </Link>
             </Grid>
             <Grid item xs={12} sm={4} lg={4}>
+              <Link href='/billing/bloodComponentBilling' style={{textDecoration:'none' }}>
               <CardStatsVertical2
                 imgSrc='/images/cards/blood issue component.PNG'
                 title='Blood Component Issue'
-                sx={{ height: '100%' }}
+                sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'} }}
               />
+              </Link>
             </Grid>
           </Grid>
         </Grid>
