@@ -76,11 +76,20 @@ const columns: GridColDef[] = [
     minWidth: 130,
     headerName: 'Option',
     renderCell: ({ row }: CellType) => (
-        <>
-            <><input type="checkbox" /><label htmlFor="Email">Enabled</label></><br/>
-            <><input type="checkbox" /><label htmlFor="Email">Staff</label></><br/>
-            <><input type="checkbox" /><label htmlFor="Email">Patient</label></>
-        </>
+      <>
+        <div style={{display: 'flex'}}>
+            <input type="checkbox" id="enabled" />
+            <label htmlFor="enabled">Enabled</label>
+        </div>
+        <div style={{display: 'flex'}}>
+            <input type="checkbox" id="staff" />
+            <label htmlFor="staff">Staff</label>
+        </div>
+        <div style={{display: 'flex'}}>
+            <input type="checkbox" id="patient" />
+            <label htmlFor="patient">Patient</label>
+        </div>
+      </>
     )
   },
   {

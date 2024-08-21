@@ -161,6 +161,7 @@ const [selectedFile, setSelectedFile] = useState<File | null>(null)
           variant='contained'
           href='/Setup/ImportPatient'
           startIcon={<Icon icon='tabler:download' />}
+          sx={{mb: 4}}
         >
           Download Sample Data
         </Button>
@@ -174,38 +175,43 @@ const [selectedFile, setSelectedFile] = useState<File | null>(null)
         pageSizeOptions={[6, 10, 25, 50]}
         onPaginationModelChange={setPaginationModel}
       />
-        <CustomTextField fullWidth select label='Blood Group' sx={{ mb: 2 }}>
-            <MenuItem value=''>Select</MenuItem>
-        </CustomTextField>
-            <Box sx={{ mb: 2}}>
-              <Typography variant='body2' sx={{ mb: 1 }}>
-                Select CSV File*
-              </Typography>
-              <Box
-                sx={{
-                  border: '2px solid',
-                  borderColor: 'divider',
-                  borderRadius: 1,
-                  textAlign: 'center'
-                }}
-              >
-                <input
-                  type='file'
-                  accept='image/*'
-                  id='patient-photo'
-                  style={{ display: 'none' }}
-                  onChange={handleFileChange}
-                />
-                <label htmlFor='patient-photo'>
-                  <IconButton component='span'>
-                    <Icon icon='tabler:upload' fontSize='2rem' />
-                  </IconButton>
-                </label>
-                {selectedFile ? (
-                  <Typography variant='body2'>{selectedFile.name}</Typography>
-                ) : (
-                  <Typography variant='body2'>Drop a file here or click</Typography>
-                )}
+        <Box sx={{display: 'flex', width: '100%'}}>
+          <CustomTextField fullWidth select label='Blood Group' sx={{ mb: 2 }}>
+              <MenuItem value=''>Select</MenuItem>
+          </CustomTextField>
+            <Box sx={{ mb: 2, width: '100%', ml: 4}}>
+                <Typography variant='body2'>
+                  Select CSV File *
+                </Typography>
+                <Box
+                  sx={{
+                    border: '2px solid',
+                    borderColor: 'divider',
+                    borderRadius: 1,
+                    textAlign: 'center',
+                    padding: '2px'
+                  }}
+                >
+                  <Box sx={{display: 'flex'}}>
+                    <input
+                      type='file'
+                      accept='image/*'
+                      id='patient-photo'
+                      style={{ display: 'none' }}
+                      onChange={handleFileChange}
+                    />
+                    <label htmlFor='patient-photo'>
+                      <IconButton component='span'>
+                        <Icon icon='tabler:upload' fontSize='1rem' />
+                      </IconButton>
+                    </label>
+                    {selectedFile ? (
+                    <Typography variant='body2'>{selectedFile.name}</Typography>
+                      ) : (
+                    <Typography variant='body2' sx={{mt: 4}}>Drop a file here or click</Typography>
+                    )}
+                  </Box>
+                </Box>
               </Box>
             </Box>
             <Button

@@ -143,7 +143,7 @@ const SMSSetting = () => {
                 <MenuItem value='Enabled'>Enabled</MenuItem>
             </CustomTextField>
             <Box sx={{ display: 'flex', justifyContent: 'center', marginY: 4 }}>
-                <Image src='/images/sms-country.png' width={150} height={150} alt='' />
+                <Image src='/images/sms-country.jpg' width={150} height={150} alt='' />
             </Box>
             <Button variant="contained" color="primary">Save</Button>
         </TabPanel>
@@ -198,7 +198,7 @@ const SMSSetting = () => {
                 <MenuItem value='Enabled'>Enabled</MenuItem>
             </CustomTextField>
             <Box sx={{ display: 'flex', justifyContent: 'center', marginY: 4 }}>
-                <Image src='/images/africatalking.png' width={150} height={150} alt='' />
+                <Image src='/images/africastalking.png' width={150} height={150} alt='' />
             </Box>
             <Button variant="contained" color="primary">Save</Button>
         </TabPanel>

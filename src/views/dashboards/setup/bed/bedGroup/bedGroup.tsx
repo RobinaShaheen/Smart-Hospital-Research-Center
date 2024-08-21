@@ -4,9 +4,7 @@ import { useState } from 'react'
 
 // ** Next Import
 import Link from 'next/link'
-import { FC } from 'react'
 // ** MUI Imports
-import Image from 'next/image'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'

@@ -27,58 +27,76 @@ const AddPatient = () => {
       <Grid item xs={12}>
         <Card>
           <CardContent>
-            <CustomTextField fullWidth label='Name *' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Guardian Name' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Gender' sx={{ mb: 2 }}>
-                <MenuItem value=''>Select</MenuItem>
-            </CustomTextField>
-            <CustomTextField fullWidth label='Date Of Birth' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Age' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Blood Group' sx={{ mb: 2 }}>
-                <MenuItem value=''>Select</MenuItem>
-            </CustomTextField>
-            <CustomTextField fullWidth label='Marital Status' sx={{ mb: 2 }}>
-                <MenuItem value=''>Select</MenuItem>
-            </CustomTextField>
-            <Box sx={{ mb: 2 }}>
-              <Typography variant='body2' sx={{ mb: 1 }}>
-                Patient Photo
-              </Typography>
-              <Box
-                sx={{
-                  border: '2px solid',
-                  borderColor: 'divider',
-                  borderRadius: 1,
-                  textAlign: 'center'
-                }}
-              >
-                <input
-                  type='file'
-                  accept='image/*'
-                  id='patient-photo'
-                  style={{ display: 'none' }}
-                  onChange={handleFileChange}
-                />
-                <label htmlFor='patient-photo'>
-                  <IconButton component='span'>
-                    <Icon icon='tabler:upload' fontSize='2rem' />
-                  </IconButton>
-                </label>
-                {selectedFile ? (
-                  <Typography variant='body2'>{selectedFile.name}</Typography>
-                ) : (
-                  <Typography variant='body2'>Drop a file here or click</Typography>
-                )}
+            <Box sx={{display: 'flex'}}>
+              <CustomTextField fullWidth label='Name *' sx={{ mb: 2 }}/>
+              <CustomTextField fullWidth label='Guardian Name' sx={{ mb: 2, ml: 6}}/>
+            </Box>
+            <Box sx={{display: 'flex'}}>
+              <CustomTextField fullWidth select label='Gender' sx={{ mb: 2 }}>
+                  <MenuItem value=''>Select</MenuItem>
+              </CustomTextField>
+              <CustomTextField fullWidth label='Date Of Birth' sx={{ mb: 2, ml: 4}}/>
+              <Box sx={{display: 'flex', ml: 4, width: '100%'}}>
+                <CustomTextField label='Year' placeholder='year' sx={{ mb: 2}}/>
+                <CustomTextField label='Month' placeholder='month' sx={{ mb: 2, ml: 4}}/>
+                <CustomTextField label='Day' placeholder='day' sx={{ mb: 2, ml: 4}}/>
+              </Box>
+              <CustomTextField fullWidth label='Age' sx={{ mb: 2, ml: 4}}/>
+              <CustomTextField fullWidth select label='Blood Group' sx={{ mb: 2, ml: 4}}>
+                  <MenuItem value=''>Select</MenuItem>
+              </CustomTextField>
+              <CustomTextField fullWidth select label='Marital Status' sx={{ mb: 2, ml: 4}}>
+                  <MenuItem value=''>Select</MenuItem>
+              </CustomTextField>
+              <Box sx={{ mb: 2, width: '100%', ml: 4}}>
+                <Typography variant='body2'>
+                  Patient Photo
+                </Typography>
+                <Box
+                  sx={{
+                    border: '2px solid',
+                    borderColor: 'divider',
+                    borderRadius: 1,
+                    textAlign: 'center',
+                    padding: '2px'
+                  }}
+                >
+                  <Box sx={{display: 'flex'}}>
+                    <input
+                      type='file'
+                      accept='image/*'
+                      id='patient-photo'
+                      style={{ display: 'none' }}
+                      onChange={handleFileChange}
+                    />
+                    <label htmlFor='patient-photo'>
+                      <IconButton component='span'>
+                        <Icon icon='tabler:upload' fontSize='1rem' />
+                      </IconButton>
+                    </label>
+                    {selectedFile ? (
+                    <Typography variant='body2'>{selectedFile.name}</Typography>
+                      ) : (
+                    <Typography variant='body2'>Drop a file here or click</Typography>
+                    )}
+                  </Box>
+                </Box>
               </Box>
             </Box>
-            <CustomTextField fullWidth label='Phone' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Email'  sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Address' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Remarks' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Any Know Allergies' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='TPA ID' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='TPA Validity' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='National Identification Number' sx={{ mb: 2 }}/>
+            <Box sx={{display: 'flex'}}>
+              <CustomTextField fullWidth label='Phone' sx={{ mb: 2 }}/>
+              <CustomTextField fullWidth label='Email'  sx={{ mb: 2, ml: 4}}/>
+              <CustomTextField fullWidth label='Address' sx={{ mb: 2, ml: 4}}/>
+            </Box>
+            <Box sx={{display: 'flex'}}>
+              <CustomTextField fullWidth label='Remarks' sx={{ mb: 2 }}/>
+              <CustomTextField fullWidth label='Any Know Allergies' sx={{ mb: 2, ml: 4}}/>
+            </Box>
+            <Box sx={{display: 'flex'}}>
+              <CustomTextField fullWidth label='TPA ID' sx={{ mb: 2 }}/>
+              <CustomTextField fullWidth label='TPA Validity' sx={{ mb: 2, ml: 4}}/>
+              <CustomTextField fullWidth label='National Identification Number' sx={{ mb: 2, ml: 4}}/>
+            </Box>
             <CustomTextField fullWidth label='Alternate Number' sx={{ mb: 2 }}/>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 4 }}>
               <Button variant='contained' sx={{ mr: 2 }}>

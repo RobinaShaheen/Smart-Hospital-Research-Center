@@ -17,10 +17,10 @@ const AddBed = () => {
         <Card>
           <CardContent>
             <CustomTextField fullWidth label='Name *' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Bed Type' required sx={{ mb: 2 }}>
+            <CustomTextField fullWidth select label='Bed Type' required sx={{ mb: 2 }}>
                 <MenuItem value=''>Select</MenuItem>
             </CustomTextField>
-            <CustomTextField fullWidth label='Bed Group' required sx={{ mb: 2 }}>
+            <CustomTextField fullWidth select label='Bed Group' required sx={{ mb: 2 }}>
                 <MenuItem value=''>Select</MenuItem>
             </CustomTextField>
             <input type="checkbox"/> Mark as unused

@@ -12,7 +12,7 @@ const OptionsWrapper = styled(Box)<BoxProps>(() => ({
   alignItems: 'flex-start', // Align items to the start
   justifyContent: 'flex-start', // Align items to the start
   gap: '12px', // Space between items
-  width: '300px' // Adjust the width of the sidebar
+  width: '250px' // Adjust the width of the sidebar
 }))
 
 // Style the Link component to remove underline and adjust color
@@ -46,7 +46,7 @@ const SettingSideBar: React.FC<SettingSideBarProps> = ({ onSelectSetting }) => {
 
   return (
     <Grid container spacing={6}>
-      <Grid item>
+      <Grid item xs={12}>
         <Card>
           <CardContent>
             <OptionsWrapper>

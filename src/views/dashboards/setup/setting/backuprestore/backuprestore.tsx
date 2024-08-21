@@ -140,6 +140,7 @@ const [selectedFile, setSelectedFile] = useState<File | null>(null)
           variant='contained'
           href=''
           startIcon={<Icon icon='tabler:plus' />}
+          sx={{mb: 4}}
         >
           Create Backup
         </Button>

@@ -17,7 +17,7 @@ const AddBedGroup = () => {
         <Card>
           <CardContent>
             <CustomTextField fullWidth label='Name *' sx={{ mb: 2 }}/>
-            <CustomTextField fullWidth label='Floor' required sx={{ mb: 2 }}>
+            <CustomTextField fullWidth select label='Floor' required sx={{ mb: 2 }}>
                 <MenuItem value=''>Select</MenuItem>
             </CustomTextField>
             <CustomTextField fullWidth label='Color' type='color' required sx={{ mb: 2 }}/>
