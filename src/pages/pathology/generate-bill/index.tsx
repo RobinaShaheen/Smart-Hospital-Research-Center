@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import PathologyGenerateBill from 'src/views/dashboards/pathology/GenerateBill'
 
-const Appointment = () => {
+const Appointment = () => { 
   return (
     <ApexChartWrapper>
       <Typography

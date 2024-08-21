@@ -1,6 +1,4 @@
 // ** Type import
-import path from 'path'
-import { title } from 'process'
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
 const navigation = (): VerticalNavItemsType => {
@@ -751,6 +749,72 @@ const navigation = (): VerticalNavItemsType => {
           externalLink: true,
           openInNewTab: true,
           path: 'https://demos.pixinvent.com/vuexy-nextjs-admin-template/documentation'
+        }
+      ]
+    },
+    {
+      title: 'Certificate',
+      icon: 'tabler:receipt',
+      children: [
+        {
+          title: 'Certificate',
+          path: '/certificate/Certificate'
+        }
+      ]
+    },
+    {
+      title:'Download Center',
+      path:'/download-center'
+    },
+    {
+      title: 'Live Consultation',
+      icon: 'tabler:receipt',
+      children: [
+        {
+          title: 'Live Consultation',
+          path: '/liveConsultation/LiveConsultation'
+        },
+        {
+          title: 'Live Meeting',
+          path: '/liveConsultation/LiveMeeting'
+        }
+      ]
+    },
+    {
+      title: 'Set Up',
+      icon:'tabler:settings',
+      children:[
+        {
+          title:"Hospital Charges",
+          path:'/setup/hospitalCharges'
+        },
+        {
+          title:'Print Header Footer',
+          path:'/setup/printHeaderFooter'
+        },
+        {
+          title:'Pharmacy',
+          path:'/setup/pharmacy'
+        },
+        {
+          title:'Radiology',
+          path:'/setup/radiology'
+        },
+        {
+          title:'Finding',
+          path:'/setup/finding'
+        },
+        {
+          title:'Custom Field',
+          path:'/setup/customField'
+        },
+        {
+          title:'Appointment',
+          path:'/setup/appointment'
+        },
+        {
+          title:'Human Resources',
+          path:'/setup/humanResources'
         }
       ]
     }
