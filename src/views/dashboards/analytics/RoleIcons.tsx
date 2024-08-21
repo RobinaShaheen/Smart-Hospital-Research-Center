@@ -1,19 +1,18 @@
 import React from 'react';
 import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import { Person as PersonIcon } from '@mui/icons-material';
-import Link from 'next/link';
 
 const RolesList: React.FC = () => {
   const roles = [
-    { role: 'Admin', count: 1, path: '/human-resource' },
-    { role: 'Accountant', count: 1, path: '/human-resource'  },
-    { role: 'Doctor', count: 4, path: '/human-resource'  },
-    { role: 'Pharmacist', count: 1, path: '/human-resource'  },
-    { role: 'Pathologist', count: 1, path: '/human-resource'  },
-    { role: 'Radiologist', count: 1, path: '/human-resource'  },
-    { role: 'Super Admin', count: 1, path: '/human-resource'  },
-    { role: 'Receptionist', count: 1, path: '/human-resource'  },
-    { role: 'Nurse', count: 2, path: '/human-resource'  },
+    { role: 'Admin', count: 1 },
+    { role: 'Accountant', count: 1 },
+    { role: 'Doctor', count: 4 },
+    { role: 'Pharmacist', count: 1 },
+    { role: 'Pathologist', count: 1 },
+    { role: 'Radiologist', count: 1 },
+    { role: 'Super Admin', count: 1 },
+    { role: 'Receptionist', count: 1 },
+    { role: 'Nurse', count: 2 },
   ];
 
   return (
