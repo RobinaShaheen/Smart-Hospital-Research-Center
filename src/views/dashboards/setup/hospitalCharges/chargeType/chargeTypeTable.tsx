@@ -200,7 +200,7 @@ const ChargesTypeTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/setup/hospitalCharges/ChargesType/AddChargesType'
+      href='/Setup/hospitalCharges/ChargesType/AddChargesType'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Charge Type

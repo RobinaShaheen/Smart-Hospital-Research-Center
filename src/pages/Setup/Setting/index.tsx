@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import SettingSideBar from 'src/views/dashboards/setup/setting/setting'
 import SettingContainer from 'src/views/dashboards/setup/setting/SettingContainer'
-import Typography from '@mui/material/Typography'
 
 const Appointment = () => {
   const [selectedSetting, setSelectedSetting] = useState<string>('GeneralSetting')

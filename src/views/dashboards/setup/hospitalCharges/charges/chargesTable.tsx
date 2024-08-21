@@ -10,15 +10,12 @@ import Card from '@mui/material/Card'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
-import Tooltip from '@mui/material/Tooltip'
-import IconButton from '@mui/material/IconButton'
 import Button from '@mui/material/Button'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
 // ** Custom Component Imports
 import CustomTextField from 'src/@core/components/mui/text-field'
-import { typography } from '@mui/system'
 
 // ** Dummy Data
 const dummyData = [
@@ -133,7 +130,7 @@ const ChargesTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/setup/hospitalCharges/Charges/AddCharges'
+      href='/Setup/hospitalCharges/Charges/AddCharges'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Charges

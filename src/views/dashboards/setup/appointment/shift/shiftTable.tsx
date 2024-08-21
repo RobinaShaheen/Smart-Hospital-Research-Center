@@ -124,7 +124,7 @@ const ShiftTable = () => {
           <Button
           component={Link}
           variant='contained'
-          href='/setup/appointment/shift/AddShift'
+          href='/Setup/appointment/shift/AddShift'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Shift

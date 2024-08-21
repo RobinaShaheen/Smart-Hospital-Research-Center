@@ -117,7 +117,7 @@ const ChargesCategoryTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/setup/hospitalCharges/ChargesCatagory/AddChargeCategory'
+      href='/Setup/hospitalCharges/ChargesCatagory/AddChargeCategory'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Charge Category

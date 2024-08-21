@@ -150,7 +150,7 @@ const RadiologyTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/setup/radiology/generate-bill'
+          href='/Setup/radiology/generate-bill'
           startIcon={<Icon icon='tabler:receipt' />}
         >
           Generate Bill
