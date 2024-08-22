@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import { FC } from 'react'
@@ -15,11 +16,7 @@ import Box, { BoxProps } from '@mui/material/Box'
 import Icon from 'src/@core/components/icon'
 import CardContent from '@mui/material/CardContent'
 import PatientIdCardList from './patientIdCardList'
-const OptionsWrapper = styled(Box)<BoxProps>(() => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between'
-}))
+
 
 const IdCardTemplate = () => {
 

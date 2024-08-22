@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -5,6 +6,7 @@ import Grid from '@mui/material/Grid'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import Typography from '@mui/material/Typography'
+
 const SEODetail = () => {
   return (
     <Grid container spacing={6}>

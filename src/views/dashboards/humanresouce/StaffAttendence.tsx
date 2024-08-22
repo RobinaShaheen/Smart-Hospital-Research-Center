@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -9,6 +10,7 @@ import MenuItem from '@mui/material/MenuItem'
 import OutlinedInput from '@mui/material/OutlinedInput'
 import TextField from '@mui/material/TextField'
 import { SelectChangeEvent } from '@mui/material/Select'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
@@ -27,9 +29,8 @@ const StaffAttendance = () => {
   }
 
   return (
-    <Box sx={{ p: 3, backgroundColor: 'white', borderRadius: 1, boxShadow: 1 }}>
-      
 
+    <Box sx={{ p: 3, backgroundColor: 'white', borderRadius: 1, boxShadow: 1 }}>
       <Box sx={{ display: 'flex', gap: 4, mb: 4 }}>
         <FormControl variant='outlined' sx={{ minWidth: 200 }}>
           <InputLabel htmlFor='role'>Role</InputLabel>

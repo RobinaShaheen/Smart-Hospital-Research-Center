@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -12,6 +13,7 @@ import Paper from '@mui/material/Paper'
 import IconButton from '@mui/material/IconButton'
 import { Tooltip } from '@mui/material'
 import Icon from 'src/@core/components/icon'
+
 // ** Sample Data
 const leaveRequests = [
   {
@@ -33,20 +35,24 @@ const leaveRequests = [
 ]
 
 const MyLeaves = () => {
+
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [selectedLeave, setSelectedLeave] = useState<number | null>(null)
 
   const handleApplyLeave = () => {
+
     // Handle apply leave logic here
     console.log('Apply Leave')
   }
 
   const handleApproveLeave = () => {
+
     // Handle approve leave logic here
     console.log('Approve Leave')
   }
 
   return (
+    
     <Box sx={{ p: 3, backgroundColor: 'white', borderRadius: 1, boxShadow: 1 }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 4 }}>
         <Box>

@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -9,8 +10,10 @@ import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import { useState } from 'react'
+
 // ** Custom Component Import
 import CustomTextField from 'src/@core/components/mui/text-field'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
@@ -24,6 +27,7 @@ const AddNewPatient = () => {
   }
 
   return (
+    
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Card>

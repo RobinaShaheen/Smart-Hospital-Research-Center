@@ -21,7 +21,9 @@ const AddMedia = () => {
   
   // ** State
   const [value, setValue] = useState<string>('')
+  
   return (
+    
     <Card>
       <CardContent
         sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}

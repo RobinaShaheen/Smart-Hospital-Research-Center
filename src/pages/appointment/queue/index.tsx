@@ -1,3 +1,4 @@
+
 // ** MUI Import
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
@@ -7,6 +8,7 @@ import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import PatientQueue from 'src/views/dashboards/appointments/Queue'
 
 const Appointment = () => {
+  
   return (
     <ApexChartWrapper>
       <Typography

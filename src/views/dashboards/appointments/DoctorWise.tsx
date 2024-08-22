@@ -1,7 +1,9 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** React Imports
 'use client'
 import { useState } from 'react'
+
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
@@ -9,8 +11,10 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
+
 // ** Custom Component Import
 import CustomTextField from 'src/@core/components/mui/text-field'
+
 const DoctorWiseAppointment = () => {
   const [doctor, setDoctor] = useState('')
   const [date, setDate] = useState('')
@@ -21,6 +25,7 @@ const DoctorWiseAppointment = () => {
   }
 
   return (
+    
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Card>

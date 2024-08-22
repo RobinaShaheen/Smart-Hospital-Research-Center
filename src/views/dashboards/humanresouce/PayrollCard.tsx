@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -10,6 +11,7 @@ import MenuItem from '@mui/material/MenuItem'
 import OutlinedInput from '@mui/material/OutlinedInput'
 import TextField from '@mui/material/TextField'
 import { SelectChangeEvent } from '@mui/material/Select'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
@@ -34,6 +36,7 @@ const PayrollCard = () => {
   }
 
   return (
+    
     <Box sx={{ p: 3, backgroundColor: 'white', borderRadius: 1, boxShadow: 1 }}>
       <Typography variant='h6' sx={{ mb: 4 }}>
         Payroll

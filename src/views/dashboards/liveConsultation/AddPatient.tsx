@@ -33,7 +33,9 @@ const AddPatient = () => {
         setSelectedFile(event.target.files[0])
       }
     }
+
   return (
+    
     <Grid container spacing={6} display={'flex'}>
       <Grid item xs={12} >
         <Card>

@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import { FC } from 'react'
@@ -15,11 +16,6 @@ import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import Icon from 'src/@core/components/icon'
 import StaffIdCardList from './staffIdCardList'
-const OptionsWrapper = styled(Box)<BoxProps>(() => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between'
-}))
 
 const StaffIdCardTemplate = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)

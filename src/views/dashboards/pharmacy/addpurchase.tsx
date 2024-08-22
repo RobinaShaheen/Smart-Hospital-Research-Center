@@ -1,6 +1,8 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -25,6 +27,7 @@ const AddPurchase = () => {
   }
 
   return (
+    
     <Card>
       <CardContent>
         <Typography variant='h6' gutterBottom>

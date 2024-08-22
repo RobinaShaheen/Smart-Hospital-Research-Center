@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -11,13 +12,9 @@ import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import PatientList from './patientList'
-const OptionsWrapper = styled(Box)<BoxProps>(() => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between'
-}))
 
 const PatientIdCard = () => {
+
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>

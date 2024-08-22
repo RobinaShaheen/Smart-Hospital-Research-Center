@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -11,8 +12,11 @@ import Typography from '@mui/material/Typography'
 import Icon from 'src/@core/components/icon'
 import SEODetail from './seo'
 import Link from 'next/link'
+
 const AddCMSPage = () => {
+
   return (
+  
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Card>

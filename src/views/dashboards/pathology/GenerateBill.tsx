@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -9,6 +10,7 @@ import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import { useState } from 'react'
+
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
   display: 'flex',
   alignItems: 'center',
@@ -23,6 +25,7 @@ const PathologyGenerateBill = () => {
   const [netAmount, setNetAmount] = useState('0')
 
   return (
+    
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Box display="flex" flexDirection="column" mb={4}>

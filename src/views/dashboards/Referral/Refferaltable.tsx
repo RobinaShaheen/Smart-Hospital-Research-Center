@@ -1,5 +1,7 @@
+
 // ** React Imports
 import React from 'react'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -20,8 +22,10 @@ const referralData = [
 ]
 
 const ReferralTable = () => {
+
   return (
-    <Card>
+  
+  <Card>
       <CardContent>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 3 }}>
           <Box>

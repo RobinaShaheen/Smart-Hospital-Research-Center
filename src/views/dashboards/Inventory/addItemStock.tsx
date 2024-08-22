@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -11,6 +12,7 @@ import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import Icon from 'src/@core/components/icon'
 import { useState } from 'react'
+
 const AddItemStock = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
@@ -21,6 +23,7 @@ const AddItemStock = () => {
   }
 
   return (
+
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Card>
@@ -33,6 +36,7 @@ const AddItemStock = () => {
               sx={{ mb: 4 }}
             >
               <MenuItem value=''>Select</MenuItem>
+              
               {/* Add patient options here */}
             </CustomTextField>
             <CustomTextField fullWidth select label='Item *' sx={{ mb: 2 }}>
