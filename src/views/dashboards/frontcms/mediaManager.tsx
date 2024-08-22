@@ -1,12 +1,16 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
+
 // ** Next Import
 import Link from 'next/link'
+
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import CardContent from '@mui/material/CardContent'
+
 // ** Icon Imports
 import Box, { BoxProps } from '@mui/material/Box'
 import CustomTextField from 'src/@core/components/mui/text-field'
@@ -15,9 +19,6 @@ import IconButton from '@mui/material/IconButton'
 import Icon from 'src/@core/components/icon'
 import AddMedia from './addMedia'
 const MediaManager = () => {
-  // ** State
-  const [value, setValue] = useState<string>('')
-  const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
 

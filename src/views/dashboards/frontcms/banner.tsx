@@ -1,19 +1,21 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
+
 // ** Next Import
 import Link from 'next/link'
+
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import CardContent from '@mui/material/CardContent'
+
 // ** Icon Imports
 import Box from '@mui/material/Box'
 import Image from 'next/image'
 import Icon from 'src/@core/components/icon'
 const Banners = () => {
-  // ** State
-  const [value, setValue] = useState<string>('')
 
   return (
     <Card>

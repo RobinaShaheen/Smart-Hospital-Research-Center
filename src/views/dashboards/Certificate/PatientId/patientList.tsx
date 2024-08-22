@@ -1,16 +1,21 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
+
 // ** Next Import
 import Link from 'next/link'
+
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
+
 // ** Dummy Data
 const dummyData = [
   {
@@ -75,6 +80,7 @@ const columns: GridColDef[] = [
 ]
 
 const PatientList = () => {
+
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
