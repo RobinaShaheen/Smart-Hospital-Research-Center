@@ -1,10 +1,8 @@
 // ** React Imports
 'use client'
 import { useState } from 'react'
-
 // ** Next Import
 import Link from 'next/link'
-
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
@@ -16,10 +14,6 @@ import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import Icon from 'src/@core/components/icon'
 import AddMedia from './addMedia'
-// ** Custom Component Imports
-// import CustomTextField from 'src/@core/components/mui/text-field'
-// import { IconButton, Tooltip } from '@mui/material'
-
 const MediaManager = () => {
   // ** State
   const [value, setValue] = useState<string>('')

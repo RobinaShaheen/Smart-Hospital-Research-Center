@@ -1,10 +1,8 @@
 // ** React Imports
 'use client'
 import { useState } from 'react'
-
 // ** Next Import
 import Link from 'next/link'
-
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -12,7 +10,6 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
-
 // ** Dummy Data
 const dummyData = [
   {

@@ -1,12 +1,10 @@
 // /* eslint-disable @typescript-eslint/no-unused-vars */
-
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import React, {useState} from 'react'
-
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
   display: 'flex',

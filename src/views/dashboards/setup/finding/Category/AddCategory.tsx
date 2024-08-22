@@ -7,8 +7,6 @@ import Box from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 
-const categories = ['Syrup','Capsule','Tablet','Injection','Inhaler']
-
 const AddCategory= () => {
   return (
     <Grid container spacing={6}>

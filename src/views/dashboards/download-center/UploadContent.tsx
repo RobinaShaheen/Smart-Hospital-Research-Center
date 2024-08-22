@@ -3,21 +3,10 @@
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
-// import MenuItem from '@mui/material/MenuItem'
-// import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
-// import { File } from 'buffer'
-// import { useState } from 'react'
-
 const UploadContent = () => {
-  // const [searchValue, setSearchValue] = useState('')
-  // const [total, setTotal] = useState('0')
-  // const [discount, setDiscount] = useState('0')
-  // const [tax, setTax] = useState('0')
-  // const [netAmount, setNetAmount] = useState('0')
-
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>

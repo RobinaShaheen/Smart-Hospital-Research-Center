@@ -1,10 +1,8 @@
 // ** React Imports
 'use client'
 import { useState } from 'react'
-
 // ** Next Import
 import Link from 'next/link'
-
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
@@ -14,15 +12,10 @@ import MenuItem from '@mui/material/MenuItem'
 import Box from '@mui/material/Box'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import Image from 'next/image'
-// ** Custom Component Imports
-// import CustomTextField from 'src/@core/components/mui/text-field'
-// import { IconButton, Tooltip } from '@mui/material'
-
 const AddMedia = () => {
   // ** State
   const [value, setValue] = useState<string>('')
-  const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
-
+  
   return (
     <Card>
       <CardContent

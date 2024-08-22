@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-
 // ** React Imports
 'use client'
 import { useState } from 'react'
-
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
@@ -14,10 +12,8 @@ import CustomTextField from 'src/@core/components/mui/text-field'
 import MenuItem from '@mui/material/MenuItem'
 import { Typography } from '@mui/material'
 import IconButton from '@mui/material/IconButton'
-
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
-
 //Dummy Data
 const gender = ['Male','Female']
 const bloodGroups = ['select','A+','A-','B+','B-','O+','O-','AB+', 'AB-']

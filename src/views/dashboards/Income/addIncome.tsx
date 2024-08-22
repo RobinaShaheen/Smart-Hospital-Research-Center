@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Box, Button, Card, CardContent, TextField, MenuItem, Typography, TextFieldProps } from '@mui/material'
 import { DesktopDatePicker } from '@mui/lab'
-
 // Define a type for the file state
 type IncomeFormFile = File | null
 

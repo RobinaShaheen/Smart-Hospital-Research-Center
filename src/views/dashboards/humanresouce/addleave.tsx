@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -11,8 +10,6 @@ import MenuItem from '@mui/material/MenuItem'
 import OutlinedInput from '@mui/material/OutlinedInput'
 import TextField from '@mui/material/TextField'
 import { UploadFile } from '@mui/icons-material'
-
-// ** Icon Imports
 
 const roles = ['Doctor', 'Nurse', 'Technician', 'Other'] // Example roles
 const names = ['John Doe', 'Jane Smith', 'Alice Johnson'] // Example names
