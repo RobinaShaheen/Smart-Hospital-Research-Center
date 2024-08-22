@@ -39,7 +39,7 @@ interface HospitalChargesSideBarProps {
 
 const HospitalChargesSideBar: React.FC<HospitalChargesSideBarProps> = ({ onSelectSetting }) => {
   
-  const [selected, setSelected] = useState<string>('slot'); // Default active setting
+  const [selected, setSelected] = useState<string>('Charges'); // Default active setting
 
   const handleClick = (setting:string) => {
     setSelected(setting);

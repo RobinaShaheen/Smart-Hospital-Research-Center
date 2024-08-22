@@ -1,5 +1,4 @@
 // ** Type import
-import { title } from 'process'
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
 const navigation = (): VerticalNavItemsType => {
@@ -14,7 +13,6 @@ const navigation = (): VerticalNavItemsType => {
           title: 'Analytics',
           path: '/dashboards/analytics'
         }
-        
       ]
     },
     {
@@ -82,7 +80,137 @@ const navigation = (): VerticalNavItemsType => {
       title: 'eCommerce',
       path: '/ecommerce'
     },
-    
+    {
+      title: 'Inventory',
+      path: '/Inventory',
+    },
+    {
+      title:'Download Center',
+      path:'/download-center'
+    },
+    {
+      title: 'Certificate',
+      path: '/Certificate',
+      children: [
+        {
+          title: 'Certificate',
+          path: '/Certificate/Certificate'
+        },
+        {
+          title: 'Patient ID Card',
+          path: '/Certificate/PatientId',
+        },
+        {
+          title: 'Staff ID Card',
+          path: '/Certificate/Staffid',
+        },
+      ]
+    },
+    {
+      title: 'Front CMS',
+      path: '/front-cms',
+    },
+    {
+      title: 'Live Consultation',
+      icon: 'tabler:receipt',
+      children: [
+        {
+          title: 'Live Consultation',
+          path: '/liveConsultation/LiveConsultation'
+        },
+        {
+          title: 'Live Meeting',
+          path: '/liveConsultation/LiveMeeting'
+        }
+      ]
+    },
+    {
+      title: 'Setup',
+      path: '/Setup',
+      icon: 'tabler:settings',
+      children: [
+        {
+          title: 'Settings',
+          path: '/Setup/Setting',
+        },
+        {
+          title: 'Patient',
+          path: '/Setup/PatientSetup',
+        },
+        {
+          title:"Hospital Charges",
+          path:'/Setup/hospitalCharges'
+        },
+        {
+          title: 'Bed',
+          path: '/Setup/Bed',
+        },
+        {
+          title:'Print Header Footer',
+          path:'/Setup/printHeaderFooter'
+        },
+        {
+          title: 'Front Office',
+          path: '/Setup/FrontOffice',
+        },
+        {
+          title: 'Operations',
+          path: '/Setup/Operation',
+        },
+        {
+          title:'Pharmacy',
+          path:'/Setup/pharmacy'
+        },
+        {
+          title: 'Pathology',
+          path: '/Setup/Pathology',
+        },
+        {
+          title:'Radiology',
+          path:'/Setup/radiology'
+        },
+        {
+          title: 'Blood Bank',
+          path: '/Setup/BloodBank',
+        },
+        {
+          title: 'Symptoms',
+          path: '/Setup/Symptom',
+        },
+        {
+          title:'Finding',
+          path:'/Setup/finding'
+        },
+        {
+          title: 'Zoom Setting',
+          path: '/Setup/ZoomSetting',
+        },
+        {
+          title: 'Finance',
+          path: '/Setup/Finance',
+        },
+        {
+          title:'Human Resources',
+          path:'/Setup/humanResources'
+        },
+        {
+          title: 'Referral',
+          path: '/Setup/Referral',
+        },
+        {
+          title:'Appointment',
+          path:'/Setup/appointment'
+        },
+        {
+          title: 'Inventory',
+          path: '/Setup/Inventory',
+        },
+        {
+          title:'Custom Field',
+          path:'/Setup/customField'
+        },
+      ]
+    },
     {
       sectionTitle: 'Apps & Pages'
     },
@@ -679,72 +807,6 @@ const navigation = (): VerticalNavItemsType => {
         }
       ]
     },
-    {
-      title: 'Certificate',
-      icon: 'tabler:receipt',
-      children: [
-        {
-          title: 'Certificate',
-          path: '/certificate/Certificate'
-        }
-      ]
-    },
-    {
-      title:'Download Center',
-      path:'/download-center'
-    },
-    {
-      title: 'Live Consultation',
-      icon: 'tabler:receipt',
-      children: [
-        {
-          title: 'Live Consultation',
-          path: '/liveConsultation/LiveConsultation'
-        },
-        {
-          title: 'Live Meeting',
-          path: '/liveConsultation/LiveMeeting'
-        }
-      ]
-    },
-    {
-      title: 'Set Up',
-      icon:'tabler:settings',
-      children:[
-        {
-          title:"Hospital Charges",
-          path:'/setup/hospitalCharges'
-        },
-        {
-          title:'Print Header Footer',
-          path:'/setup/printHeaderFooter'
-        },
-        {
-          title:'Pharmacy',
-          path:'/setup/pharmacy'
-        },
-        {
-          title:'Radiology',
-          path:'/setup/radiology'
-        },
-        {
-          title:'Finding',
-          path:'/setup/finding'
-        },
-        {
-          title:'Custom Field',
-          path:'/setup/customField'
-        },
-        {
-          title:'Appointment',
-          path:'/setup/appointment'
-        },
-        {
-          title:'Human Resources',
-          path:'/setup/humanResources'
-        }
-      ]
-    }
   ]
 }
 

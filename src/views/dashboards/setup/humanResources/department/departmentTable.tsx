@@ -107,7 +107,7 @@ const DepartmentTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/setup/humanResources/department/AddDepartment'
+      href='/Setup/humanResources/department/AddDepartment'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Department

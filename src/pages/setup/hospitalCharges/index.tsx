@@ -5,7 +5,7 @@ import HospitalChargesSideBar from 'src/views/dashboards/setup/hospitalCharges/h
 import HospitalChargesContainer from 'src/views/dashboards/setup/hospitalCharges/HospitalChargesContainer'
 
 const Appointment = () => {
-  const [selectedSetting, setSelectedSetting] = useState<string>('GeneralSetting')
+  const [selectedSetting, setSelectedSetting] = useState<string>('Charges')
 
   return (
     <ApexChartWrapper>

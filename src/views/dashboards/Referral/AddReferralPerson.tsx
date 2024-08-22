@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Box, Card, CardContent, Grid, TextField, Button, Typography, MenuItem } from '@mui/material'
-
 const categories = ['OPD', 'IPD', 'Pharmacy', 'Pathology', 'Radiology', 'Blood Bank', 'Ambulance']
 
 const AddReferralPerson = () => {

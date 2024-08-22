@@ -112,7 +112,7 @@ const MedicineCateroryTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/setup/pharmacy/medicineCategory/AddMedicineCategory'
+          href='/Setup/pharmacy/medicineCategory/AddMedicineCategory'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Medicine Category

@@ -23,9 +23,9 @@ const gender = ['Male','Female']
 const bloodGroups = ['select','A+','A-','B+','B-','O+','O-','AB+', 'AB-']
 const maritalStatus = ['select','Single','Married','Widowed','Separated','Not Spacified']
 
-// const certificateTemplates = ['Doctor ABC','Doctor LMN','Doctor XYZ']
 
 const AddPatient = () => {
+  
     const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {

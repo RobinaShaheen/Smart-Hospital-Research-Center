@@ -107,7 +107,7 @@ const SpecialistTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/setup/humanResources/specialist/AddSpecialist'
+      href='/Setup/humanResources/specialist/AddSpecialist'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Specialist

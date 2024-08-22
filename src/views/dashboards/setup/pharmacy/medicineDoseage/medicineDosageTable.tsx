@@ -106,7 +106,7 @@ const MedicineDosageTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/setup/pharmacy/medicineDosage/AddMedicineDose'
+          href='/Setup/pharmacy/medicineDosage/AddMedicineDose'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Medicine Dosage

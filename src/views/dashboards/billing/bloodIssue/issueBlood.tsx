@@ -15,8 +15,6 @@ import Icon from 'src/@core/components/icon'
 // ** Custom Component Import
 import CustomTextField from 'src/@core/components/mui/text-field'
 import { Typography } from '@mui/material'
-import { flexbox } from '@mui/system'
-
 const IssueBlood = () => {
 
   const [value, setValue] = useState<string>('')

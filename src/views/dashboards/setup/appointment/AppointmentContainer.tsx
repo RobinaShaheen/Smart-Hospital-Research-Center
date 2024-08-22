@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid'
 import Slot from 'src/pages/setup/appointment/slot'
 import DoctorShift from 'src/pages/setup/appointment/doctorShift'
 import Shift from 'src/pages/setup/appointment/shift'
+// import other setting components as needed
 
 const AppointmentContainer = ({ selectedSetting }: { selectedSetting: string }) => {
   const renderSetting = () => {
@@ -12,7 +13,8 @@ const AppointmentContainer = ({ selectedSetting }: { selectedSetting: string }) 
       case 'doctorShift':
         return <DoctorShift/>;
       case 'shift':
-        return <Shift/>;
+        
+      return <div><Shift/></div>;
         // Add cases for other settings components
       default:
         return <Slot/>;

@@ -103,7 +103,7 @@ const LeaveTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/setup/humanResources/leave/AddLeave'
+      href='/Setup/humanResources/leave/AddLeave'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Leave

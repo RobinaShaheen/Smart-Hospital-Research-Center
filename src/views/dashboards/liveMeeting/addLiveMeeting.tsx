@@ -1,9 +1,7 @@
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
-
 // ** React Imports
 import Link from 'next/link'
-
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
@@ -12,7 +10,6 @@ import Box from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import { Typography } from '@mui/material'
-
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
