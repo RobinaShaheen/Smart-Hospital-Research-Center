@@ -6,7 +6,6 @@ import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
-
 const AddShift= () => {
   return (
     <Grid container spacing={6}>

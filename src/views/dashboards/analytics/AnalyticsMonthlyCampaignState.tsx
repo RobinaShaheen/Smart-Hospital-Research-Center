@@ -4,17 +4,13 @@ import Card from '@mui/material/Card'
 import Typography from '@mui/material/Typography'
 import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
-
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
-
 // ** Types
 import { ThemeColor } from 'src/@core/layouts/types'
-
 // ** Custom Components Imports
 import CustomAvatar from 'src/@core/components/mui/avatar'
 import OptionsMenu from 'src/@core/components/option-menu'
-
 interface DataType {
   icon: string
   title: string

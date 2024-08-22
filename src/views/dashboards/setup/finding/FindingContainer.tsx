@@ -2,7 +2,6 @@ import React from 'react'
 import Grid from '@mui/material/Grid'
 import Findings from 'src/pages/Setup/finding/finding'
 import Category from 'src/pages/Setup/finding/category'
-
 // import other setting components as needed
 
 const FindingContainer = ({ selectedSetting }: { selectedSetting: string }) => {

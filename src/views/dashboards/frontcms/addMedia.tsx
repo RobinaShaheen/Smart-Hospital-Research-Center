@@ -17,15 +17,10 @@ import Box from '@mui/material/Box'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import Image from 'next/image'
 
-// ** Custom Component Imports
-// import CustomTextField from 'src/@core/components/mui/text-field'
-// import { IconButton, Tooltip } from '@mui/material'
-
 const AddMedia = () => {
   
   // ** State
   const [value, setValue] = useState<string>('')
-
   return (
     <Card>
       <CardContent

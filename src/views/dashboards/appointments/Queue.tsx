@@ -2,21 +2,15 @@
 // ** React Imports
 'use client'
 import { useState } from 'react'
-
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
-import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
-
 // ** Custom Component Import
 import CustomTextField from 'src/@core/components/mui/text-field'
-
-
-
 const PatientQueue = () => {
   const [doctor, setDoctor] = useState('')
   const [shift, setShift] = useState('')

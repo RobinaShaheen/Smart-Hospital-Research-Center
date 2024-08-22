@@ -15,6 +15,7 @@ const AppointmentContainer = ({ selectedSetting }: { selectedSetting: string }) 
         return <div><DoctorShift/></div>;
       case 'shift':
         return <div><Shift/></div>;
+        
         // Add cases for other settings components
       default:
         return <div><Slot/></div>;

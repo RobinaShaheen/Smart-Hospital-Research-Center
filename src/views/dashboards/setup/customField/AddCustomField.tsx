@@ -9,7 +9,6 @@ import CustomTextField from 'src/@core/components/mui/text-field'
 import MenuItem from '@mui/material/MenuItem'
 import { Typography } from '@mui/material'
 
-const categories = ['Syrup','Capsule','Tablet','Injection','Inhaler']
 const fieldTypes = ['Checkbox','Color Picker','Date Picker','Date Time Picker','input']
 const fieldBelongsTo = ['Ambulance Call','Appointment','Birth Record','Blood Issue','Component Issue','Death Recoed']
 

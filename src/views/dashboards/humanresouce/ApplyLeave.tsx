@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -11,10 +10,6 @@ import MenuItem from '@mui/material/MenuItem'
 import OutlinedInput from '@mui/material/OutlinedInput'
 import TextField from '@mui/material/TextField'
 import { UploadFile } from '@mui/icons-material'
-
-// ** Icon Imports
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Icon from 'src/@core/components/icon'
 
 const leaveTypes = ['Sick Leave', 'Vacation', 'Casual Leave'] // Example leave types
 

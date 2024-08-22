@@ -1,6 +1,5 @@
 // ** React Imports
 import React from 'react'
-
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'

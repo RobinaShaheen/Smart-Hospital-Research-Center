@@ -7,20 +7,16 @@ import CardContent from '@mui/material/CardContent'
 import Grid, { GridProps } from '@mui/material/Grid'
 import { styled, useTheme } from '@mui/material/styles'
 import LinearProgress from '@mui/material/LinearProgress'
-
 // ** Third Party Imports
 import { ApexOptions } from 'apexcharts'
-
 // ** Type Import
 import { ThemeColor } from 'src/@core/layouts/types'
-
 // ** Custom Components Imports
 import Icon from 'src/@core/components/icon'
 import CustomChip from 'src/@core/components/mui/chip'
 import OptionsMenu from 'src/@core/components/option-menu'
 import CustomAvatar from 'src/@core/components/mui/avatar'
 import ReactApexcharts from 'src/@core/components/react-apexcharts'
-
 // ** Util Import
 import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
 

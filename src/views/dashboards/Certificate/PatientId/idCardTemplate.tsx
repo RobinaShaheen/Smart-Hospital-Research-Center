@@ -15,7 +15,6 @@ import Box, { BoxProps } from '@mui/material/Box'
 import Icon from 'src/@core/components/icon'
 import CardContent from '@mui/material/CardContent'
 import PatientIdCardList from './patientIdCardList'
-
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
   display: 'flex',
   alignItems: 'center',

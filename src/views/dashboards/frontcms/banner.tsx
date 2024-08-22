@@ -15,10 +15,6 @@ import Box from '@mui/material/Box'
 import Image from 'next/image'
 import Icon from 'src/@core/components/icon'
 
-// ** Custom Component Imports
-// import CustomTextField from 'src/@core/components/mui/text-field'
-// import { IconButton, Tooltip } from '@mui/material'
-
 const Banners = () => {
   
   return (

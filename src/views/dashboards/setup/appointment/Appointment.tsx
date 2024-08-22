@@ -44,6 +44,7 @@ const AppointmentSideBarProps: React.FC<AppointmentSideBarProps> = ({ onSelectSe
   const handleClick = (setting:string) => {
     setSelected(setting);
     onSelectSetting(setting);
+
     // Add any additional logic you need for when a setting is selected
   };
 
@@ -56,6 +57,7 @@ const AppointmentSideBarProps: React.FC<AppointmentSideBarProps> = ({ onSelectSe
               <StyledLink onClick={() => handleClick('slot')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'slot'? 'blue':'black'}}>Slot</StyledLink>
               <StyledLink onClick={() => handleClick('doctorShift')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'doctorShift'? 'blue':'black'}}>Doctor Shift</StyledLink>
               <StyledLink onClick={() => handleClick('shift')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'shift'? 'blue':'black'}}>Shift</StyledLink>
+             
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

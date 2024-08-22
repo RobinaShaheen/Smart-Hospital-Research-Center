@@ -19,10 +19,6 @@ import IconButton from '@mui/material/IconButton'
 import Icon from 'src/@core/components/icon'
 import AddMedia from './addMedia'
 
-// ** Custom Component Imports
-// import CustomTextField from 'src/@core/components/mui/text-field'
-// import { IconButton, Tooltip } from '@mui/material'
-
 const MediaManager = () => {
 
   const [selectedFile, setSelectedFile] = useState<File | null>(null)

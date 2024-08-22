@@ -9,8 +9,6 @@ import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import { useState } from 'react'
-import { Typography } from '@mui/material'
-
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
   display: 'flex',
   alignItems: 'center',
