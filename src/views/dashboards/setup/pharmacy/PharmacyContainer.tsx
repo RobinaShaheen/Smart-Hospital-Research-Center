@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import MedicinCategory from 'src/pages/Setup/pharmacy/medicineCategory'
 import Supplier from 'src/pages/Setup/pharmacy/supplier'
 import MedicineDosage from 'src/pages/Setup/pharmacy/medicineDosage'
 import DoseInterval from 'src/pages/Setup/pharmacy/doseInterval'
 import DoseDuration from 'src/pages/Setup/pharmacy/doseDuration'
+
 // import other setting components as needed
 
 const PharmacyContainer = ({ selectedSetting }: { selectedSetting: string }) => {
@@ -20,7 +21,8 @@ const PharmacyContainer = ({ selectedSetting }: { selectedSetting: string }) => 
         return <div><DoseInterval/></div>;
       case 'doseDuration':
         return <div><DoseDuration/></div>;
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div><MedicinCategory/></div>;
     }

@@ -1,3 +1,4 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
@@ -15,7 +16,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import Tooltip from '@mui/material/Tooltip'
 import IconButton from '@mui/material/IconButton'
 import MenuItem from '@mui/material/MenuItem'
-import TextField from '@mui/material/TextField'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
@@ -106,7 +107,7 @@ const defaultColumns: GridColDef[] = [
         sortable: false,
         field: 'status',
         headerName: 'Status',
-        renderCell: ({ row }: CellType) => {
+        renderCell: ({}: CellType) => {
           const status = ['Awaited', 'Cancelled','Finished']
           return (
             <div>
@@ -142,6 +143,7 @@ const defaultColumns: GridColDef[] = [
 ]
 
 const LiveMeetingTable = () => {
+  
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
@@ -152,6 +154,7 @@ const LiveMeetingTable = () => {
   ]
 
   return (
+    
     <Card>
       <CardContent
         sx={{ gap: 4, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}

@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography'
 import AppointmentCreated from 'src/views/dashboards/setup/setting/systemnotification/notification'
 
 const Appointment = () => {
-  const [selectedSetting, setSelectedSetting] = useState<string>('GeneralSetting')
 
   return (
     <ApexChartWrapper>

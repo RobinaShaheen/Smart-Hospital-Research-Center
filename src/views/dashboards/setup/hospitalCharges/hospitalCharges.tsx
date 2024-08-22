@@ -1,3 +1,4 @@
+
 // /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import Card from '@mui/material/Card'
@@ -44,6 +45,7 @@ const HospitalChargesSideBar: React.FC<HospitalChargesSideBarProps> = ({ onSelec
   const handleClick = (setting:string) => {
     setSelected(setting);
     onSelectSetting(setting);
+    
     // Add any additional logic you need for when a setting is selected
   };
 
@@ -58,6 +60,7 @@ const HospitalChargesSideBar: React.FC<HospitalChargesSideBarProps> = ({ onSelec
               <StyledLink onClick={() => handleClick('ChargesType')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'ChargesType'? 'blue':'black'}}>Charges Type</StyledLink>
               <StyledLink onClick={() => handleClick('TaxCatagory')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'TaxCatagory'? 'blue':'black'}}>Tax Catagory</StyledLink>
               <StyledLink onClick={() => handleClick('UnitType')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'UnitType'? 'blue':'black'}}>Unit Type</StyledLink>
+              
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

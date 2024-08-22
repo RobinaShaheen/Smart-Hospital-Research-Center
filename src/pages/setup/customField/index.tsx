@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import CustomFieldSideBarProps from 'src/views/dashboards/setup/customField/CustomField'
+
 import CustomFieldContainer from 'src/views/dashboards/setup/customField/CutomFieldContainer'
 import AccordionCustomized from 'src/views/dashboards/setup/customField/Accordion'
 const Pharmacy = () => {
-  const [selectedSetting, setSelectedSetting] = useState<string>('GeneralSetting')
+  const [selectedSetting] = useState<string>('GeneralSetting')
 
   return (
     <ApexChartWrapper>

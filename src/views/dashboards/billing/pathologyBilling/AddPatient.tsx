@@ -1,4 +1,3 @@
-
 'use client'
 import { useState } from 'react'
 
@@ -17,15 +16,8 @@ import CardContent from '@mui/material/CardContent'
 // ** Custom Component Import
 import CustomTextField from 'src/@core/components/mui/text-field'
 
-const OptionsWrapper = styled(Box)<BoxProps>(() => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between'
-}))
-
 const AddPatient = () => {
   const [value, setValue] = useState<string>('')
-  const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   return (
     <Grid container spacing={6}>

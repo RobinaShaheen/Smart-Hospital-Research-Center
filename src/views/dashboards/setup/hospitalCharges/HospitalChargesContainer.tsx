@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import Charges from 'src/pages/Setup/hospitalCharges/Charges'
 import ChargesCategory from 'src/pages/Setup/hospitalCharges/ChargesCatagory'
 import ChargeType from 'src/pages/Setup/hospitalCharges/ChargesType'
 import TaxCatagory from 'src/pages/Setup/hospitalCharges/TaxCatagory'
 import UnitTypeTable from 'src/pages/Setup/hospitalCharges/UnitType'
+
 // import other setting components as needed
 
 const HospitalChargesContainer = ({ selectedSetting }: { selectedSetting: string }) => {
@@ -20,7 +21,8 @@ const HospitalChargesContainer = ({ selectedSetting }: { selectedSetting: string
         return <TaxCatagory/>;
       case 'UnitType':
         return <UnitTypeTable/>;
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <Charges/>;
     }

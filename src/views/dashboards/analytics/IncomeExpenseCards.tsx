@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import { Box, Card, CardContent, Typography } from '@mui/material'
 import { MoneyOff, LocalHospital, LocalPharmacy, MedicalServices, LocalLibrary, MedicalInformation, DirectionsCar, InsertChart } from '@mui/icons-material'
-import { shadows } from '@mui/system'
 
 const incomeExpenseData = [
   { title: 'OPD Income', amount: '$11,700.00', icon: <MedicalServices />, path:'/Patients/OPD' },

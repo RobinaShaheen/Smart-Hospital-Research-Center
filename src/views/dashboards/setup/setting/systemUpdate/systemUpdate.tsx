@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field';
 import { Typography } from '@mui/material';
 
-
 const SystemUpdate = () => {
 
   return (

@@ -1,3 +1,4 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
@@ -10,14 +11,11 @@ import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
+
 // ** Custom Component Imports
 import CustomTextField from 'src/@core/components/mui/text-field'
 
 const AddLanguage = () => {
-
-  // ** State
-  const [value, setValue] = useState<string>('')
-  const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   return (
     <Card>

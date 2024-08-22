@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -9,7 +10,6 @@ import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import { useState } from 'react'
-import { Typography } from '@mui/material'
 
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({
   display: 'flex',
@@ -51,6 +51,7 @@ const RadiologyGenerateBill = () => {
               sx={{ mb: 4 }}
             >
               <MenuItem value=''>Select</MenuItem>
+              
               {/* Add patient options here */}
             </CustomTextField>
             <CustomTextField fullWidth label='Prescription No' sx={{ mb: 2 }} />
@@ -65,6 +66,7 @@ const RadiologyGenerateBill = () => {
               sx={{ mb: 2 }}
             >
               <MenuItem value=''>Select</MenuItem>
+              
               {/* Add medicine category options here */}
             </CustomTextField>
             <CustomTextField
@@ -75,6 +77,7 @@ const RadiologyGenerateBill = () => {
               sx={{ mb: 2 }}
             >
               <MenuItem value=''>Select</MenuItem>
+              
               {/* Add medicine name options here */}
             </CustomTextField>
             <CustomTextField
@@ -85,6 +88,7 @@ const RadiologyGenerateBill = () => {
               sx={{ mb: 2 }}
             >
               <MenuItem value=''>Select</MenuItem>
+              
               {/* Add batch number options here */}
             </CustomTextField>
             <CustomTextField
@@ -95,6 +99,7 @@ const RadiologyGenerateBill = () => {
               sx={{ mb: 2 }}
             >
               <MenuItem value=''>Select</MenuItem>
+              
               {/* Add expiry date options here */}
             </CustomTextField>
             <CustomTextField fullWidth label='Quantity' sx={{ mb: 2 }} />
@@ -110,6 +115,7 @@ const RadiologyGenerateBill = () => {
               sx={{ mb: 2 }}
             >
               <MenuItem value=''>Select</MenuItem>
+              
               {/* Add doctor options here */}
             </CustomTextField>
             <CustomTextField fullWidth label='Doctor Name' sx={{ mb: 2 }} />

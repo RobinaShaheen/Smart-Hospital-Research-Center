@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import ReferralCommission from './referralCommission/referralCommission'
 import ReferralCategory from './referralCategory/referralCategory'
+
 // import other setting components as needed
 
 const ReferralContainer = ({ selectedReferral }: { selectedReferral: string }) => {
@@ -11,7 +12,8 @@ const ReferralContainer = ({ selectedReferral }: { selectedReferral: string }) =
         return <ReferralCommission/>
       case 'ReferralCategory':
         return <ReferralCategory/>
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div>Please select a setting from the sidebar.</div>;
     }

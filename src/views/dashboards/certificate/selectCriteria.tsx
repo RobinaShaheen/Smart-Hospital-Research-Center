@@ -1,3 +1,4 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
@@ -26,7 +27,6 @@ const pateintStatus = [ 'Discharge', 'Not Discharge']
 const certificateTemplates = ['Sample Patient File Cover']
 
 const SelectCriteria = () => {
-  const [showMoreDetails, setShowMoreDetails] = useState(false)
 
   return (
     <Card>

@@ -1,9 +1,12 @@
+
 // ** MUI Import
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
+
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import PatientIdCard from 'src/views/dashboards/Certificate/PatientId/patientIdCard'
+
 const Appointment = () => {
   return (
     <ApexChartWrapper>

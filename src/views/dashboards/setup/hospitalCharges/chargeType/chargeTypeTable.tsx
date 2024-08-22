@@ -1,3 +1,4 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
@@ -18,7 +19,6 @@ import Icon from 'src/@core/components/icon'
 
 // ** Custom Component Imports
 import CustomTextField from 'src/@core/components/mui/text-field'
-import { typography } from '@mui/system'
 
 // ** Dummy Data
 const dummyData = [
@@ -86,7 +86,7 @@ const defaultColumns: GridColDef[] = [
     field: 'appointment',
     minWidth: 150,
     headerName: 'Appointment',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <div>
             <input type="checkbox" />
         </div>
@@ -97,7 +97,7 @@ const defaultColumns: GridColDef[] = [
     field: 'opd',
     minWidth: 150,
     headerName: 'OPD',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <div>
             <input type="checkbox" />
         </div>
@@ -107,7 +107,7 @@ const defaultColumns: GridColDef[] = [
     field: 'ipd',
     minWidth: 150,
     headerName: 'IPD',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <div>
             <input type="checkbox" />
         </div>
@@ -117,7 +117,7 @@ const defaultColumns: GridColDef[] = [
     field: 'pathology',
     minWidth: 150,
     headerName: 'Pathology',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <div>
             <input type="checkbox" />
         </div>
@@ -127,7 +127,7 @@ const defaultColumns: GridColDef[] = [
     field: 'radiology',
     minWidth: 150,
     headerName: 'Radiology',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <div>
             <input type="checkbox" />
         </div>
@@ -137,7 +137,7 @@ const defaultColumns: GridColDef[] = [
     field: 'bloodbank',
     minWidth: 150,
     headerName: 'Blood Bank',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <div>
             <input type="checkbox" />
         </div>
@@ -147,7 +147,7 @@ const defaultColumns: GridColDef[] = [
     field: 'ambulance',
     minWidth: 150,
     headerName: 'Ambulance',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <div>
             <input type="checkbox" />
         </div>

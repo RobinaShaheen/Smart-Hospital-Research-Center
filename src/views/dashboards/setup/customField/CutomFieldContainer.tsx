@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
+
 // import Findings from 'src/pages/setup/finding/finding'
-import Category from 'src/pages/setup/finding/category'
-import AddCustomField from 'src/pages/setup/customField/addCustomField.tsx'
+import Category from 'src/pages/Setup/finding/category'
+import AddCustomField from 'src/pages/Setup/customField/addCustomField.tsx'
+
 // import other setting components as needed
 
 const CustomFieldContainer = ({ selectedSetting }: { selectedSetting: string }) => {
@@ -12,7 +14,8 @@ const CustomFieldContainer = ({ selectedSetting }: { selectedSetting: string }) 
         return <div></div>;
       case 'category':
         return <div><Category/></div>;
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div><AddCustomField/></div>;
     }

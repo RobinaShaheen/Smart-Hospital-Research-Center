@@ -1,13 +1,14 @@
+
 // ** MUI Import
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
+
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import AddAppointment from 'src/views/dashboards/billing/appointmentBilling/AddAppointment'
 const Certificate = () => {
   return (
     <ApexChartWrapper>
-        
       <Typography
         variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')
         gutterBottom

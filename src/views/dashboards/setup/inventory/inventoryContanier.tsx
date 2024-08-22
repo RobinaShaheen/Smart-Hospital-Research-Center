@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import ItemCategory from './itemCategory/itemCategory'
 import ItemStore from './itemStore/itemStore'
 import ItemSupplier from './ItemSupplier/itemSupplier'
+
 // import other setting components as needed
 
 const InventoryContainer = ({ selectedInventory }: { selectedInventory: string }) => {
@@ -14,7 +15,8 @@ const InventoryContainer = ({ selectedInventory }: { selectedInventory: string }
         return <ItemStore/>
       case 'ItemSupplier':
         return <ItemSupplier/>
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div>Please select a setting from the sidebar.</div>;
     }

@@ -1,3 +1,4 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
@@ -129,7 +130,8 @@ const defaultColumns: GridColDef[] = [
         sortable: false,
         field: 'status',
         headerName: 'Status',
-        renderCell: ({ row }: CellType) => {
+        renderCell: ({}: CellType) => {
+          
           // Ensure row.status is treated as an array
           //const status = Array.isArray(row.status) ? row.status : [row.status];
             const status = ['Awaited', 'Cancelled','Finished']

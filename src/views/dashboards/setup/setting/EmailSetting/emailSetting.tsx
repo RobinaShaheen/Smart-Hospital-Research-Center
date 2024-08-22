@@ -24,6 +24,7 @@ const EmailSetting = () => {
                 <MenuItem value='SMTP'>SMTP</MenuItem>
             </CustomTextField>
             <Button variant="contained" color="primary">Save</Button>
+        
         {/* Render content for other tabs as necessary */}
       </CardContent>
     </Card>

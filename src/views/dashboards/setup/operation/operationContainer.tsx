@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import OperationCategory from './operationCategory/operationCategory'
 import OperationList from './operation/operation'
+
 // import other setting components as needed
 
 const OperationContainer = ({ selectedOperation }: { selectedOperation: string }) => {
@@ -11,7 +12,8 @@ const OperationContainer = ({ selectedOperation }: { selectedOperation: string }
         return <OperationCategory/>
       case 'OperationList':
         return <OperationList/>
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div>Please select a setting from the sidebar.</div>;
     }

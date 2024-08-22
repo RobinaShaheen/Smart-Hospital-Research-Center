@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import PathologySideBar from 'src/views/dashboards/setup/pathology/pathology'
 import PathologyContainer from 'src/views/dashboards/setup/pathology/pathologyContanier'
+
 const Appointment = () => {
   const [selectedPathology, setSelectedPathology] = useState<string>('PathologyCategory')
   

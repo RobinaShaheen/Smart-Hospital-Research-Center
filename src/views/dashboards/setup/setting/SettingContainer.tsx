@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import GeneralSetting from './generalSetting/generalsetting'
 import NotificationSetting from './notificationSetting/notificationSetting'
@@ -15,6 +15,7 @@ import Users from './user/user'
 import CaptchaSetting from './captchSetting/captchaSetting'
 import Modules from './modules/modules'
 import SystemUpdate from './systemUpdate/systemUpdate'
+
 // import other setting components as needed
 
 const SettingContainer = ({ selectedSetting }: { selectedSetting: string }) => {
@@ -50,7 +51,8 @@ const SettingContainer = ({ selectedSetting }: { selectedSetting: string }) => {
         return <Modules/>
       case 'SystemUpdate':
         return <SystemUpdate/>
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div>Please select a setting from the sidebar.</div>;
     }

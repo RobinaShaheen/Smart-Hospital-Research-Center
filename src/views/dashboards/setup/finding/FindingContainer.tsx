@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
-import Findings from 'src/pages/setup/finding/finding'
-import Category from 'src/pages/setup/finding/category'
+import Findings from 'src/pages/Setup/finding/finding'
+import Category from 'src/pages/Setup/finding/category'
+
 // import other setting components as needed
 
 const FindingContainer = ({ selectedSetting }: { selectedSetting: string }) => {
@@ -11,7 +12,8 @@ const FindingContainer = ({ selectedSetting }: { selectedSetting: string }) => {
         return <Findings />;
       case 'category':
         return <div><Category/></div>;
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div><Findings/></div>;
     }

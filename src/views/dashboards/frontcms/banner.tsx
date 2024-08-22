@@ -1,3 +1,4 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
@@ -9,21 +10,18 @@ import Link from 'next/link'
 import Card from '@mui/material/Card'
 import Button from '@mui/material/Button'
 import CardContent from '@mui/material/CardContent'
-import MenuItem from '@mui/material/MenuItem'
+
 // ** Icon Imports
 import Box from '@mui/material/Box'
-import CustomTextField from 'src/@core/components/mui/text-field'
 import Image from 'next/image'
 import Icon from 'src/@core/components/icon'
+
 // ** Custom Component Imports
 // import CustomTextField from 'src/@core/components/mui/text-field'
 // import { IconButton, Tooltip } from '@mui/material'
 
 const Banners = () => {
-  // ** State
-  const [value, setValue] = useState<string>('')
-  const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
-
+  
   return (
     <Card>
         <CardContent>

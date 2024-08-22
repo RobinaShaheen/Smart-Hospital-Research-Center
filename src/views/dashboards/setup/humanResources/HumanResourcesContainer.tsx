@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import Leave from 'src/pages/Setup/humanResources/leave'
 import Department from 'src/pages/Setup/humanResources/department'
 import Designation from 'src/pages/Setup/humanResources/designation'
 import Specialist from 'src/pages/Setup/humanResources/specialist'
+
 // import other setting components as needed
 
 const HumanResourcesContainer = ({ selectedSetting }: { selectedSetting: string }) => {
@@ -17,6 +18,7 @@ const HumanResourcesContainer = ({ selectedSetting }: { selectedSetting: string 
         return <Designation />;
       case 'specialist':
         return <Specialist/>;
+        
         // Add cases for other settings components
       default:
         return <div><Leave/></div>;

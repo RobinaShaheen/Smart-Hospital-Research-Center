@@ -4,7 +4,6 @@ import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import React, { useState } from 'react'
-import { handleCalendarsUpdate } from 'src/store/apps/calendar'
 
 // Style the Box component for the sidebar layout
 const OptionsWrapper = styled(Box)<BoxProps>(() => ({

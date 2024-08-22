@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import PathologyCategory from './pathologyCategory/pathologyCategory'
 import Unit from './unit/unit'
 import PathologyParameter from './pathologyParameter/pathologyParameter'
+
 // import other setting components as needed
 
 const PathologyContainer = ({ selectedPathology }: { selectedPathology: string }) => {
@@ -14,7 +15,8 @@ const PathologyContainer = ({ selectedPathology }: { selectedPathology: string }
         return <Unit/>
       case 'PathologyParameter':
         return <PathologyParameter/>
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div>Please select a setting from the sidebar.</div>;
     }

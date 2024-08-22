@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography'
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import FrontCMSTable from 'src/views/dashboards/frontcms/frontcmstable'
+
 const Appointment = () => {
   return (
     <ApexChartWrapper>

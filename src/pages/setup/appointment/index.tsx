@@ -4,7 +4,7 @@ import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import AppointmentSideBarProps from 'src/views/dashboards/setup/appointment/Appointment'
 import AppointmentContainer from 'src/views/dashboards/setup/appointment/AppointmentContainer'
 
-const slot = () => {
+const Slot = () => {
   const [selectedSetting, setSelectedSetting] = useState<string>('GeneralSetting')
 
   return (
@@ -21,4 +21,4 @@ const slot = () => {
   )
 }
 
-export default slot
+export default Slot

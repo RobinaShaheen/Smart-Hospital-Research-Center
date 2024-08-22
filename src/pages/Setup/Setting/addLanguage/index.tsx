@@ -1,8 +1,11 @@
+
 // ** MUI Import
 import Grid from '@mui/material/Grid'
+
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import AddLanguage from 'src/views/dashboards/setup/setting/language/addlanguage'
+
 const Appointment = () => {
   return (
     <ApexChartWrapper>

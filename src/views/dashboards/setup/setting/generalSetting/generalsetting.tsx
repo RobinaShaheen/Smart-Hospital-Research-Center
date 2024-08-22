@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Image from 'next/image'
@@ -12,6 +13,7 @@ import Button from '@mui/material/Button'
 import Link from 'next/link'
 
 const GeneralSetting = () => {
+  
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>

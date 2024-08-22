@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import Products from './products/products'
+
 // import other setting components as needed
 
 const BloodBankContanier = ({ selectedBloodBank }: { selectedBloodBank: string }) => {
@@ -8,7 +9,8 @@ const BloodBankContanier = ({ selectedBloodBank }: { selectedBloodBank: string }
     switch (selectedBloodBank) {
       case 'Products':
         return <Products/>
-      // Add cases for other settings components
+      
+        // Add cases for other settings components
       default:
         return <div>Please select a setting from the sidebar.</div>;
     }
