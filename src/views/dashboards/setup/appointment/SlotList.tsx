@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -14,6 +15,7 @@ const shifts = ['Ambulance Call','Appointment','Birth Record','Blood Issue','Com
 const charges = ['select']
 
 const SlotList= () => {
+  
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>

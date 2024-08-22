@@ -75,7 +75,7 @@ const columns: GridColDef[] = [
     field: 'Action',
     minWidth: 120,
     headerName: 'Action',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
       <CustomSwitchField label=''/>
     )
   }
@@ -85,7 +85,6 @@ const columns: GridColDef[] = [
 const Patient = () => {
 
   // ** State
-  const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   return (

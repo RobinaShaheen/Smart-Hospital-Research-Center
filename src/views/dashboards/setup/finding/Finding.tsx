@@ -1,5 +1,5 @@
-// /* eslint-disable @typescript-eslint/no-unused-vars */
 
+// /* eslint-disable @typescript-eslint/no-unused-vars */
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
@@ -44,10 +44,12 @@ const FindingSideBarProps: React.FC<FindingSideBarProps> = ({ onSelectSetting })
   const handleClick = (setting:string) => {
     setSelected(setting);
     onSelectSetting(setting);
+    
     // Add any additional logic you need for when a setting is selected
   };
 
   return (
+
     <Grid container spacing={6}>
       <Grid item>
         <Card>
@@ -55,6 +57,7 @@ const FindingSideBarProps: React.FC<FindingSideBarProps> = ({ onSelectSetting })
             <OptionsWrapper>
               <StyledLink onClick={() => handleClick('finding')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'finding'? 'blue':'black'}}>Finding</StyledLink>
               <StyledLink onClick={() => handleClick('category')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'category'? 'blue':'black'}}>Category</StyledLink>
+              
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>

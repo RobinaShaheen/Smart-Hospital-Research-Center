@@ -82,6 +82,7 @@ const DoctorShiftTable = () => {
     ...defualtcolumns,
     
 ]
+
   return (
     <Card>
       <CardContent

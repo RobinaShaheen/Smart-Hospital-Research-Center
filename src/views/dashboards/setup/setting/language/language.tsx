@@ -162,7 +162,7 @@ const columns: GridColDef[] = [
     field: 'IsRTL',
     minWidth: 130,
     headerName: 'IsRTL',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
       <input type="checkbox"/>
     )
   },
@@ -171,7 +171,7 @@ const columns: GridColDef[] = [
     field: 'Action',
     minWidth: 120,
     headerName: 'Action',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
       <CustomSwitchField label=''/>
     )
   }
@@ -181,7 +181,6 @@ const columns: GridColDef[] = [
 const Languages = () => {
 
   // ** State
-  const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   return (

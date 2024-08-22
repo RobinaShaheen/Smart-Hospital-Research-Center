@@ -124,8 +124,8 @@ const [selectedFile, setSelectedFile] = useState<File | null>(null)
   const [showPassword, setShowPassword] = useState(false)
 
   const handleClickShowPassword = () => setShowPassword(!showPassword)
+  
   // ** State
-  const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   return (

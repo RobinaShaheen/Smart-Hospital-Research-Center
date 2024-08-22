@@ -78,7 +78,7 @@ const columns: GridColDef[] = [
     field: 'View',
     minWidth: 130,
     headerName: 'View',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
         <input type="checkbox" />
     )
   },
@@ -109,7 +109,6 @@ const columns: GridColDef[] = [
 const AssignPremission = () => {
 
   // ** State
-  const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   return (

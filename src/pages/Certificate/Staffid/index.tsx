@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography'
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import StaffIdCard from 'src/views/dashboards/Certificate/StaffId/staffIdCard'
+
 const Appointment = () => {
   return (
     <ApexChartWrapper>

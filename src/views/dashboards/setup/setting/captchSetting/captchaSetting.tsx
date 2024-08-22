@@ -66,7 +66,7 @@ const columns: GridColDef[] = [
     field: 'Action',
     minWidth: 120,
     headerName: 'Action',
-    renderCell: ({ row }: CellType) => (
+    renderCell: ({}: CellType) => (
       <CustomSwitchField label=''/>
     )
   }
