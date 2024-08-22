@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import MedicinCategory from 'src/pages/setup/pharmacy/medicineCategory'
 import Supplier from 'src/pages/setup/pharmacy/supplier'
 import MedicineDosage from 'src/pages/setup/pharmacy/medicineDosage'
 import DoseInterval from 'src/pages/setup/pharmacy/doseInterval'
 import DoseDuration from 'src/pages/setup/pharmacy/doseDuration'
-// import other setting components as needed
+
 
 const PharmacyContainer = ({ selectedSetting }: { selectedSetting: string }) => {
   const renderSetting = () => {

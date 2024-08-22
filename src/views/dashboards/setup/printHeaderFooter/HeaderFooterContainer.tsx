@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import OPDPrescription from './OPDPrescriptionForm'
 import OPDBill from './OPDBill'
@@ -16,7 +16,6 @@ import Operation from './Operation'
 import BloodBank from './BloodBank'
 import Ambulane from './Ambulance'
 import DischargeCard from './DischargesCard'
-// import other setting components as needed
 
 const HeaderFooterContainer = ({ selectedSetting }: { selectedSetting: string }) => {
   const renderSetting = () => {

@@ -1,3 +1,4 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
@@ -74,6 +75,7 @@ const defualtcolumns: GridColDef[] = [
 
 
 const FindingTable = () => {
+  
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
@@ -102,6 +104,7 @@ const FindingTable = () => {
       )
     }
 ]
+
   return (
     <Card>
       <CardContent

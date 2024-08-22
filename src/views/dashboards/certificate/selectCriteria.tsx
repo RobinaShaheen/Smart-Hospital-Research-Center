@@ -1,6 +1,6 @@
+
 // ** React Imports
 'use client'
-import { useState } from 'react'
 
 // ** Next Import
 import Link from 'next/link'
@@ -18,15 +18,12 @@ import MenuItem from '@mui/material/MenuItem'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
-// ** Custom Component Imports
-
 // Dummy Data for Dropdowns
 const modules = ['OPD', 'IPD']
 const pateintStatus = [ 'Discharge', 'Not Discharge']
 const certificateTemplates = ['Sample Patient File Cover']
 
 const SelectCriteria = () => {
-  const [showMoreDetails, setShowMoreDetails] = useState(false)
 
   return (
     <Card>
