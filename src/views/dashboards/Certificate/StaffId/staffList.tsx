@@ -132,7 +132,7 @@ const StaffList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Certificate/StaffId'
+          href='/certificate/StaffId'
           startIcon={<Icon icon='tabler:search' />}
         >
           Search
@@ -140,7 +140,7 @@ const StaffList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Certificate/StaffId'
+          href='/certificate/StaffId'
         >
           Generate
         </Button>

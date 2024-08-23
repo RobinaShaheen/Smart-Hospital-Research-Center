@@ -26,7 +26,7 @@ const PatientIdCard = () => {
           <Button
               component={Link}
               variant='contained'
-              href='/Certificate/PatientIdCard'
+              href='/certificate/PatientIdCard'
               startIcon={<Icon icon='tabler:id' />}
               sx={{ mb: 4 }}
             >

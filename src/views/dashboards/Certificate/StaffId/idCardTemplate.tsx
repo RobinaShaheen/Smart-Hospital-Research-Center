@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import { FC } from 'react'
@@ -5,8 +6,7 @@ import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import { useState } from 'react'
 import Button from '@mui/material/Button'
-import { styled } from '@mui/material/styles'
-import Box, { BoxProps } from '@mui/material/Box'
+import Box from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import Switch from '@mui/material/Switch';
@@ -15,11 +15,7 @@ import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import Icon from 'src/@core/components/icon'
 import StaffIdCardList from './staffIdCardList'
-const OptionsWrapper = styled(Box)<BoxProps>(() => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between'
-}))
+
 
 const StaffIdCardTemplate = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)

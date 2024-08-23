@@ -82,7 +82,6 @@ const columns: GridColDef[] = [
 const PatientList = () => {
 
   // ** State
-  const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   return (
@@ -100,7 +99,7 @@ const PatientList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Certificate/PatientId'
+          href='/certificate/PatientId'
           startIcon={<Icon icon='tabler:search' />}
         >
           Search
@@ -108,7 +107,7 @@ const PatientList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Certificate/PatientId'
+          href='/certificate/PatientId'
         >
           Generate
         </Button>
