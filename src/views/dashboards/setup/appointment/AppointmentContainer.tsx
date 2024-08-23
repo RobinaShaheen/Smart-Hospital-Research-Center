@@ -1,8 +1,8 @@
 import React from 'react'
 import Grid from '@mui/material/Grid'
-import Slot from 'src/pages/Setup/appointment/slot'
-import DoctorShift from 'src/pages/Setup/appointment/doctorShift'
-import Shift from 'src/pages/Setup/appointment/shift'
+import Slot from 'src/pages/setup/appointment/slot'
+import DoctorShift from 'src/pages/setup/appointment/doctorShift'
+import Shift from 'src/pages/setup/appointment/shift'
 
 // import other setting components as needed
 
