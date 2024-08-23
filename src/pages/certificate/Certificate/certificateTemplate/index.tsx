@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import CertificateTemplate from 'src/views/dashboards/certificate/certificateTemplate'
+import CertificateTemplate from 'src/views/dashboards/Certificate/certificateTemplate'
 
 const CertificateTmplate = () => {
   
