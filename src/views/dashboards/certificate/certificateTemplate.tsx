@@ -111,7 +111,7 @@ const CertificateTemplate = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Certificate/Certificate/AddCertificateTemplate'
+          href='/certificate/Certificate/AddCertificateTemplate'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Certificate Template

@@ -34,7 +34,7 @@ const SelectCriteria = () => {
           <Typography variant='h6'>Search Criteria</Typography>
           <Button
             component={Link}
-            href='/Certificate/Certificate/certificateTemplate'
+            href='/certificate/Certificate/certificateTemplate'
             variant='contained'
             startIcon={<Icon icon='tabler:receipt' />}
           >

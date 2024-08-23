@@ -7,8 +7,6 @@ import Button from '@mui/material/Button'
 import Link from 'next/link'
 import Icon from 'src/@core/components/icon'
 import MenuItem from '@mui/material/MenuItem'
-import { styled } from '@mui/material/styles'
-import Box, { BoxProps } from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import StaffList from './staffList'
@@ -32,6 +30,7 @@ const StaffIdCard = () => {
             </Button>
             <CustomTextField fullWidth label='Role *' sx={{ mb: 4 }}>
                 <MenuItem value=''>Select</MenuItem>
+                
                 {/* Add patient options here */}
             </CustomTextField>
             <CustomTextField fullWidth label='ID Card Template *' sx={{ mb: 2 }}>
