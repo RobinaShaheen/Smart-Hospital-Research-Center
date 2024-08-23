@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-<<<<<<< HEAD
-
-=======
->>>>>>> smart/updated
 import CustomFieldContainer from 'src/views/dashboards/setup/customField/CutomFieldContainer'
 import AccordionCustomized from 'src/views/dashboards/setup/customField/Accordion'
 
