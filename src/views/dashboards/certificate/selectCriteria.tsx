@@ -1,8 +1,10 @@
+
 // ** React Imports
 'use client'
-import { useState } from 'react'
+
 // ** Next Import
 import Link from 'next/link'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -12,15 +14,16 @@ import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import TextField from '@mui/material/TextField'
 import MenuItem from '@mui/material/MenuItem'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
+
 // Dummy Data for Dropdowns
 const modules = ['OPD', 'IPD']
 const pateintStatus = [ 'Discharge', 'Not Discharge']
 const certificateTemplates = ['Sample Patient File Cover']
 
 const SelectCriteria = () => {
-  const [showMoreDetails, setShowMoreDetails] = useState(false)
 
   return (
     <Card>
@@ -29,7 +32,7 @@ const SelectCriteria = () => {
           <Typography variant='h6'>Search Criteria</Typography>
           <Button
             component={Link}
-            href='/certificate/Certificate/certificateTemplate'
+            href='/Certificate/Certificate/certificateTemplate'
             variant='contained'
             startIcon={<Icon icon='tabler:receipt' />}
           >
