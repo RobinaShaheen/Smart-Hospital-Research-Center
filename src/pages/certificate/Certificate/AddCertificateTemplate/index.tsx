@@ -10,6 +10,7 @@ import AddCertificateTemplate from 'src/views/dashboards/Certificate/addCertific
 const AddCertificateTmplate = () => {
   
   return (
+
     <ApexChartWrapper>
       <Typography
         variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')
