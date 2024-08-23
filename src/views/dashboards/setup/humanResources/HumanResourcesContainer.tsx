@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
-import Leave from 'src/pages/Setup/humanResources/leave'
-import Department from 'src/pages/Setup/humanResources/department'
-import Designation from 'src/pages/Setup/humanResources/designation'
-import Specialist from 'src/pages/Setup/humanResources/specialist'
+
+import Leave from 'src/pages/setup/humanResources/leave'
+import Department from 'src/pages/setup/humanResources/department'
+import Designation from 'src/pages/setup/humanResources/designation'
+import Specialist from 'src/pages/setup/humanResources/specialist'
 // import other setting components as needed
 
 const HumanResourcesContainer = ({ selectedSetting }: { selectedSetting: string }) => {

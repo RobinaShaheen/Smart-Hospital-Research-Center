@@ -1,7 +1,7 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
-
 import Link from 'next/link'
 
 // ** MUI Imports
@@ -13,6 +13,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import Tooltip from '@mui/material/Tooltip'
 import IconButton from '@mui/material/IconButton'
 import Button from '@mui/material/Button'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
@@ -177,6 +178,7 @@ const defaultColumns: GridColDef[] = [
 ]
 
 const ChargesTypeTable = () => {
+  
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })

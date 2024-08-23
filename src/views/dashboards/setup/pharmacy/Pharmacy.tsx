@@ -1,5 +1,5 @@
-// /* eslint-disable @typescript-eslint/no-unused-vars */
 
+// /* eslint-disable @typescript-eslint/no-unused-vars */
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import { styled } from '@mui/material/styles'
@@ -38,6 +38,7 @@ interface HospitalChargesSideBarProps {
 }
 
 const PharmacySideBar: React.FC<HospitalChargesSideBarProps> = ({ onSelectSetting }) => {
+  
   return (
     <Grid container spacing={6}>
       <Grid item>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import { Person as PersonIcon } from '@mui/icons-material';
-
+import Link from 'next/link';
 const RolesList: React.FC = () => {
   const roles = [
     { role: 'Admin', count: 1 },
@@ -12,7 +12,7 @@ const RolesList: React.FC = () => {
     { role: 'Radiologist', count: 1 },
     { role: 'Super Admin', count: 1 },
     { role: 'Receptionist', count: 1 },
-    { role: 'Nurse', count: 2 },
+    { role: 'Nurse', count: 2},
   ];
 
   return (
