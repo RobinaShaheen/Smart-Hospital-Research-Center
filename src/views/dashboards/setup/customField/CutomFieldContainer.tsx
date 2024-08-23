@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '@mui/material/Grid'
 
 // import Findings from 'src/pages/setup/finding/finding'
-import Category from 'src/pages/Setup/finding/category'
+import Category from 'src/pages/setup/finding/category'
 import AddCustomField from 'src/pages/setup/customField/addCustomField.tsx'
 
 // import other setting components as needed
