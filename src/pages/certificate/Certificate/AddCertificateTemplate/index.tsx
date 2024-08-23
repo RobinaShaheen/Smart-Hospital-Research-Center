@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import AddCertificateTemplate from 'src/views/dashboards/Certificate/addCertificateTemplate'
 
+
 const AddCertificateTmplate = () => {
   
   return (
