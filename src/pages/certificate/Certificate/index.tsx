@@ -8,7 +8,10 @@ import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import CertificateTable from 'src/views/dashboards/Certificate/certificateTable'
 import SelectCriteria from 'src/views/dashboards/Certificate/selectCriteria'
 
+// ** Icon Imports
+
 const Certificate = () => {
+  
   return (
     <ApexChartWrapper>  
       <Typography
