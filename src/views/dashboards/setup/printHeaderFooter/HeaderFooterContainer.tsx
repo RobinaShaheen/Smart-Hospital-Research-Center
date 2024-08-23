@@ -23,41 +23,41 @@ const HeaderFooterContainer = ({ selectedSetting }: { selectedSetting: string })
   const renderSetting = () => {
     switch (selectedSetting) {
       case 'opdPrescrition':
-        return <div><OPDPrescription/></div>;
+        return <OPDPrescription/>;
       case 'opdBill':
-        return <div><OPDBill/></div>;
+        return <OPDBill/>;
       case 'ipdPrescription':
-        return <div><IPDPrescription/></div>;
+        return <IPDPrescription/>;
       case 'ipdBill':
-        return <div><IPDBill/></div>;
+        return <IPDBill/>;
       case 'bill':
-        return <div><Bill/></div>;
+        return <Bill/>;
       case 'pharmacyBill':
-        return <div><PharmacyBill/></div>;
+        return <PharmacyBill/>;
       case 'paySlip':
-        return <div><PaySlip/></div>;
+        return <PaySlip/>;
       case 'paymentReceipt':
-        return <div><PaymentReceipt/></div>;
+        return <PaymentReceipt/>;
       case 'birthRecord':
-        return <div><BirthRecord/></div>
+        return <BirthRecord/>
       case 'deathRocord':
-        return <div><DeathRecord/></div>
+        return <DeathRecord/>
       case 'pathology':
-        return <div><Pathology/></div>
+        return <Pathology/>
       case 'radiology':
-        return <div><Radiology/></div>
+        return <Radiology/>
       case 'operation':
-        return <div><Operation/></div>
+        return <Operation/>
       case 'bloodBank':
-        return <div><BloodBank/></div>
+        return <BloodBank/>
       case 'ambulance':
-        return <div><Ambulane/></div>
+        return <Ambulane/>
       case 'dischargeCard':
-        return <div><DischargeCard/></div>
+        return <DischargeCard/>
       
         // Add cases for other settings components
       default:
-        return <div><OPDPrescription/></div>;
+        return <OPDPrescription/>;
     }
   }
 

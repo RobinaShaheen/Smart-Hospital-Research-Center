@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** MUI Imports
 import Card from '@mui/material/Card'
@@ -9,8 +10,10 @@ import CustomTextField from 'src/@core/components/mui/text-field'
 import { Typography } from '@mui/material'
 import IconButton from '@mui/material/IconButton'
 import { useState } from 'react'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
+
 const AddCertificateTemplate = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
 

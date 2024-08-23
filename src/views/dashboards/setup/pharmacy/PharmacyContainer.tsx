@@ -14,17 +14,17 @@ const PharmacyContainer = ({ selectedSetting }: { selectedSetting: string }) => 
       case 'medicineCategory':
         return <MedicinCategory />;
       case 'supplier':
-        return <div><Supplier/></div>;
+        return <Supplier/>;
       case 'medicineDosage':
-        return <div><MedicineDosage/></div>;
+        return <MedicineDosage/>;
       case 'doseInterval':
-        return <div><DoseInterval/></div>;
+        return <DoseInterval/>;
       case 'doseDuration':
-        return <div><DoseDuration/></div>;
+        return <DoseDuration/>;
       
         // Add cases for other settings components
       default:
-        return <div><MedicinCategory/></div>;
+        return <MedicinCategory/>;
     }
   }
 

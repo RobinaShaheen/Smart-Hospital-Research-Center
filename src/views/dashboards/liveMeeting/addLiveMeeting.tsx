@@ -1,15 +1,13 @@
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ** React Imports
-'use client'
-import { useState } from 'react'
 import Link from 'next/link'
 
 // ** MUI Imports
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
-import Box, { BoxProps } from '@mui/material/Box'
+import Box from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CustomTextField from 'src/@core/components/mui/text-field'
 import { Typography } from '@mui/material'
@@ -17,15 +15,8 @@ import { Typography } from '@mui/material'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
-//Dummy Data
-const modules = ['OPD', 'IPD']
-const pateintStatus = [ '']
-const certificateTemplates = ['Doctor ABC','Doctor LMN','Doctor XYZ']
-
 const AddLiveMeeting = () => {
-    const [value, setValue] = useState<string>('')
-    const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
-
+    
   return (
     
     <Grid container spacing={6} display={'flex'}>

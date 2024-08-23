@@ -44,7 +44,7 @@ const AppointmentSideBarProps: React.FC<AppointmentSideBarProps> = ({ onSelectSe
   const handleClick = (setting:string) => {
     setSelected(setting);
     onSelectSetting(setting);
-
+    
     // Add any additional logic you need for when a setting is selected
   };
 

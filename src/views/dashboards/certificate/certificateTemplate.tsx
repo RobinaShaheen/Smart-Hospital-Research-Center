@@ -2,8 +2,10 @@
 // ** React Imports
 'use client'
 import { useState } from 'react'
+
 // ** Next Import
 import Link from 'next/link'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -13,8 +15,10 @@ import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import Tooltip from '@mui/material/Tooltip'
 import IconButton from '@mui/material/IconButton'
+
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
+
 // ** Custom Component Imports
 import CustomTextField from 'src/@core/components/mui/text-field'
 
@@ -57,6 +61,7 @@ const defaultColumns: GridColDef[] = [
 ]
 
 const CertificateTemplate = () => {
+
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
@@ -106,7 +111,7 @@ const CertificateTemplate = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/certificate/Certificate/AddCertificateTemplate'
+          href='/Certificate/Certificate/AddCertificateTemplate'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Certificate Template

@@ -5,10 +5,16 @@ import Typography from '@mui/material/Typography'
 
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
+<<<<<<< HEAD
 import CertificateTemplate from 'src/views/dashboards/Certificate/certificateTemplate'
+=======
+import CertificateTemplate from 'src/views/dashboards/Certificate/certificateTemplate'
+>>>>>>> smart/updated
 
 const CertificateTmplate = () => {
+  
   return (
+    
     <ApexChartWrapper>
       <Typography
         variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')

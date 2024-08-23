@@ -16,7 +16,7 @@ import Image from 'next/image'
 import Icon from 'src/@core/components/icon'
 
 const Banners = () => {
-  
+
   return (
     <Card>
         <CardContent>

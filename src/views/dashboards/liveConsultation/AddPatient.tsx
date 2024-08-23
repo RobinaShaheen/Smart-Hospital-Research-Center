@@ -23,8 +23,6 @@ const gender = ['Male','Female']
 const bloodGroups = ['select','A+','A-','B+','B-','O+','O-','AB+', 'AB-']
 const maritalStatus = ['select','Single','Married','Widowed','Separated','Not Spacified']
 
-// const certificateTemplates = ['Doctor ABC','Doctor LMN','Doctor XYZ']
-
 const AddPatient = () => {
     const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
@@ -33,8 +31,8 @@ const AddPatient = () => {
         setSelectedFile(event.target.files[0])
       }
     }
-
-  return (
+    
+    return (
     
     <Grid container spacing={6} display={'flex'}>
       <Grid item xs={12} >

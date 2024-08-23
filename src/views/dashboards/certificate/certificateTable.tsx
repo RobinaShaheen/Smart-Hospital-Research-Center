@@ -1,8 +1,11 @@
+
 // ** React Imports
 'use client'
 import { useState } from 'react'
+
 // ** Next Import
 import Link from 'next/link'
+
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -10,6 +13,7 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
+
 // ** Dummy Data
 const dummyData = [
   {
@@ -72,33 +76,13 @@ const defaultColumns: GridColDef[] = [
 ]
 
 const CertificateTable = () => {
+
   // ** State
-  const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
 
   const columns: GridColDef[] = [
     ...defaultColumns,
-    // {
-    //   flex: 0.1,
-    //   minWidth: 130,
-    //   sortable: false,
-    //   field: 'actions',
-    //   headerName: 'Actions',
-    //   renderCell: ({ row }: CellType) => (
-    //     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-    //       <Tooltip title='Delete Content'>
-    //         <IconButton size='small' onClick={() => console.log('Delete', row.id)}>
-    //           <Icon icon='tabler:trash' />
-    //         </IconButton>
-    //       </Tooltip>
-    //       <Tooltip title='Download Content'>
-    //         <IconButton size='small' onClick={() => console.log('Download', row.id)}>
-    //           <Icon icon='tabler:download' />
-    //         </IconButton>
-    //       </Tooltip>
-    //     </Box>
-    //   )
-    // }
+    
   ]
 
   return (

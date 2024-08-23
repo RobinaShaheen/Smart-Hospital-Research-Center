@@ -2,7 +2,6 @@
 // ** React Imports
 'use client'
 import { useState } from 'react'
-
 import Link from 'next/link'
 
 // ** MUI Imports
@@ -178,6 +177,7 @@ const defaultColumns: GridColDef[] = [
 ]
 
 const ChargesTypeTable = () => {
+  
   // ** State
   const [value, setValue] = useState<string>('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 6 })
