@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid'
 
 // import Findings from 'src/pages/setup/finding/finding'
 import Category from 'src/pages/Setup/finding/category'
-import AddCustomField from 'src/pages/Setup/customField/addCustomField.tsx'
+import AddCustomField from 'src/pages/setup/customField/addCustomField.tsx'
 
 // import other setting components as needed
 
