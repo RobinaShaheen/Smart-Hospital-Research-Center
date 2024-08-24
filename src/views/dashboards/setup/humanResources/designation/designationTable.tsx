@@ -109,7 +109,7 @@ const DesignationTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/Setup/humanResources/designation/AddDesignation'
+      href='/setup/humanResources/designation/AddDesignation'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Designation

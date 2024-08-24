@@ -120,7 +120,7 @@ const FindingTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Setup/finding/finding/AddFindings'
+          href='/setup/finding/finding/AddFindings'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Finding
