@@ -139,7 +139,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:"Hospital Charges",
-          path:'/Setup/hospitalCharges'
+          path:'/setup/hospitalCharges'
         },
         {
           title: 'Bed',
@@ -147,7 +147,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Print Header Footer',
-          path:'/Setup/printHeaderFooter'
+          path:'/setup/printHeaderFooter'
         },
         {
           title: 'Front Office',
@@ -159,7 +159,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Pharmacy',
-          path:'/Setup/pharmacy'
+          path:'/setup/pharmacy'
         },
         {
           title: 'Pathology',
@@ -167,7 +167,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Radiology',
-          path:'/Setup/radiology'
+          path:'/setup/radiology'
         },
         {
           title: 'Blood Bank',
@@ -179,7 +179,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Finding',
-          path:'/Setup/finding'
+          path:'/setup/finding'
         },
         {
           title: 'Zoom Setting',
@@ -191,7 +191,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Human Resources',
-          path:'/Setup/humanResources'
+          path:'/setup/humanResources'
         },
         {
           title: 'Referral',
@@ -199,7 +199,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Appointment',
-          path:'/Setup/appointment'
+          path:'/setup/appointment'
         },
         {
           title: 'Inventory',
@@ -207,7 +207,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Custom Field',
-          path:'/Setup/customField'
+          path:'/setup/customField'
         },
       ]
     },
