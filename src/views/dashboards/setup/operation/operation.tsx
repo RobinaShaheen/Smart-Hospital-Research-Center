@@ -51,8 +51,8 @@ const OperationSideBar: React.FC<SettingSideBarProps> = ({ onSelectOperation }) 
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('OperationCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'OperationCategory' ? 'blue' : '#000', fontSize: '20px'}}>Operation Category</StyledLink>
-              <StyledLink onClick={() => handleClick('OperationList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'OperationList' ? 'blue' : '#000', fontSize: '20px'}}>Operation</StyledLink>
+              <StyledLink onClick={() => handleClick('OperationCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'OperationCategory' ? 'blue' : '#000', fontSize: '16px'}}>Operation Category</StyledLink>
+              <StyledLink onClick={() => handleClick('OperationList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'OperationList' ? 'blue' : '#000', fontSize: '16px'}}>Operation</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
