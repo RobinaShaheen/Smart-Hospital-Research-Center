@@ -94,7 +94,7 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'Certificate',
-          path: '/Certificate/Certificate'
+          path: '/certificate/Certificate'
         },
         {
           title: 'Patient ID Card',

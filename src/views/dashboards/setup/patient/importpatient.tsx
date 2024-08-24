@@ -162,7 +162,7 @@ const [selectedFile, setSelectedFile] = useState<File | null>(null)
         <Button
           component={Link}
           variant='contained'
-          href='/Setup/ImportPatient'
+          href='/Setup/PatientSetup/ImportPatient'
           startIcon={<Icon icon='tabler:download' />}
           sx={{mb: 4}}
         >
