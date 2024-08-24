@@ -99,7 +99,7 @@ const PatientList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/certificate/PatientId'
+          href='/Certificate/PatientId'
           startIcon={<Icon icon='tabler:search' />}
         >
           Search
@@ -107,7 +107,7 @@ const PatientList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/certificate/PatientId'
+          href='/Certificate/PatientId'
         >
           Generate
         </Button>
