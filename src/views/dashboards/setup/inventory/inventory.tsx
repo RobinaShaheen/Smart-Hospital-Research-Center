@@ -51,9 +51,9 @@ const InventorySideBar: React.FC<SettingSideBarProps> = ({ onSelectInventory }) 
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('ItemCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ItemCategory'? 'blue': '#000', fontSize: '20px'}}>Item Category</StyledLink>
-              <StyledLink onClick={() => handleClick('ItemStore')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ItemStore'? 'blue': '#000', fontSize: '20px'}}>Item Store</StyledLink>
-              <StyledLink onClick={() => handleClick('ItemSupplier')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ItemSupplier'? 'blue': '#000', fontSize: '20px'}}>Item Supplier</StyledLink>
+              <StyledLink onClick={() => handleClick('ItemCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ItemCategory'? 'blue': '#000', fontSize: '16px'}}>Item Category</StyledLink>
+              <StyledLink onClick={() => handleClick('ItemStore')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ItemStore'? 'blue': '#000', fontSize: '16px'}}>Item Store</StyledLink>
+              <StyledLink onClick={() => handleClick('ItemSupplier')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ItemSupplier'? 'blue': '#000', fontSize: '16px'}}>Item Supplier</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
