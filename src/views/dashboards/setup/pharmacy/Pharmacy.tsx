@@ -45,11 +45,11 @@ const PharmacySideBar: React.FC<HospitalChargesSideBarProps> = ({ onSelectSettin
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectSetting('madicineCategory')} sx={{"&:focus":{textDecoration:'underline'}}}>Medicine Category</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('supplier')} sx={{"&:focus":{textDecoration:'underline'}}}>Supplier</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('medicineDosage')} sx={{"&:focus":{textDecoration:'underline'}}}>Medicine Dosage</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('doseInterval')} sx={{"&:focus":{textDecoration:'underline'}}}>Dose Interval</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('doseDuration')} sx={{"&:focus":{textDecoration:'underline'}}}>Dose Duration</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('madicineCategory')} sx={{"&:focus":{textDecoration:'none'}}}>Medicine Category</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('supplier')} sx={{"&:focus":{textDecoration:'none'}}}>Supplier</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('medicineDosage')} sx={{"&:focus":{textDecoration:'none'}}}>Medicine Dosage</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('doseInterval')} sx={{"&:focus":{textDecoration:'none'}}}>Dose Interval</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('doseDuration')} sx={{"&:focus":{textDecoration:'none'}}}>Dose Duration</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
