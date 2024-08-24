@@ -54,10 +54,10 @@ const HumanResourcesSideBarProps: React.FC<HumanResourcesSideBarProps> = ({ onSe
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('leaveType')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'leaveType'? 'blue':'black'}}>Leave Type</StyledLink>
-              <StyledLink onClick={() => handleClick('department')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'department'? 'blue':'black'}}>Department</StyledLink>
-              <StyledLink onClick={() => handleClick('designation')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'designation'? 'blue':'black'}}>Designation</StyledLink>
-              <StyledLink onClick={() => handleClick('specialist')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'specialist'? 'blue':'black'}}>Specialist</StyledLink>
+              <StyledLink onClick={() => handleClick('leaveType')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'leaveType'? 'blue':'black'}}>Leave Type</StyledLink>
+              <StyledLink onClick={() => handleClick('department')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'department'? 'blue':'black'}}>Department</StyledLink>
+              <StyledLink onClick={() => handleClick('designation')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'designation'? 'blue':'black'}}>Designation</StyledLink>
+              <StyledLink onClick={() => handleClick('specialist')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'specialist'? 'blue':'black'}}>Specialist</StyledLink>
              
               {/* Add more settings links as needed */}
             </OptionsWrapper>
