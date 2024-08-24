@@ -54,7 +54,7 @@ const BloodBankSideBar: React.FC<SettingSideBarProps> = ({ onSelectBloodBank }) 
                 onClick={() => handleClick('Products')}
                 sx={{
                   color: selected === 'Products' ? 'blue' : '#000', // Apply blue color if selected
-                  fontSize: '20px',
+                  fontSize: '16px',
                   '&:focus': { color: 'blue' }
                 }}
               >
