@@ -50,8 +50,8 @@ const SymptomsSideBar: React.FC<SettingSideBarProps> = ({ onSelectSymptoms }) =>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('SymptomsHead')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SymptomsHead' ? 'blue' : '#000', fontSize: '20px'}}>Symptoms Head</StyledLink>
-              <StyledLink onClick={() => handleClick('SymptomsType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SymptomsType' ? 'blue' : '#000', fontSize: '20px'}}>Symptoms Type</StyledLink>
+              <StyledLink onClick={() => handleClick('SymptomsHead')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SymptomsHead' ? 'blue' : '#000', fontSize: '16px'}}>Symptoms Head</StyledLink>
+              <StyledLink onClick={() => handleClick('SymptomsType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SymptomsType' ? 'blue' : '#000', fontSize: '16px'}}>Symptoms Type</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
