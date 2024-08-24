@@ -101,7 +101,7 @@ const UnitTypeTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/Setup/hospitalCharges/UnitType/AddUnitType'
+      href='/setup/hospitalCharges/UnitType/AddUnitType'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Unit Type
