@@ -147,7 +147,7 @@ const navigation = (): VerticalNavItemsType => {
         },
         {
           title:'Print Header Footer',
-          path:'/Setup/printHeaderFooter'
+          path:'/setup/printHeaderFooter'
         },
         {
           title: 'Front Office',
