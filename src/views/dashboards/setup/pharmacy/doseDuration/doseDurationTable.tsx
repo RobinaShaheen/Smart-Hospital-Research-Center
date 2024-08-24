@@ -96,7 +96,7 @@ const DoseDuration = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Setup/pharmacy/doseDuration/AddDoseDuration'
+          href='/setup/pharmacy/doseDuration/AddDoseDuration'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Dose Duration
