@@ -50,9 +50,9 @@ const PathologySideBar: React.FC<SettingSideBarProps> = ({ onSelectPathology }) 
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('PathologyCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PathologyCategory' ? 'blue' : '#000', fontSize: '20px'}}>Pathology Category</StyledLink>
-              <StyledLink onClick={() => handleClick('Unit')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Unit' ? 'blue' : '#000', fontSize: '20px'}}>Unit</StyledLink>
-              <StyledLink onClick={() => handleClick('PathologyParameter')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PathologyParameter' ? 'blue' : '#000', fontSize: '20px'}}>Pathology Parameter</StyledLink>
+              <StyledLink onClick={() => handleClick('PathologyCategory')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PathologyCategory' ? 'blue' : '#000', fontSize: '16px'}}>Pathology Category</StyledLink>
+              <StyledLink onClick={() => handleClick('Unit')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Unit' ? 'blue' : '#000', fontSize: '16px'}}>Unit</StyledLink>
+              <StyledLink onClick={() => handleClick('PathologyParameter')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PathologyParameter' ? 'blue' : '#000', fontSize: '16px'}}>Pathology Parameter</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
