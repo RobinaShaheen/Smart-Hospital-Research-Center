@@ -50,21 +50,21 @@ const SettingSideBar: React.FC<SettingSideBarProps> = ({ onSelectSetting }) => {
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('GeneralSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'GeneralSetting' ? 'blue' : '#000', fontSize: '20px'}}>General Setting</StyledLink>
-              <StyledLink onClick={() => handleClick('NotificationSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'NotificationSetting' ? 'blue' : '#000', fontSize: '20px'}}>Notification Setting</StyledLink>
-              <StyledLink onClick={() => handleClick('SystemNotificationSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SystemNotificationSetting' ? 'blue' : '#000', fontSize: '20px'}}>System Notification Setting</StyledLink>
-              <StyledLink onClick={() => handleClick('SMSSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SMSSetting' ? 'blue' : '#000', fontSize: '20px'}}>SMS Setting</StyledLink>
-              <StyledLink onClick={() => handleClick('EmailSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'EmailSetting' ? 'blue' : '#000', fontSize: '20px'}}>Email Setting</StyledLink>
-              <StyledLink onClick={() => handleClick('PaymentMethod')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PaymentMethod' ? 'blue' : '#000', fontSize: '20px'}}>Payment Method</StyledLink>
-              <StyledLink onClick={() => handleClick('FrontCMSSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'FrontCMSSetting' ? 'blue' : '#000', fontSize: '20px'}}>Front CMS Setting</StyledLink>
-              <StyledLink onClick={() => handleClick('PrefixSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PrefixSetting' ? 'blue' : '#000', fontSize: '20px'}}>Prefix Setting</StyledLink>
-              <StyledLink onClick={() => handleClick('RolePremission')} sx={{"&:focus": {color: 'blue'}, color: selected === 'RolePremission' ? 'blue' : '#000', fontSize: '20px'}}>Role Premission</StyledLink>
-              <StyledLink onClick={() => handleClick('BackupRestore')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BackupRestore' ? 'blue' : '#000', fontSize: '20px'}}>Backup Restore</StyledLink>
-              <StyledLink onClick={() => handleClick('Languages')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Languages' ? 'blue' : '#000', fontSize: '20px'}}>Languages</StyledLink>
+              <StyledLink onClick={() => handleClick('GeneralSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'GeneralSetting' ? 'blue' : '#000', fontSize: '16px'}}>General Setting</StyledLink>
+              <StyledLink onClick={() => handleClick('NotificationSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'NotificationSetting' ? 'blue' : '#000', fontSize: '16px'}}>Notification Setting</StyledLink>
+              <StyledLink onClick={() => handleClick('SystemNotificationSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SystemNotificationSetting' ? 'blue' : '#000', fontSize: '16px'}}>System Notification Setting</StyledLink>
+              <StyledLink onClick={() => handleClick('SMSSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SMSSetting' ? 'blue' : '#000', fontSize: '16px'}}>SMS Setting</StyledLink>
+              <StyledLink onClick={() => handleClick('EmailSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'EmailSetting' ? 'blue' : '#000', fontSize: '16px'}}>Email Setting</StyledLink>
+              <StyledLink onClick={() => handleClick('PaymentMethod')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PaymentMethod' ? 'blue' : '#000', fontSize: '16px'}}>Payment Method</StyledLink>
+              <StyledLink onClick={() => handleClick('FrontCMSSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'FrontCMSSetting' ? 'blue' : '#000', fontSize: '16px'}}>Front CMS Setting</StyledLink>
+              <StyledLink onClick={() => handleClick('PrefixSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'PrefixSetting' ? 'blue' : '#000', fontSize: '16px'}}>Prefix Setting</StyledLink>
+              <StyledLink onClick={() => handleClick('RolePremission')} sx={{"&:focus": {color: 'blue'}, color: selected === 'RolePremission' ? 'blue' : '#000', fontSize: '16px'}}>Role Premission</StyledLink>
+              <StyledLink onClick={() => handleClick('BackupRestore')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BackupRestore' ? 'blue' : '#000', fontSize: '16px'}}>Backup Restore</StyledLink>
+              <StyledLink onClick={() => handleClick('Languages')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Languages' ? 'blue' : '#000', fontSize: '16px'}}>Languages</StyledLink>
               <StyledLink onClick={() => handleClick('Users')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Users' ? 'blue' : '#000', fontSize: '20px'}}>Users</StyledLink>
-              <StyledLink onClick={() => handleClick('CaptchaSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'CaptchaSetting' ? 'blue' : '#000', fontSize: '20px'}}>CaptchaSetting</StyledLink>
-              <StyledLink onClick={() => handleClick('Modules')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Modules' ? 'blue' : '#000', fontSize: '20px'}}>Modules</StyledLink>
-              <StyledLink onClick={() => handleClick('SystemUpdate')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SystemUpdate' ? 'blue' : '#000', fontSize: '20px'}}>System Update</StyledLink>
+              <StyledLink onClick={() => handleClick('CaptchaSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'CaptchaSetting' ? 'blue' : '#000', fontSize: '16px'}}>CaptchaSetting</StyledLink>
+              <StyledLink onClick={() => handleClick('Modules')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Modules' ? 'blue' : '#000', fontSize: '16px'}}>Modules</StyledLink>
+              <StyledLink onClick={() => handleClick('SystemUpdate')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SystemUpdate' ? 'blue' : '#000', fontSize: '16px'}}>System Update</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
