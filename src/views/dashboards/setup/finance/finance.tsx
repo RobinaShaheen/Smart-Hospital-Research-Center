@@ -51,8 +51,8 @@ const FinanceSideBar: React.FC<SettingSideBarProps> = ({ onSelectFinance }) => {
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('IncomeHead')} sx={{"&:focus": {color: 'blue'}, color: selected ===  'IncomeHead' ? 'blue' : '#000', fontSize: '20px'}}>Income Head</StyledLink>
-              <StyledLink onClick={() => handleClick('ExpenseHead')} sx={{"&:focus": {color: 'blue'}, color: selected ===  'ExpenseHead' ? 'blue' : '#000', fontSize: '20px'}}>Expense Head</StyledLink>
+              <StyledLink onClick={() => handleClick('IncomeHead')} sx={{"&:focus": {color: 'blue'}, color: selected ===  'IncomeHead' ? 'blue' : '#000', fontSize: '16px'}}>Income Head</StyledLink>
+              <StyledLink onClick={() => handleClick('ExpenseHead')} sx={{"&:focus": {color: 'blue'}, color: selected ===  'ExpenseHead' ? 'blue' : '#000', fontSize: '16px'}}>Expense Head</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
