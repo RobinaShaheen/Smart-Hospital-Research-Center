@@ -55,8 +55,8 @@ const FindingSideBarProps: React.FC<FindingSideBarProps> = ({ onSelectSetting })
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('finding')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'finding'? 'blue':'black'}}>Finding</StyledLink>
-              <StyledLink onClick={() => handleClick('category')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'category'? 'blue':'black'}}>Category</StyledLink>
+              <StyledLink onClick={() => handleClick('finding')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'finding'? 'blue':'black'}}>Finding</StyledLink>
+              <StyledLink onClick={() => handleClick('category')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'category'? 'blue':'black'}}>Category</StyledLink>
               
               {/* Add more settings links as needed */}
             </OptionsWrapper>
