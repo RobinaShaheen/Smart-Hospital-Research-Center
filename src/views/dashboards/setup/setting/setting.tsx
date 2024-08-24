@@ -61,7 +61,7 @@ const SettingSideBar: React.FC<SettingSideBarProps> = ({ onSelectSetting }) => {
               <StyledLink onClick={() => handleClick('RolePremission')} sx={{"&:focus": {color: 'blue'}, color: selected === 'RolePremission' ? 'blue' : '#000', fontSize: '16px'}}>Role Premission</StyledLink>
               <StyledLink onClick={() => handleClick('BackupRestore')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BackupRestore' ? 'blue' : '#000', fontSize: '16px'}}>Backup Restore</StyledLink>
               <StyledLink onClick={() => handleClick('Languages')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Languages' ? 'blue' : '#000', fontSize: '16px'}}>Languages</StyledLink>
-              <StyledLink onClick={() => handleClick('Users')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Users' ? 'blue' : '#000', fontSize: '20px'}}>Users</StyledLink>
+              <StyledLink onClick={() => handleClick('Users')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Users' ? 'blue' : '#000', fontSize: '16px'}}>Users</StyledLink>
               <StyledLink onClick={() => handleClick('CaptchaSetting')} sx={{"&:focus": {color: 'blue'}, color: selected === 'CaptchaSetting' ? 'blue' : '#000', fontSize: '16px'}}>CaptchaSetting</StyledLink>
               <StyledLink onClick={() => handleClick('Modules')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Modules' ? 'blue' : '#000', fontSize: '16px'}}>Modules</StyledLink>
               <StyledLink onClick={() => handleClick('SystemUpdate')} sx={{"&:focus": {color: 'blue'}, color: selected === 'SystemUpdate' ? 'blue' : '#000', fontSize: '16px'}}>System Update</StyledLink>
