@@ -45,22 +45,22 @@ const HeaderFooterSideBarProps: React.FC<HeaderFooterSideBarProps> = ({ onSelect
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectSetting('opdPrescrition')} sx={{"&:focus": { textDecoration: 'underline' }}}>OPD Prescription</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('opdBill')} sx={{"&:focus": { textDecoration: 'underline' }}}>OPD Bill</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('ipdPrescription')} sx={{"&:focus": { textDecoration: 'underline' }}}>IPD Prescription</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('ipdBill')} sx={{"&:focus": { textDecoration: 'underline' }}}>IPD Bill</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('bill')} sx={{"&:focus": { textDecoration: 'underline' }}}>Bill</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('pharmacyBill')} sx={{"&:focus": { textDecoration: 'underline' }}}>Pharmacy Bill</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('paySlip')} sx={{"&:focus": { textDecoration: 'underline' }}}>Pay Slip</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('paymentReceipt')} sx={{"&:focus": { textDecoration: 'underline' }}}>Payment Receipt</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('birthRecord')} sx={{"&:focus": { textDecoration: 'underline' }}}>Birth Record</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('deathRecord')} sx={{"&:focus": { textDecoration: 'underline' }}}>Death Record</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('pathology')} sx={{"&:focus": { textDecoration: 'underline' }}}>Pathology</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('radiology')} sx={{"&:focus": { textDecoration: 'underline' }}}>Radiology</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('operation')} sx={{"&:focus": { textDecoration: 'underline' }}}>Operation</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('bloodBank')} sx={{"&:focus": { textDecoration: 'underline' }}}>Blood Bank</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('ambulance')} sx={{"&:focus": { textDecoration: 'underline' }}}>Ambulance</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('dischargeCard')} sx={{"&:focus": { textDecoration: 'underline' }}}>Discharge Card</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('opdPrescrition')} sx={{"&:focus": { textDecoration: 'none' }}}>OPD Prescription</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('opdBill')} sx={{"&:focus": { textDecoration: 'none' }}}>OPD Bill</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('ipdPrescription')} sx={{"&:focus": { textDecoration: 'none' }}}>IPD Prescription</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('ipdBill')} sx={{"&:focus": { textDecoration: 'none' }}}>IPD Bill</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('bill')} sx={{"&:focus": { textDecoration: 'none' }}}>Bill</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('pharmacyBill')} sx={{"&:focus": { textDecoration: 'none' }}}>Pharmacy Bill</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('paySlip')} sx={{"&:focus": { textDecoration: 'none' }}}>Pay Slip</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('paymentReceipt')} sx={{"&:focus": { textDecoration: 'none' }}}>Payment Receipt</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('birthRecord')} sx={{"&:focus": { textDecoration: 'none' }}}>Birth Record</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('deathRecord')} sx={{"&:focus": { textDecoration: 'none' }}}>Death Record</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('pathology')} sx={{"&:focus": { textDecoration: 'none' }}}>Pathology</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('radiology')} sx={{"&:focus": { textDecoration: 'none' }}}>Radiology</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('operation')} sx={{"&:focus": { textDecoration: 'none' }}}>Operation</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('bloodBank')} sx={{"&:focus": { textDecoration: 'none' }}}>Blood Bank</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('ambulance')} sx={{"&:focus": { textDecoration: 'none' }}}>Ambulance</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('dischargeCard')} sx={{"&:focus": { textDecoration: 'none' }}}>Discharge Card</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
