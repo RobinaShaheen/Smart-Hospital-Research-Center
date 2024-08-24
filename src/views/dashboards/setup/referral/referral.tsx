@@ -51,8 +51,8 @@ const ReferralSideBar: React.FC<SettingSideBarProps> = ({ onSelectReferral }) =>
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('ReferralCommission')} sx={{"&:active": {color: 'blue'}, color: selected === 'ReferralCommission'? 'blue' : '#000', fontSize: '20px'}}>Referral Commission</StyledLink>
-              <StyledLink onClick={() => handleClick('ReferralCategory')} sx={{"&:active": {color: 'blue'}, color: selected === 'ReferralCategory'? 'blue' : '#000', fontSize: '20px'}}>Referral Category</StyledLink>
+              <StyledLink onClick={() => handleClick('ReferralCommission')} sx={{"&:active": {color: 'blue'}, color: selected === 'ReferralCommission'? 'blue' : '#000', fontSize: '16px'}}>Referral Commission</StyledLink>
+              <StyledLink onClick={() => handleClick('ReferralCategory')} sx={{"&:active": {color: 'blue'}, color: selected === 'ReferralCategory'? 'blue' : '#000', fontSize: '16px'}}>Referral Category</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
