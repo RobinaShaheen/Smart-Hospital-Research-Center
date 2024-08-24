@@ -7,7 +7,7 @@ const TextEditor = () => {
   useEffect(() => {
     if (editorRef.current) {
       
-      const () = new Quill(editorRef.current, {
+      const quillEditor = new Quill(editorRef.current, {
         theme: 'snow',
         modules: {
           toolbar: [
