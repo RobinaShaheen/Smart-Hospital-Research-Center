@@ -211,6 +211,7 @@ const navigation = (): VerticalNavItemsType => {
         },
       ]
     },
+    
     // {
     //   sectionTitle: 'Apps & Pages'
     // },
