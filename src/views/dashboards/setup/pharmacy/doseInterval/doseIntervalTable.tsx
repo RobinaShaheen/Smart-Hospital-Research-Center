@@ -96,7 +96,7 @@ const DoseIntervalTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Setup/pharmacy/doseInterval/AddDoseInterval'
+          href='/setup/pharmacy/doseInterval/AddDoseInterval'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Dose Interval
