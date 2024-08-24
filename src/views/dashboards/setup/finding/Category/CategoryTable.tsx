@@ -100,7 +100,7 @@ const CategoryTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Setup/finding/category/AddCategory'
+          href='/setup/finding/category/AddCategory'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Finding Category
