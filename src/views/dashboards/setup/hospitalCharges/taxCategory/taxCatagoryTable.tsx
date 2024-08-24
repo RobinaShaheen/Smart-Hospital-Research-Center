@@ -112,7 +112,7 @@ const TaxCatagoryTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/Setup/hospitalCharges/TaxCatagory/AddTaxCategory'
+      href='/setup/hospitalCharges/TaxCatagory/AddTaxCategory'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Tax Category
