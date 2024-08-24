@@ -139,7 +139,7 @@ const StaffList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Certificate/StaffId'
+          href='/Certificate/Staffid'
         >
           Generate
         </Button>
