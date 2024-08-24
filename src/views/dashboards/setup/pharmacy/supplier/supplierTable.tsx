@@ -139,7 +139,7 @@ const SupplierTable = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Setup/pharmacy/supplier/AddSupplier'
+          href='/setup/pharmacy/supplier/AddSupplier'
           startIcon={<Icon icon='tabler:plus' />}
         >
           Add Supplier
