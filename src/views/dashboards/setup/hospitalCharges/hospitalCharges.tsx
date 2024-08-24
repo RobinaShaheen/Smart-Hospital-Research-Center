@@ -55,11 +55,11 @@ const HospitalChargesSideBar: React.FC<HospitalChargesSideBarProps> = ({ onSelec
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('Charges')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'Charges'? 'blue':'black'}}>Charges</StyledLink>
-              <StyledLink onClick={() => handleClick('ChargesCatagory')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'ChargesCatagory'? 'blue':'black'}}>Charges Category</StyledLink>
-              <StyledLink onClick={() => handleClick('ChargesType')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'ChargesType'? 'blue':'black'}}>Charges Type</StyledLink>
-              <StyledLink onClick={() => handleClick('TaxCatagory')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'TaxCatagory'? 'blue':'black'}}>Tax Catagory</StyledLink>
-              <StyledLink onClick={() => handleClick('UnitType')} sx={{"&:focus":{textDecoration:'underline'}, color: selected === 'UnitType'? 'blue':'black'}}>Unit Type</StyledLink>
+              <StyledLink onClick={() => handleClick('Charges')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'Charges'? 'blue':'black'}}>Charges</StyledLink>
+              <StyledLink onClick={() => handleClick('ChargesCatagory')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'ChargesCatagory'? 'blue':'black'}}>Charges Category</StyledLink>
+              <StyledLink onClick={() => handleClick('ChargesType')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'ChargesType'? 'blue':'black'}}>Charges Type</StyledLink>
+              <StyledLink onClick={() => handleClick('TaxCatagory')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'TaxCatagory'? 'blue':'black'}}>Tax Catagory</StyledLink>
+              <StyledLink onClick={() => handleClick('UnitType')} sx={{"&:focus":{textDecoration:'none'}, color: selected === 'UnitType'? 'blue':'black'}}>Unit Type</StyledLink>
               
               {/* Add more settings links as needed */}
             </OptionsWrapper>
