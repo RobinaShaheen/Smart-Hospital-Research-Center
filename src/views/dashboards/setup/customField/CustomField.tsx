@@ -44,8 +44,8 @@ const CustomFieldSideBarProps: React.FC<CustomFieldSideBarProps> = ({ onSelectSe
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => onSelectSetting('customField')} sx={{"&:focus":{textDecoration:'underline'}}}>Custom Field</StyledLink>
-              <StyledLink onClick={() => onSelectSetting('category')} sx={{"&:focus":{textDecoration:'underline'}}}>Category</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('customField')} sx={{"&:focus":{textDecoration:'none'}}}>Custom Field</StyledLink>
+              <StyledLink onClick={() => onSelectSetting('category')} sx={{"&:focus":{textDecoration:'none'}}}>Category</StyledLink>
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
