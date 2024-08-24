@@ -51,11 +51,11 @@ const BedSideBar: React.FC<SettingSideBarProps> = ({ onSelectBed }) => {
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('BedStatus')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedStatus' ? 'blue' : '#000', fontSize: '20px'}}>Bed Status</StyledLink>
-              <StyledLink onClick={() => handleClick('BedList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedList' ? 'blue' : '#000', fontSize: '20px'}}>Bed List</StyledLink>
-              <StyledLink onClick={() => handleClick('BedType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedType' ? 'blue' : '#000', fontSize: '20px'}}>Bed Type</StyledLink>
-              <StyledLink onClick={() => handleClick('BedGroup')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedGroup' ? 'blue' : '#000', fontSize: '20px'}}>Bed Group</StyledLink>
-              <StyledLink onClick={() => handleClick('FloorList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'FloorList' ? 'blue' : '#000', fontSize: '20px'}}>Floor</StyledLink>
+              <StyledLink onClick={() => handleClick('BedStatus')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedStatus' ? 'blue' : '#000', fontSize: '16px'}}>Bed Status</StyledLink>
+              <StyledLink onClick={() => handleClick('BedList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedList' ? 'blue' : '#000', fontSize: '16px'}}>Bed List</StyledLink>
+              <StyledLink onClick={() => handleClick('BedType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedType' ? 'blue' : '#000', fontSize: '16px'}}>Bed Type</StyledLink>
+              <StyledLink onClick={() => handleClick('BedGroup')} sx={{"&:focus": {color: 'blue'}, color: selected === 'BedGroup' ? 'blue' : '#000', fontSize: '16px'}}>Bed Group</StyledLink>
+              <StyledLink onClick={() => handleClick('FloorList')} sx={{"&:focus": {color: 'blue'}, color: selected === 'FloorList' ? 'blue' : '#000', fontSize: '16px'}}>Floor</StyledLink>
               
               {/* Add more settings links as needed */}
             </OptionsWrapper>
