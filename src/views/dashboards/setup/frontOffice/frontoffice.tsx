@@ -50,10 +50,10 @@ const FrontOfficeSideBar: React.FC<SettingSideBarProps> = ({ onSelectFrontOffice
         <Card>
           <CardContent>
             <OptionsWrapper>
-              <StyledLink onClick={() => handleClick('Purpose')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Purpose' ? 'blue' : '#000', fontSize: '20px'}}>Purpose</StyledLink>
-              <StyledLink onClick={() => handleClick('ComplainType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ComplainType' ? 'blue' : '#000', fontSize: '20px'}}>Complain Type</StyledLink>
-              <StyledLink onClick={() => handleClick('Source')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Source' ? 'blue' : '#000', fontSize: '20px'}}>Source</StyledLink>
-              <StyledLink onClick={() => handleClick('AppointmentPriority')} sx={{"&:focus": {color: 'blue'}, color: selected === 'AppointmentPriority' ? 'blue' : '#000', fontSize: '20px'}}>Appointment Priority</StyledLink> 
+              <StyledLink onClick={() => handleClick('Purpose')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Purpose' ? 'blue' : '#000', fontSize: '16px'}}>Purpose</StyledLink>
+              <StyledLink onClick={() => handleClick('ComplainType')} sx={{"&:focus": {color: 'blue'}, color: selected === 'ComplainType' ? 'blue' : '#000', fontSize: '16px'}}>Complain Type</StyledLink>
+              <StyledLink onClick={() => handleClick('Source')} sx={{"&:focus": {color: 'blue'}, color: selected === 'Source' ? 'blue' : '#000', fontSize: '16px'}}>Source</StyledLink>
+              <StyledLink onClick={() => handleClick('AppointmentPriority')} sx={{"&:focus": {color: 'blue'}, color: selected === 'AppointmentPriority' ? 'blue' : '#000', fontSize: '16px'}}>Appointment Priority</StyledLink> 
               {/* Add more settings links as needed */}
             </OptionsWrapper>
           </CardContent>
