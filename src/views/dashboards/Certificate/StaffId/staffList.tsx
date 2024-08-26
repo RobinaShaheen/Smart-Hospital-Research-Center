@@ -131,7 +131,7 @@ const StaffList = () => {
         <Button
           component={Link}
           variant='contained'
-          href='/Certificate/StaffId'
+          href='/Certificate/Staffid'
           startIcon={<Icon icon='tabler:search' />}
         >
           Search
