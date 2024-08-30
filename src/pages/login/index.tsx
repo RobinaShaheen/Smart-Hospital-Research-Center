@@ -199,7 +199,7 @@ const LoginPage = () => {
               </Typography>
             </Box>
             <Alert icon={false} sx={{ py: 3, mb: 6, ...bgColors.primaryLight, '& .MuiAlert-message': { p: 0 } }}>
-              <Typography variant='body2' sx={{ mb: 2, color: 'primary.main' }}>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
                 Super Admin: <strong>superadmin@vuexy.com</strong> / Pass: <strong>superadmin</strong>
               </Typography>
               <Typography variant='body2' sx={{ color: 'primary.main' }}>
@@ -225,9 +225,6 @@ const LoginPage = () => {
               </Typography>
               <Typography variant='body2' sx={{ color: 'primary.main' }}>
                 Nurse: <strong>nurse@vuexy.com</strong> / Pass: <strong>nurse</strong>
-              </Typography>
-              <Typography variant='body2' sx={{ color: 'primary.main' }}>
-                client: <strong>client@vuexy.com</strong> / Pass: <strong>client</strong>
               </Typography>
             </Alert>
             <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>

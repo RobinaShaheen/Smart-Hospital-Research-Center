@@ -90,16 +90,7 @@ const users: UserDataType[] = [
     fullName: 'April Clinton',
     username: 'AprilClinton',
     email: 'nurse@vuexy.com',
-    profilePicture: '/images/avatars/14.png'
-  },
-  {
-    id: 10,
-    role: 'client',
-    password: 'client',
-    fullName: 'April Clinton',
-    username: 'AprilClinton',
-    email: 'client@vuexy.com',
-    profilePicture: '/images/avatars/14.png'
+    profilePicture: '/images/avatars/10.png'
   }
 ]
 

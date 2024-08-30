@@ -45,10 +45,7 @@ const defineRulesFor = (role: string, subject: string) => {
     can('manage', 'all');
   } else if (role === 'Nurse') {
     can('manage', 'acl-page');
-  } 
-  else if (role === 'client') {
-    can('manage', 'acl-page');
-  } 
+  }
   else {
     can(['read', 'create', 'update', 'delete'], subject);
   }
