@@ -29,7 +29,7 @@ const AddCertificateTmplate = () => {
   )
 }
 
-AddCertificateTemplate.acl = {
+AddCertificateTmplate.acl = {
   action: 'read',
   subject: 'acl-page'
 }
