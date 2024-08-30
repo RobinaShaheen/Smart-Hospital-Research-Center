@@ -15,6 +15,7 @@ export type UserDataType = {
   username: string;
   password: string;
   profilePicture: string | null;
+  
   // avatar?: string | null;
 };
 

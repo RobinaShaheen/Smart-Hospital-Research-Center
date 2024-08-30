@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Grid from '@mui/material/Grid'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import AccordionCustomized from 'src/views/dashboards/message/accortion'
@@ -11,7 +11,6 @@ const Appointment = () => {
         <Grid item xs={12} >
           <AccordionCustomized/>
         </Grid>
-        
       </Grid>
     </ApexChartWrapper>
   )

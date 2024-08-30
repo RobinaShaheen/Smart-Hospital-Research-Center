@@ -1,3 +1,4 @@
+
 // ** React Imports
 import { SyntheticEvent, useState } from 'react'
 
@@ -5,13 +6,11 @@ import { SyntheticEvent, useState } from 'react'
 import Box from '@mui/material/Box'
 import { styled } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
-import { IconButton, Tooltip } from '@mui/material'
+import { IconButton} from '@mui/material'
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion'
 import MuiAccordionSummary, { AccordionSummaryProps } from '@mui/material/AccordionSummary'
 import MuiAccordionDetails, { AccordionDetailsProps } from '@mui/material/AccordionDetails'
 
-// ** Custom Component Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
 
@@ -78,6 +77,7 @@ const AccordionDetails = styled(MuiAccordionDetails)<AccordionDetailsProps>(({ t
 }))
 
 const AccordionCustomized = () => {
+  
   // ** State
   const [expanded, setExpanded] = useState<string | false>('panel1')
 
