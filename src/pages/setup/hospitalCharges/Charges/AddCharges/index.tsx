@@ -1,3 +1,4 @@
+
 // ** MUI Import
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
@@ -6,14 +7,14 @@ import Typography from '@mui/material/Typography'
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import AddCharges from 'src/views/dashboards/setup/hospitalCharges/charges/addCharges'
 
-//import HospitalChargesContainer from 'src/views/dashboards/setup/hospitalCharges/HospitalChargesContainer'
 const Addcharges = () => { 
+  
   return (
     <ApexChartWrapper>
       <Typography
-        variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')
+        variant='h4'
         gutterBottom
-        sx={{ mb: 4 }} // Adjust margin bottom if needed
+        sx={{ mb: 4 }}
       >
         Add Charges 
       </Typography>

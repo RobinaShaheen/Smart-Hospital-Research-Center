@@ -54,7 +54,7 @@ const BillingDashboard = () => {
             <Grid item xs={12} sm={4} lg={4}>
               <Link href='/billing/pathologyTable' style={{textDecoration:'none' }}>
                 <CardStatsVertical2
-                  imgSrc='/images/cards/Pathology.PNG'
+                  imgSrc='/images/cards/pathology.PNG'
                   title='Pathology'
                   sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'} }}
                 />
@@ -64,7 +64,7 @@ const BillingDashboard = () => {
             <Grid item xs={12} sm={4} lg={4}>
               <Link href='/billing/radiology' style={{textDecoration:'none' }}>
               <CardStatsVertical2
-                imgSrc='/images/cards/Radiology.PNG'
+                imgSrc='/images/cards/radiology.PNG'
                 title='Radiology'
                 sx={{ height: '100%', backgroundColor: 'white', "&:hover": { backgroundColor: '#9086F3'} }}
               />
