@@ -132,7 +132,7 @@ const ChargesTable = () => {
     <Button
       component={Link}
       variant='contained'
-      href='/setup/hospitalCharges/Charges/AddCharges'
+      href='/Setup/hospitalCharges/Charges/AddCharges'
       startIcon={<Icon icon='tabler:plus' />}
     >
       Add Charges
