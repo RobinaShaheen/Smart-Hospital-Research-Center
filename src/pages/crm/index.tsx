@@ -78,4 +78,9 @@ const CrmDashboard = () => {
   )
 }
 
+CrmDashboard.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default CrmDashboard

@@ -27,4 +27,9 @@ const BloodIssue = () => {
   )
 }
 
+BloodIssue.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default BloodIssue

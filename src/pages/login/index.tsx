@@ -200,10 +200,34 @@ const LoginPage = () => {
             </Box>
             <Alert icon={false} sx={{ py: 3, mb: 6, ...bgColors.primaryLight, '& .MuiAlert-message': { p: 0 } }}>
               <Typography variant='body2' sx={{ mb: 2, color: 'primary.main' }}>
+                Super Admin: <strong>superadmin@vuexy.com</strong> / Pass: <strong>superadmin</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
                 Admin: <strong>admin@vuexy.com</strong> / Pass: <strong>admin</strong>
               </Typography>
               <Typography variant='body2' sx={{ color: 'primary.main' }}>
-                Client: <strong>client@vuexy.com</strong> / Pass: <strong>client</strong>
+                Doctor: <strong>doctor@vuexy.com</strong> / Pass: <strong>doctor</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
+                Pharmacist: <strong>Pharmacist@vuexy.com</strong> / Pass: <strong>Pharmacist</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
+                Pathologist: <strong>pathologist@vuexy.com</strong> / Pass: <strong>pathologist</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
+                Radiologist: <strong>radiologist@vuexy.com</strong> / Pass: <strong>radiologist</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
+                Accountant: <strong>accountant@vuexy.com</strong> / Pass: <strong>accountant</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
+                Receptionist: <strong>receptionist@vuexy.com</strong> / Pass: <strong>receptionist</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
+                Nurse: <strong>nurse@vuexy.com</strong> / Pass: <strong>nurse</strong>
+              </Typography>
+              <Typography variant='body2' sx={{ color: 'primary.main' }}>
+                client: <strong>client@vuexy.com</strong> / Pass: <strong>client</strong>
               </Typography>
             </Alert>
             <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>

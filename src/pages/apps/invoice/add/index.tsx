@@ -71,4 +71,9 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
+InvoiceAdd.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default InvoiceAdd

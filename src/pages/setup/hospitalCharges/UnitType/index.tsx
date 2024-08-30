@@ -25,4 +25,9 @@ const UnitType = () => {
   )
 }
 
+UnitType.acl ={
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default UnitType

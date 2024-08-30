@@ -5,4 +5,9 @@ const EmailApp = () => <Email folder='inbox' />
 
 EmailApp.contentHeightFixed = true
 
+EmailApp.acl = {
+    action: 'read',
+    subject: 'acl-page'
+}
+
 export default EmailApp

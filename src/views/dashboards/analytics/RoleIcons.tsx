@@ -18,36 +18,42 @@ const RolesList: React.FC = () => {
 
   return (
     <Box mt={4}>
-      {roles.map((roleData, index) => (
-        <Card key={index} variant="outlined" style={{ marginBottom: 16}} 
-          sx={{'&:hover': {boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'}}}
-          >
-          <Link href={roleData.path} style={{textDecoration: 'none'}}>
-          <CardContent>
-            <Grid container alignItems="center" spacing={2} sx={{cursor: 'pointer'}}>
-              <Grid item>
-                <Box
-                  style={{
-                    backgroundColor: '#ffa726',
-                    borderRadius: '50%',
-                    padding: 8,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <PersonIcon style={{ color: '#fff', fontSize: 40 }} />
-                </Box>
-              </Grid>
-              <Grid item xs>
-                <Typography variant="h6">{roleData.role}</Typography>
-                <Typography variant="h4">{roleData.count}</Typography>
-              </Grid>
-            </Grid>
-          </CardContent>
-          </Link>
-        </Card>
-      ))}
+      <Grid container spacing={2}>
+        {roles.map((roleData, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <Card 
+              variant="outlined" 
+              style={{ marginBottom: 16 }} 
+              sx={{'&:hover': {boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'}}}
+            >
+              <Link href={roleData.path} style={{ textDecoration: 'none' }}>
+                <CardContent>
+                  <Grid container alignItems="center" spacing={2} sx={{ cursor: 'pointer' }}>
+                    <Grid item>
+                      <Box
+                        style={{
+                          backgroundColor: '#ffa726',
+                          borderRadius: '50%',
+                          padding: 8,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        <PersonIcon style={{ color: '#fff', fontSize: 40 }} />
+                      </Box>
+                    </Grid>
+                    <Grid item xs>
+                      <Typography variant="h6">{roleData.role}</Typography>
+                      <Typography variant="h4">{roleData.count}</Typography>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </Link>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 };

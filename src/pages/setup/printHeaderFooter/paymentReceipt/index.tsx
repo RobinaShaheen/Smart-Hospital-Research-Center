@@ -26,4 +26,9 @@ const paymentReceipt = () => {
   )
 }
 
+paymentReceipt.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default paymentReceipt

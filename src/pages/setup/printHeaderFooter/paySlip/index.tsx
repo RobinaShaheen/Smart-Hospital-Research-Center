@@ -26,4 +26,9 @@ const paySlip = () => {
   )
 }
 
+paySlip.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default paySlip

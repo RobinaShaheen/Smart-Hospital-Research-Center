@@ -1,10 +1,5 @@
-// ** React Imports
 import { useState, SyntheticEvent, Fragment } from 'react'
-
-// ** Next Import
 import { useRouter } from 'next/router'
-
-// ** MUI Imports
 import Box from '@mui/material/Box'
 import Menu from '@mui/material/Menu'
 import Badge from '@mui/material/Badge'
@@ -13,21 +8,18 @@ import Divider from '@mui/material/Divider'
 import { styled } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import MenuItem, { MenuItemProps } from '@mui/material/MenuItem'
-
-// ** Icon Imports
 import Icon from 'src/@core/components/icon'
-
-// ** Context
 import { useAuth } from 'src/hooks/useAuth'
-
-// ** Type Imports
 import { Settings } from 'src/@core/context/settingsContext'
 
 interface Props {
   settings: Settings
+  fullName: string;
+  profilePicture: string | null
+  avatar?: string | null
+  role: string;
 }
 
-// ** Styled Components
 const BadgeContentSpan = styled('span')(({ theme }) => ({
   width: 8,
   height: 8,
@@ -43,17 +35,12 @@ const MenuItemStyled = styled(MenuItem)<MenuItemProps>(({ theme }) => ({
 }))
 
 const UserDropdown = (props: Props) => {
-  // ** Props
   const { settings } = props
-
-  // ** States
   const [anchorEl, setAnchorEl] = useState<Element | null>(null)
 
-  // ** Hooks
   const router = useRouter()
-  const { logout } = useAuth()
+  const { user, logout } = useAuth()
 
-  // ** Vars
   const { direction } = settings
 
   const handleDropdownOpen = (event: SyntheticEvent) => {
@@ -65,6 +52,11 @@ const UserDropdown = (props: Props) => {
       router.push(url)
     }
     setAnchorEl(null)
+  }
+
+  const handleLogout = () => {
+    logout()
+    handleDropdownClose()
   }
 
   const styles = {
@@ -82,9 +74,394 @@ const UserDropdown = (props: Props) => {
     }
   }
 
-  const handleLogout = () => {
-    logout()
-    handleDropdownClose()
+  if (!user) {
+    // Return null or a placeholder if user is not authenticated
+    return null
+  }
+
+  const renderMenuItems = () => {
+    switch (user.role) {
+      case 'admin':
+        return (
+          <>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+              <Box sx={styles}>
+              <Icon icon='tabler:user-check' />
+              My Profile
+            </Box>
+          </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:settings' />
+              Settings
+            </Box>
+          </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:credit-card' />
+              Billing
+            </Box>
+          </MenuItemStyled>
+          <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:lifebuoy' />
+              Help
+              </Box>
+          </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:info-circle' />
+              FAQ
+            </Box>
+            </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:currency-dollar' />
+              Pricing
+            </Box>
+          </MenuItemStyled>
+        </>
+      )
+      case 'SuperAdmin':
+        return (
+          <>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+              <Box sx={styles}>
+              <Icon icon='tabler:user-check' />
+              My Profile
+            </Box>
+          </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:settings' />
+              Settings
+            </Box>
+          </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:credit-card' />
+              Billing
+            </Box>
+          </MenuItemStyled>
+          <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:lifebuoy' />
+              Help
+              </Box>
+          </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:info-circle' />
+              FAQ
+            </Box>
+            </MenuItemStyled>
+          <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+            <Box sx={styles}>
+              <Icon icon='tabler:currency-dollar' />
+              Pricing
+            </Box>
+          </MenuItemStyled>
+        </>
+        )
+        case 'Doctor':
+          return (
+            <>
+              <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+                <Box sx={styles}>
+                <Icon icon='tabler:user-check' />
+                My Profile
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:settings' />
+                Settings
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:credit-card' />
+                Billing
+              </Box>
+            </MenuItemStyled>
+            <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:lifebuoy' />
+                Help
+                </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:info-circle' />
+                FAQ
+              </Box>
+              </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:currency-dollar' />
+                Pricing
+              </Box>
+            </MenuItemStyled>
+          </>
+        )
+        case 'Pharmacist':
+          return (
+            <>
+              <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+                <Box sx={styles}>
+                <Icon icon='tabler:user-check' />
+                My Profile
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:settings' />
+                Settings
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:credit-card' />
+                Billing
+              </Box>
+            </MenuItemStyled>
+            <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:lifebuoy' />
+                Help
+                </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:info-circle' />
+                FAQ
+              </Box>
+              </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:currency-dollar' />
+                Pricing
+              </Box>
+            </MenuItemStyled>
+          </>
+        )
+        case 'Pathologist':
+          return (
+            <>
+              <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+                <Box sx={styles}>
+                <Icon icon='tabler:user-check' />
+                My Profile
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:settings' />
+                Settings
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:credit-card' />
+                Billing
+              </Box>
+            </MenuItemStyled>
+            <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:lifebuoy' />
+                Help
+                </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:info-circle' />
+                FAQ
+              </Box>
+              </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:currency-dollar' />
+                Pricing
+              </Box>
+            </MenuItemStyled>
+          </>
+        )
+        case 'Radiologist':
+          return (
+            <>
+              <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+                <Box sx={styles}>
+                <Icon icon='tabler:user-check' />
+                My Profile
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:settings' />
+                Settings
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:credit-card' />
+                Billing
+              </Box>
+            </MenuItemStyled>
+            <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:lifebuoy' />
+                Help
+                </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:info-circle' />
+                FAQ
+              </Box>
+              </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:currency-dollar' />
+                Pricing
+              </Box>
+            </MenuItemStyled>
+          </>
+        )
+        case 'Accountant':
+          return (
+            <>
+              <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+                <Box sx={styles}>
+                <Icon icon='tabler:user-check' />
+                My Profile
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:settings' />
+                Settings
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:credit-card' />
+                Billing
+              </Box>
+            </MenuItemStyled>
+            <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:lifebuoy' />
+                Help
+                </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:info-circle' />
+                FAQ
+              </Box>
+              </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:currency-dollar' />
+                Pricing
+              </Box>
+            </MenuItemStyled>
+          </>
+        )
+        case 'Receptionist':
+          return (
+            <>
+              <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+                <Box sx={styles}>
+                <Icon icon='tabler:user-check' />
+                My Profile
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:settings' />
+                Settings
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:credit-card' />
+                Billing
+              </Box>
+            </MenuItemStyled>
+            <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:lifebuoy' />
+                Help
+                </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:info-circle' />
+                FAQ
+              </Box>
+              </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:currency-dollar' />
+                Pricing
+              </Box>
+            </MenuItemStyled>
+          </>
+        )
+        case 'Nurse':
+          return (
+            <>
+              <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
+                <Box sx={styles}>
+                <Icon icon='tabler:user-check' />
+                My Profile
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:settings' />
+                Settings
+              </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:credit-card' />
+                Billing
+              </Box>
+            </MenuItemStyled>
+            <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:lifebuoy' />
+                Help
+                </Box>
+            </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:info-circle' />
+                FAQ
+              </Box>
+              </MenuItemStyled>
+            <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
+              <Box sx={styles}>
+                <Icon icon='tabler:currency-dollar' />
+                Pricing
+              </Box>
+            </MenuItemStyled>
+          </>
+        ) 
+      default:
+        return null
+    }
   }
 
   return (
@@ -100,8 +477,8 @@ const UserDropdown = (props: Props) => {
         }}
       >
         <Avatar
-          alt='John Doe'
-          src='/images/avatars/1.png'
+          alt={user.fullName} // Fallback to 'User' if user.username is null/undefined
+          src={user.profilePicture} // Provide a default avatar
           onClick={handleDropdownOpen}
           sx={{ width: 38, height: 38 }}
         />
@@ -124,52 +501,16 @@ const UserDropdown = (props: Props) => {
                 horizontal: 'right'
               }}
             >
-              <Avatar alt='John Doe' src='/images/avatars/1.png' sx={{ width: '2.5rem', height: '2.5rem' }} />
+              <Avatar alt={user.fullName} src={user.profilePicture} sx={{ width: '2.5rem', height: '2.5rem' }} />
             </Badge>
             <Box sx={{ display: 'flex', ml: 2.5, alignItems: 'flex-start', flexDirection: 'column' }}>
-              <Typography sx={{ fontWeight: 500 }}>John Doe</Typography>
-              <Typography variant='body2'>Admin</Typography>
+              <Typography sx={{ fontWeight: 500 }}>{user.fullName}</Typography>
+              <Typography variant='body2'>{user.role}</Typography>
             </Box>
           </Box>
         </Box>
         <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
-        <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/user-profile/profile')}>
-          <Box sx={styles}>
-            <Icon icon='tabler:user-check' />
-            My Profile
-          </Box>
-        </MenuItemStyled>
-        <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/account')}>
-          <Box sx={styles}>
-            <Icon icon='tabler:settings' />
-            Settings
-          </Box>
-        </MenuItemStyled>
-        <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/account-settings/billing')}>
-          <Box sx={styles}>
-            <Icon icon='tabler:credit-card' />
-            Billing
-          </Box>
-        </MenuItemStyled>
-        <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
-        <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>
-          <Box sx={styles}>
-            <Icon icon='tabler:lifebuoy' />
-            Help
-          </Box>
-        </MenuItemStyled>
-        <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/faq')}>
-          <Box sx={styles}>
-            <Icon icon='tabler:info-circle' />
-            FAQ
-          </Box>
-        </MenuItemStyled>
-        <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/pricing')}>
-          <Box sx={styles}>
-            <Icon icon='tabler:currency-dollar' />
-            Pricing
-          </Box>
-        </MenuItemStyled>
+        {renderMenuItems()}
         <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
         <MenuItemStyled sx={{ p: 0 }} onClick={handleLogout}>
           <Box sx={styles}>
@@ -183,3 +524,5 @@ const UserDropdown = (props: Props) => {
 }
 
 export default UserDropdown
+
+

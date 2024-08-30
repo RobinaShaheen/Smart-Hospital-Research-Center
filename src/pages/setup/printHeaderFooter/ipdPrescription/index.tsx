@@ -26,4 +26,9 @@ const OpdPrescription = () => {
   )
 }
 
+OpdPrescription.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default OpdPrescription

@@ -25,4 +25,9 @@ const AddConsultations = () => {
   )
 }
 
+AddConsultations.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default AddConsultations

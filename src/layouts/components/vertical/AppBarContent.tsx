@@ -148,7 +148,7 @@ const AppBarContent = (props: Props) => {
           <>
             <ShortcutsDropdown settings={settings} shortcuts={shortcuts} />
             <NotificationDropdown settings={settings} notifications={notifications} />
-            <UserDropdown settings={settings} />
+            <UserDropdown settings={settings} fullName={''} profilePicture={null} role={''} />
           </>
         )}
       </Box>

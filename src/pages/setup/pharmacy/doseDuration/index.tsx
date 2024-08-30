@@ -26,4 +26,9 @@ const DoseInterval = () => {
   )
 }
 
+DoseInterval.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default DoseInterval

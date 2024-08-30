@@ -158,4 +158,9 @@ ForgotPassword.getLayout = (page: ReactNode) => <BlankLayout>{page}</BlankLayout
 
 ForgotPassword.guestGuard = true
 
+ForgotPassword.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default ForgotPassword

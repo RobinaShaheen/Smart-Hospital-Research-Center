@@ -26,4 +26,9 @@ const AdddoseDuration = () => {
   )
 }
 
+AdddoseDuration.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default AdddoseDuration

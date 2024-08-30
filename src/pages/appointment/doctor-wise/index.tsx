@@ -26,4 +26,9 @@ const Appointment = () => {
   )
 }
 
+Appointment.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Appointment

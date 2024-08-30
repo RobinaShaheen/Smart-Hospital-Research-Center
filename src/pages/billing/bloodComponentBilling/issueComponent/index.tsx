@@ -28,4 +28,9 @@ const bloodComponentBilling = () => {
   )
 }
 
+bloodComponentBilling.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default bloodComponentBilling

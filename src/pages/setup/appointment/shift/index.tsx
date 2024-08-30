@@ -27,4 +27,9 @@ const Shift = () => {
   )
 }
 
+Shift.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Shift

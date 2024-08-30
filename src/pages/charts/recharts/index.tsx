@@ -74,4 +74,9 @@ const Recharts = () => {
   )
 }
 
+Recharts.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Recharts

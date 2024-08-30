@@ -172,4 +172,9 @@ const AppointmentBillingTable = () => {
   )
 }
 
+AppointmentBillingTable.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default AppointmentBillingTable

@@ -26,4 +26,9 @@ const MedicinCategory = () => {
   )
 }
 
+MedicinCategory.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default MedicinCategory

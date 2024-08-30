@@ -26,4 +26,9 @@ const OpdBill = () => {
   )
 }
 
+OpdBill.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default OpdBill

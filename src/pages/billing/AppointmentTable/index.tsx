@@ -28,4 +28,9 @@ const Certificate = () => {
   )
 }
 
+Certificate.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Certificate

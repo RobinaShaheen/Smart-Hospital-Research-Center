@@ -25,4 +25,9 @@ const DownloadCenter = () => {
   )
 }
 
+DownloadCenter.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default DownloadCenter

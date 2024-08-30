@@ -25,4 +25,9 @@ const ChargesCategory = () => {
   )
 }
 
+ChargesCategory.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default ChargesCategory

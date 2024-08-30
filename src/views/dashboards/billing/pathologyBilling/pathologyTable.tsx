@@ -171,4 +171,9 @@ const PathologyTable = () => {
   )
 }
 
+PathologyTable.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default PathologyTable

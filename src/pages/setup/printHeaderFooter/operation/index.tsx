@@ -26,4 +26,9 @@ const operation = () => {
   )
 }
 
+operation.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default operation

@@ -26,4 +26,9 @@ const pathology = () => {
   )
 }
 
+pathology.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default pathology

@@ -26,4 +26,9 @@ const AddoseInterval = () => {
   )
 }
 
+AddoseInterval.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default AddoseInterval

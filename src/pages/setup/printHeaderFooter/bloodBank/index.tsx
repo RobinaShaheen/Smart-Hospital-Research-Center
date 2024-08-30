@@ -26,4 +26,9 @@ const bloodBank = () => {
   )
 }
 
+bloodBank.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default bloodBank

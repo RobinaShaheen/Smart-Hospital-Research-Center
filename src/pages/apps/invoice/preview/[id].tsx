@@ -36,4 +36,9 @@ export const getStaticProps: GetStaticProps = ({ params }: GetStaticPropsContext
   }
 }
 
+InvoicePreview.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default InvoicePreview

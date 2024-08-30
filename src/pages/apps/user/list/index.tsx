@@ -417,4 +417,9 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
+UserList.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default UserList

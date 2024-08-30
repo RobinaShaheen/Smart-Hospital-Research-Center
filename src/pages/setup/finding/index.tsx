@@ -21,4 +21,9 @@ const Pharmacy = () => {
   )
 }
 
+Pharmacy.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Pharmacy

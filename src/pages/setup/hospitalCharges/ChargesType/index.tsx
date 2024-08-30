@@ -25,4 +25,9 @@ const ChargeType = () => {
   )
 }
 
+ChargeType.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default ChargeType

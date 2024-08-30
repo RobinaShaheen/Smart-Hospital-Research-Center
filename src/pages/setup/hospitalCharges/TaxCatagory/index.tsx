@@ -25,4 +25,9 @@ const TaxCatagory = () => {
   )
 }
 
+TaxCatagory.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default TaxCatagory

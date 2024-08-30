@@ -21,4 +21,9 @@ const PrintHeaderFooter = () => {
   )
 }
 
+PrintHeaderFooter.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default PrintHeaderFooter

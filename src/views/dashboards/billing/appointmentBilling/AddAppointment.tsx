@@ -121,4 +121,9 @@ const AddAppointment = () => {
   )
 }
 
+AddAppointment.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default AddAppointment

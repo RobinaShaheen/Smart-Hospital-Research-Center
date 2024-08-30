@@ -26,4 +26,9 @@ const radiology = () => {
   )
 }
 
+radiology.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default radiology

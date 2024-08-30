@@ -27,4 +27,9 @@ const Slot = () => {
   )
 }
 
+Slot.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Slot

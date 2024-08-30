@@ -26,4 +26,9 @@ const pharmacyBill = () => {
   )
 }
 
+pharmacyBill.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default pharmacyBill

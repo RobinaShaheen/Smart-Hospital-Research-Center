@@ -27,4 +27,9 @@ const OPDTable = () => {
   )
 }
 
+OPDTable.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default OPDTable

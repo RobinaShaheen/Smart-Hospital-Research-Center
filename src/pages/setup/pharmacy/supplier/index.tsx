@@ -26,4 +26,9 @@ const Supplier = () => {
   )
 }
 
+Supplier.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default Supplier

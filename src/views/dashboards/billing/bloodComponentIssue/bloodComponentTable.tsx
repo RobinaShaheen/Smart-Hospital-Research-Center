@@ -203,4 +203,9 @@ const BloodIssueTable = () => {
   )
 }
 
+BloodIssueTable.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default BloodIssueTable

@@ -7,14 +7,17 @@ export type LoginParams = {
 }
 
 export type UserDataType = {
-  id: number
-  role: string
-  email: string
-  fullName: string
-  username: string
-  password: string
-  avatar?: string | null
-}
+  [key: string]: string | number | null; // Allows for additional properties with these types
+  id: number;
+  role: string;
+  email: string;
+  fullName: string;
+  username: string;
+  password: string;
+  profilePicture: string | null;
+  // avatar?: string | null;
+};
+
 
 export type AuthValuesType = {
   loading: boolean

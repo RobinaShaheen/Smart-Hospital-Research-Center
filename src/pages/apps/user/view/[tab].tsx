@@ -39,4 +39,9 @@ export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsC
   }
 }
 
+UserView.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default UserView

@@ -164,4 +164,9 @@ const IssueBlood = () => {
   )
 }
 
+IssueBlood.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default IssueBlood

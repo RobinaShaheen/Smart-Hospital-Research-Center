@@ -12,4 +12,9 @@ const InvoiceEdit = () => {
   )
 }
 
+InvoiceEdit.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default InvoiceEdit

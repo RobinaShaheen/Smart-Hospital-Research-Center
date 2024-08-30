@@ -125,4 +125,8 @@ const AddPatient = () => {
   )
 }
 
+AddPatient.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
 export default AddPatient

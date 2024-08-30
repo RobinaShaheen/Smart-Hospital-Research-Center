@@ -1,14 +1,16 @@
 // ** MUI Import
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-
 // ** Demo Component Imports
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import PharmacyTable from 'src/views/dashboards/pharmacy/PharmacyTable'
+import React from 'react';
+
 
 const Appointment = () => {
+
   return (
-    <ApexChartWrapper>
+      <ApexChartWrapper>
       <Typography
         variant='h4' // You can adjust the variant as needed (e.g., 'h3', 'h2')
         gutterBottom
@@ -23,6 +25,11 @@ const Appointment = () => {
       </Grid>
     </ApexChartWrapper>
   )
+}
+
+Appointment.acl = {
+  action: 'read',
+  subject: 'acl-page'
 }
 
 export default Appointment

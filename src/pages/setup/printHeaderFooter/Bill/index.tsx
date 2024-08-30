@@ -26,4 +26,9 @@ const bill = () => {
   )
 }
 
+bill.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default bill

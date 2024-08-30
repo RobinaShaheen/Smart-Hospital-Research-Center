@@ -26,4 +26,9 @@ const Findings = () => {
   )
 }
 
+Findings.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Findings

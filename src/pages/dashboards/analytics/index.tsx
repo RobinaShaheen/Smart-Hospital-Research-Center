@@ -1,6 +1,4 @@
 import React from 'react';
-
-// ** MUI Imports
 import Grid from '@mui/material/Grid';
 import KeenSliderWrapper from 'src/@core/styles/libs/keen-slider';
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts';
@@ -12,6 +10,7 @@ import AppCalendar from 'src/pages/apps/calendar';
 import RolesList from 'src/views/dashboards/analytics/RoleIcons';
 
 const AnalyticsDashboard = () => {
+
   return (
     <ApexChartWrapper>
       <KeenSliderWrapper>
@@ -44,5 +43,10 @@ const AnalyticsDashboard = () => {
     </ApexChartWrapper>
   );
 };
+
+AnalyticsDashboard.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
 
 export default AnalyticsDashboard;

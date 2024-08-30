@@ -26,4 +26,9 @@ const birthRecord = () => {
   )
 }
 
+birthRecord.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default birthRecord

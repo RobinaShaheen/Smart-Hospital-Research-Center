@@ -26,4 +26,9 @@ const dischargeCard = () => {
   )
 }
 
+dischargeCard.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default dischargeCard

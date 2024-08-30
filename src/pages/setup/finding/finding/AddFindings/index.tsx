@@ -26,4 +26,9 @@ const Addfindings = () => {
   )
 }
 
+Addfindings.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Addfindings

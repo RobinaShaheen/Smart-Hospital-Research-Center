@@ -13,19 +13,93 @@ import { UserDataType } from 'src/context/types'
 const users: UserDataType[] = [
   {
     id: 1,
-    role: 'admin',
-    password: 'admin',
+    role: 'SuperAdmin',
+    password: 'superadmin',
     fullName: 'John Doe',
     username: 'johndoe',
-    email: 'admin@vuexy.com'
+    email: 'superadmin@vuexy.com',
+    profilePicture: '/images/avatars/1.png'
   },
   {
     id: 2,
+    role: 'admin',
+    password: 'admin',
+    fullName: 'Joson Abbot',
+    username: 'JosonAbbot',
+    email: 'admin@vuexy.com',
+    profilePicture: '/images/avatars/3.png'
+  },
+  {
+    id: 3,
+    role: 'Doctor',
+    password: 'doctor',
+    fullName: 'Sonia Bush',
+    username: 'SoniaBush',
+    email: 'doctor@vuexy.com',
+    profilePicture: '/images/avatars/4.png'
+  },
+  {
+    id: 4,
+    role: 'Pharmacist',
+    password: 'Pharmacist',
+    fullName: 'Harry Grant',
+    username: 'HarryGrant',
+    email: 'Pharmacist@vuexy.com',
+    profilePicture: '/images/avatars/5.png'
+  },
+  {
+    id: 5,
+    role: 'Pathologist',
+    password: 'pathologist',
+    fullName: 'Belina Turner',
+    username: 'BelinaTurner',
+    email: 'pathologist@vuexy.com',
+    profilePicture: '/images/avatars/6.png'
+  },
+  {
+    id: 6,
+    role: 'Radiologist',
+    password: 'radiologist',
+    fullName: 'John Hook',
+    username: 'JohnHook',
+    email: 'radiologist@vuexy.com',
+    profilePicture: '/images/avatars/7.png'
+  },
+  {
+    id: 7,
+    role: 'Accountant',
+    password: 'accountant',
+    fullName: 'Brad Frost',
+    username: 'BradFrost',
+    email: 'accountant@vuexy.com',
+    profilePicture: '/images/avatars/9.png'
+  },
+  {
+    id: 8,
+    role: 'Receptionist',
+    password: 'receptionist',
+    fullName: 'Maria Ford',
+    username: 'MariaFord',
+    email: 'receptionist@vuexy.com',
+    profilePicture: '/images/avatars/12.png'
+  },
+  {
+    id: 9,
+    role: 'Nurse',
+    password: 'nurse',
+    fullName: 'April Clinton',
+    username: 'AprilClinton',
+    email: 'nurse@vuexy.com',
+    profilePicture: '/images/avatars/14.png'
+  },
+  {
+    id: 10,
     role: 'client',
     password: 'client',
-    fullName: 'Jane Doe',
-    username: 'janedoe',
-    email: 'client@vuexy.com'
+    fullName: 'April Clinton',
+    username: 'AprilClinton',
+    email: 'client@vuexy.com',
+    profilePicture: '/images/avatars/14.png'
   }
 ]
 
@@ -86,6 +160,7 @@ mock.onPost('/jwt/register').reply(request => {
         email,
         password,
         username,
+        profilePicture: null,
         avatar: null,
         fullName: '',
         role: 'admin'

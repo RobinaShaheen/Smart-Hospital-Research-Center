@@ -180,4 +180,9 @@ const RadiologyTable = () => {
   )
 }
 
+RadiologyTable.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default RadiologyTable

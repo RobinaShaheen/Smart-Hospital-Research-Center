@@ -9,7 +9,7 @@ const incomeExpenseData = [
   { title: 'Pharmacy Income', amount: '$2,626.40', icon: <LocalPharmacy />, path:'/pharmacy' },
   { title: 'Pathology Income', amount: '$1,400.00', icon: <MedicalInformation />, path:'/pathology' },
   { title: 'Radiology Income', amount: '$1,636.00', icon: <InsertChart />, path:'/radiology' },
-  { title: 'Blood Bank Income', amount: '$1,790.80', icon: <LocalLibrary />, path:'' },
+  { title: 'Blood Bank Income', amount: '$1,790.80', icon: <LocalLibrary />, path:'/Setup/BloodBank' },
   { title: 'Ambulance Income', amount: '$1,521.00', icon: <DirectionsCar />, path:'' },
   { title: 'General Income', amount: '$1,550.00', icon: <MoneyOff />, path:'/Finance/Income' },
   { title: 'Expenses', amount: '$225,800.00', icon: <MoneyOff />, path:'/Finance/Expense' }

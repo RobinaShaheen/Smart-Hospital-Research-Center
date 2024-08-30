@@ -27,4 +27,9 @@ const Addshift = () => {
   )
 }
 
+Addshift.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Addshift

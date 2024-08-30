@@ -27,4 +27,9 @@ const DoctorShift = () => {
   )
 }
 
+DoctorShift.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default DoctorShift

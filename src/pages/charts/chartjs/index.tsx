@@ -142,4 +142,9 @@ const ChartJS = () => {
   )
 }
 
+ChartJS.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default ChartJS

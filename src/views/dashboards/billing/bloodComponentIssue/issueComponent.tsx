@@ -174,4 +174,9 @@ const IssueComponent = () => {
   )
 }
 
+IssueComponent.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default IssueComponent

@@ -26,4 +26,9 @@ const MedicineDosage = () => {
   )
 }
 
+MedicineDosage.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default MedicineDosage

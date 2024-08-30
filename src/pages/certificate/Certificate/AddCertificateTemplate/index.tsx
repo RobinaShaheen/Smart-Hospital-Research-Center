@@ -29,4 +29,9 @@ const AddCertificateTmplate = () => {
   )
 }
 
+AddCertificateTemplate.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default AddCertificateTmplate

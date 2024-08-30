@@ -26,4 +26,9 @@ const ambulance = () => {
   )
 }
 
+ambulance.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default ambulance

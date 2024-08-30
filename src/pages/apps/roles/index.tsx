@@ -35,4 +35,9 @@ const RolesComponent = () => {
   )
 }
 
+RolesComponent.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default RolesComponent

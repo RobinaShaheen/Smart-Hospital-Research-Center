@@ -26,4 +26,9 @@ const AddmedicinCategory = () => {
   )
 }
 
+AddmedicinCategory.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default AddmedicinCategory

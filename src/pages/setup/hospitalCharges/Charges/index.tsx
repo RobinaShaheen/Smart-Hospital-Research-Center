@@ -26,4 +26,9 @@ const Charges = () => {
   )
 }
 
+Charges.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Charges

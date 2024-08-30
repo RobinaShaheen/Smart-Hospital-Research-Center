@@ -170,4 +170,9 @@ const OpdBillingTable = () => {
   )
 }
 
+OpdBillingTable.acl = {
+  action: 'read',
+  subject: 'acl-page',
+}
+
 export default OpdBillingTable

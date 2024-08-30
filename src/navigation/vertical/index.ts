@@ -1,7 +1,11 @@
 // ** Type import
+import { useContext } from 'react'
+import { AbilityContext } from 'src/layouts/components/acl/Can'
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
+
 const navigation = (): VerticalNavItemsType => {
+
   return [
     {
       title: 'Dashboards',
@@ -10,40 +14,62 @@ const navigation = (): VerticalNavItemsType => {
       badgeColor: 'error',
       children: [
         {
+          action: 'read',
+          subject: 'acl-page',
           title: 'Analytics',
           path: '/dashboards/analytics'
         }
       ]
     },
     {
+      action: 'read',
+      subject: 'acl-page',
       title: 'Billing',
       path: '/billing'
     },
     {
+      action: 'read',
+      subject: 'acl-page',
+      title: 'OPD - Out Patient',
+      path: '/OPD'
+    },
+    {
+      action: 'read',
+      subject: 'acl-page',
+      title: 'IPD - In Patient',
+      path: '/IPD'
+    },
+    {
+      action: 'read',
+      subject: 'acl-page',
       title: 'Pathology',
       path: '/pathology'
     },
     {
+      action: 'read',
+      subject: 'acl-page',
       title: 'Radiology',
       path: '/radiology'
     },
     {
+      action: 'read',
+      subject: 'acl-page',
       title: 'Pharmacy',
       path: '/pharmacy'
-    },
-    {
-      title: 'OPD',
-      path: '/Patients/OPD'
-    },
-    {
-      title: 'IPD',
-      path: '/Patients/IPD'
     },
     {
       title: 'Appointment',
       path: '/appointment'
     },
     {
+      action: 'read',
+      subject: 'acl-page',
+      title: 'Blood Bank',
+      path: '/Setup/BloodBank',
+    },
+    {
+      action: 'read',
+      subject: 'acl-page',
       title: 'Human Resource',
       path: '/human-resource'
     },
@@ -73,6 +99,13 @@ const navigation = (): VerticalNavItemsType => {
       ]
     },
     {
+      action: 'read',
+      subject: 'acl-page',
+      title: 'Message',
+      icon: 'tabler:message',
+      path: '/message'
+    },
+    {
       title: 'CRM',
       path: '/crm'
     },
@@ -85,6 +118,8 @@ const navigation = (): VerticalNavItemsType => {
       path: '/Inventory',
     },
     {
+      action: 'read',
+      subject: 'acl-page',
       title:'Download Center',
       path:'/download-center'
     },
@@ -111,6 +146,8 @@ const navigation = (): VerticalNavItemsType => {
       path: '/front-cms',
     },
     {
+      action: 'read',
+      subject: 'acl-page',
       title: 'Live Consultation',
       icon: 'tabler:receipt',
       children: [
@@ -134,10 +171,14 @@ const navigation = (): VerticalNavItemsType => {
           path: '/Setup/Setting',
         },
         {
+          action: 'read',
+          subject: 'acl-page',
           title: 'Patient',
           path: '/Setup/PatientSetup',
         },
         {
+          action: 'read',
+          subject: 'acl-page',
           title:"Hospital Charges",
           path:'/setup/hospitalCharges'
         },
@@ -146,6 +187,8 @@ const navigation = (): VerticalNavItemsType => {
           path: '/Setup/Bed',
         },
         {
+          action: 'read',
+          subject: 'acl-page',
           title:'Print Header Footer',
           path:'/setup/printHeaderFooter'
         },
@@ -158,8 +201,10 @@ const navigation = (): VerticalNavItemsType => {
           path: '/Setup/Operation',
         },
         {
+          action: 'read',
+          subject: 'acl-page',
           title:'Pharmacy',
-          path:'/setup/pharmacy'
+          path:'/pharmacy',
         },
         {
           title: 'Pathology',
@@ -170,6 +215,8 @@ const navigation = (): VerticalNavItemsType => {
           path:'/setup/radiology'
         },
         {
+          action: 'read',
+          subject: 'acl-page',
           title: 'Blood Bank',
           path: '/Setup/BloodBank',
         },
@@ -760,12 +807,12 @@ const navigation = (): VerticalNavItemsType => {
     //     }
     //   ]
     // },
-    // {
+    // , {
     //   path: '/acl',
     //   action: 'read',
     //   subject: 'acl-page',
     //   icon: 'tabler:shield',
-    //   title: 'Access Control'
+    //   title: 'Dashboards'
     // },
     // {
     //   title: 'Others',
@@ -808,7 +855,7 @@ const navigation = (): VerticalNavItemsType => {
     //     }
     //   ]
     // },
-  ]
+  ].filter(Boolean) as VerticalNavItemsType
 }
 
 export default navigation

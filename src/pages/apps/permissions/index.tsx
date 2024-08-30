@@ -228,4 +228,9 @@ const PermissionsTable = () => {
   )
 }
 
+PermissionsTable.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default PermissionsTable

@@ -377,4 +377,9 @@ const InvoiceList = () => {
   )
 }
 
+InvoiceList.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default InvoiceList

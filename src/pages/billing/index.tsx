@@ -12,6 +12,7 @@ import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 import CardStatsVertical2 from 'src/@core/components/card-statistics/card-stats-vertical2'
 
 const BillingDashboard = () => {
+
   const [searchTerm, setSearchTerm] = useState('')
 
   const handleSearchChange = (event: { target: { value: React.SetStateAction<string> } }) => {
@@ -125,7 +126,13 @@ const BillingDashboard = () => {
         </Grid>
       </Grid>
     </ApexChartWrapper>
+
   )
+}
+
+BillingDashboard.acl = {
+  action: 'read',
+  subject: 'acl-page'
 }
 
 export default BillingDashboard

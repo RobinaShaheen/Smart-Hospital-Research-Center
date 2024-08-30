@@ -38,4 +38,9 @@ export const getStaticProps: GetStaticProps = ({ params }: GetStaticPropsContext
 
 EmailApp.contentHeightFixed = true
 
+EmailApp.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default EmailApp

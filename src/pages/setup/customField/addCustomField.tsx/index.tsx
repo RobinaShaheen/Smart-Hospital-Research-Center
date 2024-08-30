@@ -26,4 +26,9 @@ const AddCustomField = () => {
   )
 }
 
+AddCustomField.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default AddCustomField
