@@ -477,8 +477,8 @@ const UserDropdown = (props: Props) => {
         }}
       >
         <Avatar
-          alt={user.fullName} // Fallback to 'User' if user.username is null/undefined
-          src={user.profilePicture} // Provide a default avatar
+          alt={user.fullName ?? 'User'} // Fallback to 'User' if user.username is null/undefined
+          src={user.profilePicture ?? '/path/to/default/avatar.png'} // Provide a default avatar
           onClick={handleDropdownOpen}
           sx={{ width: 38, height: 38 }}
         />
@@ -501,7 +501,7 @@ const UserDropdown = (props: Props) => {
                 horizontal: 'right'
               }}
             >
-              <Avatar alt={user.fullName} src={user.profilePicture} sx={{ width: '2.5rem', height: '2.5rem' }} />
+              <Avatar alt={user.fullName ?? 'User'} src={user.profilePicture ?? '/path/to/default/avatar.png'} sx={{ width: '2.5rem', height: '2.5rem' }} />
             </Badge>
             <Box sx={{ display: 'flex', ml: 2.5, alignItems: 'flex-start', flexDirection: 'column' }}>
               <Typography sx={{ fontWeight: 500 }}>{user.fullName}</Typography>
