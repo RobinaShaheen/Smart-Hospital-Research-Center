@@ -27,4 +27,9 @@ const Addcharges = () => {
   )
 }
 
+Addcharges.acl = {
+  action: 'read',
+  subject: 'acl-page'
+}
+
 export default Addcharges
